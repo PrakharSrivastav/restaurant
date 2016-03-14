@@ -10,6 +10,9 @@ $(document).ready(function() {
 			change.addClass('fa-angle-down');
 		}
 	});
+
+	$('.affix-side').affix();
+	// code to add and remove the items in the calculator
 	total = 0;
 	grand_total = 0;
 	var price_array = [];
