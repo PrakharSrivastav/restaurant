@@ -25,9 +25,9 @@
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
 						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
+						<span class="fa fa-bars"></span>
+						<!-- <span class="icon-bar"></span> -->
+						<!-- <span class="icon-bar"></span> -->
 					</button>
 					<a class="navbar-brand no-text-decoration text-uppercase margin-top-5 text-white" href="#">Magic Meal</a>
 				</div>
@@ -46,7 +46,7 @@
 		</nav>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 weight-500">
+				<div class="col-md-6 weight-500  hidden-sm hidden-xs">
 					<button type="button" class="btn btn-lg btn-link text-white"><i class="fa fa-angle-left"></i> Back to results</button>
 				</div>
 				<div class="col-md-6 weight-500">
@@ -55,8 +55,8 @@
 			</div>
 			<div class="row margin-top-40 padding-bottom-15">
 				<div class="col-lg-8" style="position:relative">
-					<img src="img/food.jpg" alt="" class="profile-border margin-right-5 img-responsive profile-picture" style="float:left" />
-					<div class="restaurant-name" style="position:absolute;bottom:0px;left:130px">
+					<img src="img/food.jpg" alt="" class="profile-border margin-right-5  hidden-sm hidden-xs img-responsive profile-picture" style="float:left" />
+					<div class="restaurant-name">
 						<h3 class="weight-300 text-white">20% Off</h3>
 						<h3 class="text-capitalize text-white">fancy restaurant name</h3>
 						<p class="weight-300 text-white text-capitalize">
@@ -64,7 +64,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4  hidden-sm hidden-xs">
 					<div class="padding-top-50 margin-top-40 pull-right">
 						<i class="fa fa-star text-white"></i>
 						<i class="fa fa-star text-white"></i>
@@ -80,7 +80,7 @@
 		</div>
 	</div>
 	<div class="container">
-		<ul class="nav nav-tabs nav-justified" role="tablist">
+		<ul class="nav nav-tabs nav-justified hidden-sm hidden-xs" role="tablist">
 			<li role="presentation" class="active"><a href="#menu" aria-controls="home" role="tab" data-toggle="tab" class="no-text-decoration text-dark">Menu</a></li>
 			<li role="presentation"><a href="#about" aria-controls="home" role="tab" data-toggle="tab" class="no-text-decoration text-dark">About</a></li>
 			<li role="presentation"><a href="#reviews" aria-controls="home" role="tab" data-toggle="tab" class="no-text-decoration text-dark">Reviews</a></li>
@@ -91,13 +91,13 @@
 		<div class="row margin-top-20">
 			<div class="col-md-3 col-xs-12">
 
-				<div class="input-group ">
+				<div class="input-group full-width margin-bottom-10">
 					<input type="text" class="form-control " placeholder="Search for...">
 					<span class="input-group-btn">
         				<button class="btn btn-success " type="button"><i class="fa fa-search "></i></button>
       				</span>
 				</div>
-				<div class="list-group margin-top-20">
+				<div class="list-group margin-top-20 hidden-sm hidden-xs">
 					<a href="#" class="list-group-item active no-border">
 						<h4 class="list-group-item-heading font-13">1000 people have have ordered from this place</h4>
 						<p class="list-group-item-text font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
@@ -108,7 +108,7 @@
 					<a class="list-group-item font-12">The restaurant charges 5% service fee</a>
 				</div>
 
-				<div class="list-group">
+				<div class="list-group hidden-sm hidden-xs">
 					<div id="left-sidebar">
 						<a href="#" class="list-group-item active">Categories</a>
 						<a href="#starterHeading" class="list-group-item scroll-btn font-14 text-info padding-20">Starters</a>
@@ -137,14 +137,14 @@
 											<div class="list-group-item">
 												<div class="item_name">Starter Item 1</div>
 												<div class="row">
-													<div class="col-sm-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
-													<div class="col-sm-1">
+													<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+													<div class="col-sm-1 hidden-sm hidden-xs">
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
-													<div class="col-sm-2 text-dark">
-														<span class="pull-right font-18 ">£ <span class="price">2.00</span></span>
+													<div class="col-sm-2 col-xs-2 text-dark">
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
-													<div class="col-sm-1">
+													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
 															<i class="fa fa-plus-square-o"></i>
 														</div>
@@ -154,14 +154,14 @@
 											<div class="list-group-item">
 												<div class="item_name">Starter Item 2</div>
 												<div class="row">
-													<div class="col-sm-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
-													<div class="col-sm-1">
+													<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+													<div class="col-sm-1 hidden-sm hidden-xs">
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
-													<div class="col-sm-2 text-dark">
-														<span class="pull-right font-18 ">£ <span class="price">2.00</span></span>
+													<div class="col-sm-2 col-xs-2 text-dark">
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
-													<div class="col-sm-1">
+													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
 															<i class="fa fa-plus-square-o"></i>
 														</div>
@@ -171,14 +171,14 @@
 											<div class="list-group-item">
 												<div class="item_name">Starter Item 3</div>
 												<div class="row">
-													<div class="col-sm-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
-													<div class="col-sm-1">
+													<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+													<div class="col-sm-1 hidden-sm hidden-xs">
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
-													<div class="col-sm-2 text-dark">
-														<span class="pull-right font-18 ">£ <span class="price">2.00</span></span>
+													<div class="col-sm-2 col-xs-2 text-dark">
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
-													<div class="col-sm-1">
+													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
 															<i class="fa fa-plus-square-o"></i>
 														</div>
@@ -205,14 +205,14 @@
 											<div class="list-group-item">
 												<div class="item_name">Main Course Item 1</div>
 												<div class="row">
-													<div class="col-sm-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
-													<div class="col-sm-1">
+													<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+													<div class="col-sm-1 hidden-sm hidden-xs">
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
-													<div class="col-sm-2 text-dark">
-														<span class="pull-right font-18 ">£ <span class="price">2.00</span></span>
+													<div class="col-sm-2 col-xs-2 text-dark">
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
-													<div class="col-sm-1">
+													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
 															<i class="fa fa-plus-square-o"></i>
 														</div>
@@ -222,14 +222,14 @@
 											<div class="list-group-item">
 												<div class="item_name">Main Course Item 2</div>
 												<div class="row">
-													<div class="col-sm-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
-													<div class="col-sm-1">
+													<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+													<div class="col-sm-1 hidden-sm hidden-xs">
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
-													<div class="col-sm-2 text-dark">
-														<span class="pull-right font-18 ">£ <span class="price">2.00</span></span>
+													<div class="col-sm-2 col-xs-2 text-dark">
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
-													<div class="col-sm-1">
+													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
 															<i class="fa fa-plus-square-o"></i>
 														</div>
@@ -239,14 +239,14 @@
 											<div class="list-group-item">
 												<div class="item_name">Main Course Item 3</div>
 												<div class="row">
-													<div class="col-sm-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
-													<div class="col-sm-1">
+													<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+													<div class="col-sm-1 hidden-sm hidden-xs">
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
-													<div class="col-sm-2 text-dark">
-														<span class="pull-right font-18 ">£ <span class="price">2.00</span></span>
+													<div class="col-sm-2 col-xs-2 text-dark">
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
-													<div class="col-sm-1">
+													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
 															<i class="fa fa-plus-square-o"></i>
 														</div>
@@ -256,14 +256,14 @@
 											<div class="list-group-item">
 												<div class="item_name">Main Course Item 4</div>
 												<div class="row">
-													<div class="col-sm-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
-													<div class="col-sm-1">
+													<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+													<div class="col-sm-1 hidden-sm hidden-xs">
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
-													<div class="col-sm-2 text-dark">
-														<span class="pull-right font-18 ">£ <span class="price">2.00</span></span>
+													<div class="col-sm-2 col-xs-2 text-dark">
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
-													<div class="col-sm-1">
+													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
 															<i class="fa fa-plus-square-o"></i>
 														</div>
@@ -290,14 +290,14 @@
 											<div class="list-group-item">
 												<div class="item_name">Dessert Item 1</div>
 												<div class="row">
-													<div class="col-sm-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
-													<div class="col-sm-1">
+													<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+													<div class="col-sm-1  hidden-sm hidden-xs">
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
-													<div class="col-sm-2 text-dark">
-														<span class="pull-right font-18 ">£ <span class="price">2.00</span></span>
+													<div class="col-sm-2 col-xs-2 text-dark">
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
-													<div class="col-sm-1">
+													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
 															<i class="fa fa-plus-square-o"></i>
 														</div>
@@ -307,14 +307,14 @@
 											<div class="list-group-item">
 												<div class="item_name">Dessert Item 2</div>
 												<div class="row">
-													<div class="col-sm-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
-													<div class="col-sm-1">
+													<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+													<div class="col-sm-1 hidden-sm hidden-xs">
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
-													<div class="col-sm-2 text-dark">
-														<span class="pull-right font-18 ">£ <span class="price">2.00</span></span>
+													<div class="col-sm-2 col-xs-2 text-dark">
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
-													<div class="col-sm-1">
+													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
 															<i class="fa fa-plus-square-o"></i>
 														</div>
@@ -324,14 +324,14 @@
 											<div class="list-group-item">
 												<div class="item_name">Dessert Item 3</div>
 												<div class="row">
-													<div class="col-sm-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
-													<div class="col-sm-1">
+													<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+													<div class="col-sm-1 hidden-sm hidden-xs">
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
-													<div class="col-sm-2 text-dark">
-														<span class="pull-right font-18 ">£ <span class="price">2.00</span></span>
+													<div class="col-sm-2 col-xs-2 text-dark">
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
-													<div class="col-sm-1">
+													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
 															<i class="fa fa-plus-square-o"></i>
 														</div>
@@ -341,14 +341,14 @@
 											<div class="list-group-item">
 												<div class="item_name">Dessert Item 4</div>
 												<div class="row">
-													<div class="col-sm-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
-													<div class="col-sm-1">
+													<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+													<div class="col-sm-1 hidden-sm hidden-xs">
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
-													<div class="col-sm-2 text-dark">
-														<span class="pull-right font-18 ">£ <span class="price">2.00</span></span>
+													<div class="col-sm-2 col-xs-2 text-dark">
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
-													<div class="col-sm-1">
+													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
 															<i class="fa fa-plus-square-o"></i>
 														</div>
@@ -358,14 +358,14 @@
 											<div class="list-group-item">
 												<div class="item_name">Dessert Item 5</div>
 												<div class="row">
-													<div class="col-sm-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
-													<div class="col-sm-1">
+													<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+													<div class="col-sm-1 hidden-sm hidden-xs">
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
-													<div class="col-sm-2 text-dark">
-														<span class="pull-right font-18 ">£ <span class="price">2.00</span></span>
+													<div class="col-sm-2 col-xs-2 text-dark">
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
-													<div class="col-sm-1">
+													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
 															<i class="fa fa-plus-square-o"></i>
 														</div>
@@ -375,14 +375,14 @@
 											<div class="list-group-item">
 												<div class="item_name">Dessert Item 6</div>
 												<div class="row">
-													<div class="col-sm-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
-													<div class="col-sm-1">
+													<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+													<div class="col-sm-1 hidden-sm hidden-xs">
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
-													<div class="col-sm-2 text-dark">
-														<span class="pull-right font-18 ">£ <span class="price">2.00</span></span>
+													<div class="col-sm-2 col-xs-2 text-dark">
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
-													<div class="col-sm-1">
+													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
 															<i class="fa fa-plus-square-o"></i>
 														</div>
@@ -392,14 +392,14 @@
 											<div class="list-group-item">
 												<div class="item_name">Dessert Item 7</div>
 												<div class="row">
-													<div class="col-sm-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
-													<div class="col-sm-1">
+													<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+													<div class="col-sm-1 hidden-sm hidden-xs">
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
-													<div class="col-sm-2 text-dark">
-														<span class="pull-right font-18 ">£ <span class="price">2.00</span></span>
+													<div class="col-sm-2 col-xs-2 text-dark">
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
-													<div class="col-sm-1">
+													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
 															<i class="fa fa-plus-square-o"></i>
 														</div>
@@ -409,14 +409,14 @@
 											<div class="list-group-item">
 												<div class="item_name">Dessert Item 8</div>
 												<div class="row">
-													<div class="col-sm-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
-													<div class="col-sm-1">
+													<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+													<div class="col-sm-1 hidden-sm hidden-xs">
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
-													<div class="col-sm-2 text-dark">
-														<span class="pull-right font-18 ">£ <span class="price">2.00</span></span>
+													<div class="col-sm-2 col-xs-2 text-dark">
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
-													<div class="col-sm-1">
+													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
 															<i class="fa fa-plus-square-o"></i>
 														</div>
@@ -426,14 +426,14 @@
 											<div class="list-group-item">
 												<div class="item_name">Dessert Item 9</div>
 												<div class="row">
-													<div class="col-sm-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
-													<div class="col-sm-1">
+													<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+													<div class="col-sm-1 hidden-sm hidden-xs">
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
-													<div class="col-sm-2 text-dark">
-														<span class="pull-right font-18 ">£ <span class="price">2.00</span></span>
+													<div class="col-sm-2 col-xs-2 text-dark">
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
-													<div class="col-sm-1">
+													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
 															<i class="fa fa-plus-square-o"></i>
 														</div>

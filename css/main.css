@@ -143,7 +143,7 @@ div.bg-img {
 .no-border 						{border-radius: 0px;border: none}
 .profile-border 				{border-radius: 5px;border: 1px solid grey}
 .profile-picture 				{width: 120px; height: 120px;}
-.restaurant-name 				{color:#fff;margin:10px 20px !important;}
+.restaurant-name 				{color:#fff;margin:10px 20px !important;position:absolute;bottom:0px;left:130px}
 nav >* ,
 ul.navbar-nav:hover li a,
 .transparent 					{background-color: transparent !important;}
@@ -170,4 +170,9 @@ nav.affix #navbar ul li a i 	{color:#000 !important;border-color: #000}
   position: static;
   width: auto;
   top: 0;
+}
+
+@media (max-width:991px) {
+	.restaurant-name 			{left:0px;margin:0;}
+	.restaurant-name h3			{font-size: 16px !important}
 }
