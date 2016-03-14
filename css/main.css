@@ -129,11 +129,12 @@ body {font-family: 'Open Sans', sans-serif; background: #f1f1f1}
 div.bg-img {
 	margin-top:0px;
 	background: url(../img/test_image.jpg) ;
-	background-size: 100% 100%;
+	background-size: cover;;;
     background-repeat: no-repeat;
 }
-.text-white {color:#fff}
+.text-white {color:#fff !important}
 .bg-white {background-color: #fff}
 .no-border {border-radius: 0px;border: solid white 1px !important;}
 .restaurant-name {color:#fff;margin:40px 40px !important;}
-nav >* {background-color: transparent !important;}
+nav >* , ul.navbar-nav:hover li a,.transparent {background-color: transparent !important;}
+.no-text-decoration { text-decoration: none !important}
