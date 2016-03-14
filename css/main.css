@@ -125,16 +125,22 @@
 .weight-600 {font-weight: 600 !important}
 .weight-700 {font-weight: 700 !important}
 
-body {font-family: 'Open Sans', sans-serif; background: #f1f1f1}
+body {font-family: 'Open Sans', sans-serif; background: #ededed}
 div.bg-img {
 	margin-top:0px;
 	background: url(../img/test_image.jpg) ;
 	background-size: cover;;;
     background-repeat: no-repeat;
 }
-.text-white {color:#fff !important}
-.bg-white {background-color: #fff}
-.no-border {border-radius: 0px;border: solid white 1px !important;}
-.restaurant-name {color:#fff;margin:40px 40px !important;}
-nav >* , ul.navbar-nav:hover li a,.transparent {background-color: transparent !important;}
-.no-text-decoration { text-decoration: none !important}
+.text-white 					{color:#fff !important}
+.text-dark 						{color: #000;font-size: 20px}
+.bg-white 						{background-color: #fff}
+.no-border 						{border-radius: 0px;border: none}
+.restaurant-name 				{color:#fff;margin:40px 40px !important;}
+nav >* ,
+ul.navbar-nav:hover li a,
+.transparent 					{background-color: transparent !important;}
+.no-text-decoration 			{ text-decoration: none !important}
+a.list-group-item.active 		{background-color: #222a2d !important;border-color: #222a2d}
+.menu-items 					{border-radius: 0px;padding:0px;margin:0px;border:none}
+.menu-items>.list-group-item 	{border-radius: 0px;font-weight:400}

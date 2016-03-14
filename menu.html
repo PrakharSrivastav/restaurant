@@ -32,9 +32,9 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="navbar">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#"><i class="pe-7s-cart pe-2x"></i></a></li>
-						<li><a href="#"><i class="pe-7s-bell pe-2x"></i></a></li>
-						<li><a href="#"><i class="pe-7s-menu pe-2x"></i></a></li>
+						<li><a href="#"><i class="pe-7s-cart pe-2x no-text-decoration text-white "></i></a></li>
+						<li><a href="#"><i class="pe-7s-bell pe-2x no-text-decoration text-white "></i></a></li>
+						<li><a href="#"><i class="pe-7s-menu pe-2x no-text-decoration text-white "></i></a></li>
 					</ul>
 					<a href="#" class="btn btn-default pull-right navbar-btn margin-top-14 margin-right-10 transparent text-white weight-300">Login</a>
 				</div>
@@ -76,7 +76,105 @@
 			</div>
 		</div>
 	</div>
+	<div class="container">
+		<ul class="nav nav-tabs nav-justified" role="tablist">
+			<li role="presentation" class="active"><a href="#" aria-controls="home" role="tab" data-toggle="tab" class="no-text-decoration text-dark weight-300">Menu</a></li>
+			<li role="presentation"><a href="#" aria-controls="home" role="tab" data-toggle="tab" class="no-text-decoration text-dark weight-300">About</a></li>
+			<li role="presentation"><a href="#" aria-controls="home" role="tab" data-toggle="tab" class="no-text-decoration text-dark weight-300">Reviews</a></li>
+			<li role="presentation"><a href="#" aria-controls="home" role="tab" data-toggle="tab" class="no-text-decoration text-dark weight-300">Photos</a></li>
+			<li role="presentation"><a href="#" aria-controls="home" role="tab" data-toggle="tab" class="no-text-decoration text-dark weight-300">Social</a></li>
+		</ul>
+		<!-- <div class="tab-content">
+			<div role="tabpanel" class="tab-pane active" id="home">...</div>
+			<div role="tabpanel" class="tab-pane" id="profile">...</div>
+			<div role="tabpanel" class="tab-pane" id="messages">...</div>
+			<div role="tabpanel" class="tab-pane" id="settings">...</div>
+		</div> -->
+		<div class="row margin-top-20">
+			<div class="col-md-3 col-xs-12">
+				<div class="input-group">
+					<input type="text" class="form-control  weight-300" placeholder="Search for...">
+					<span class="input-group-btn">
+        				<button class="btn btn-success  weight-300" type="button"><i class="pe-7s-search "></i></button>
+      				</span>
+				</div>
+				<div class="list-group margin-top-20">
+					<a href="#" class="list-group-item active no-border">
+						<h4 class="list-group-item-heading weight-300">1000 people have have ordered from this place</h4>
+						<p class="list-group-item-text weight-300">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
+					</a>
+					<a class="list-group-item no-padding no-margin no-border">
+						<button type="button" class="btn btn-lg btn-block no-border btn-info text-dark weight-300 " name="button"> Create Group Order</button>
+					</a>
+					<a class="list-group-item weight-400">The restaurant charges service fees of 5%</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-xs-12">
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="starterHeading">
+							<h4 class="panel-title">
+					        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#starters" aria-expanded="true" aria-controls="starters">
+					          <div class="pull-left weight-300 font-20 margin-top-5 text-primary">Starters</div>
+							  <div class="pull-right"><i class="pe-7s-angle-down pe-2x"></i></div>
+							  <div class="clearfix"></div>
+					        </a>
+					      </h4>
+						</div>
+						<div id="starters" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="starterHeading">
+							<div class="panel-body no-padding no-margin">
+								<div class="list-group menu-items">
+									<a href="#" class="list-group-item">
+										<div class="weight-400">Starter Item 1</div>
+										<div class="row">
+										  <div class="col-sm-9 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+										  <div class="col-sm-3"></div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+									<a href="#" class="list-group-item">Morbi leo risus</a>
+									<a href="#" class="list-group-item">Porta ac consectetur ac</a>
+									<a href="#" class="list-group-item">Vestibulum at eros</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="mainCourseHeading">
+							<h4 class="panel-title">
+					        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#mainCourse" aria-expanded="false" aria-controls="mainCourse">
+								<div class="pull-left weight-300 font-20 margin-top-5">Main Course</div>
+  							  <div class="pull-right"><i class="pe-7s-angle-down pe-2x"></i></div>
+  							  <div class="clearfix"></div>
+					        </a>
+					      </h4>
+						</div>
+						<div id="mainCourse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="mainCourseHeading">
+							<div class="panel-body">
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="dessertHeading">
+							<h4 class="panel-title">
+					        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#desserts" aria-expanded="false" aria-controls="desserts">
+								<div class="pull-left weight-300 font-20 margin-top-5">Desserts</div>
+								<div class="pull-right"><i class="pe-7s-angle-down pe-2x"></i></div>
+								<div class="clearfix"></div>
+					        </a>
+					      </h4>
+						</div>
+						<div id="desserts" class="panel-collapse collapse" role="tabpanel" aria-labelledby="dessertHeading">
+							<div class="panel-body">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-xs-12"></div>
+		</div>
 
+	</div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
