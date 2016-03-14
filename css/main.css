@@ -125,19 +125,26 @@
 .weight-600 {font-weight: 600 !important}
 .weight-700 {font-weight: 700 !important}
 
-body {font-family: 'Open Sans', sans-serif; background: #ededed}
+body {font-family: 'Montserrat', sans-serif; background: #ededed}
+
 div.bg-img {
 	margin-top:0px;
 	background: url(../img/test_image.jpg) ;
 	background-size: cover;;;
     background-repeat: no-repeat;
+	text-transform: uppercase;
 }
+
+
 .text-white 					{color:#fff !important}
+.text-grey 						{color:#e6e6e6 !important}
 .text-dark 						{color: #000;font-size: 20px}
 .bg-white 						{background-color: #fff}
 .bg-dark 						{background-color: #222a2d !important}
 .no-border 						{border-radius: 0px;border: none}
-.restaurant-name 				{color:#fff;margin:40px 40px !important;}
+.profile-border 				{border-radius: 5px;border: 1px solid grey}
+.profile-picture 				{width: 120px; height: 120px;}
+.restaurant-name 				{color:#fff;margin:10px 20px !important;}
 nav >* ,
 ul.navbar-nav:hover li a,
 .transparent 					{background-color: transparent !important;}
