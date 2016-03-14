@@ -11,7 +11,8 @@ $(document).ready(function() {
 		}
 	});
 
-	$('.affix-side').affix();
+	$('.navbar').affix();
+	// $('#left-sidebar').affix();
 	// code to add and remove the items in the calculator
 	total = 0;
 	grand_total = 0;
@@ -20,8 +21,7 @@ $(document).ready(function() {
 		price = parseFloat($(this).parent().parent().parent().find('span.price').text());
 		item_name = $(this).parent().parent().parent().parent().find('div.item_name').text();
 
-		if ($.inArray(item_name, price_array) > -1)
-		{
+		if ($.inArray(item_name, price_array) > -1) {
 			calculator_item = $("#calculatorItem").find("#" + changeToId(item_name));
 			old_val = calculator_item.text();
 			new_val = parseInt(old_val) + 1;
@@ -30,18 +30,17 @@ $(document).ready(function() {
 			old_val = parseFloat(price_item.text());
 			new_val = price + old_val;
 			price_item.text(new_val.toFixed(2));
-		} else
-		{
-			template = '<div class="template_added"  style="display: visible;">'+
-							'<div class="col-xs-9 pull-left">' +
-								'<i class="fa fa-minus-square-o font-11" data-price="__price__"></i>' +
-								' <span class="font-11 count" id="the_count_id">1</span>' +
-								'<span class="weight-400 font-11 text-dark"> * _item_name_</span>'+
-							'</div>' +
-							'<div class="col-xs-3">' +
-								'<div class="margin-top-5 pull-right font-10">£<span id="the_count_id_price" class="price">__price__</span></div>' +
-							'</div>' +
-						'</div>';
+		} else {
+			template = '<div class="template_added"  style="display: visible;">' +
+				'<div class="col-xs-9 pull-left">' +
+				'<i class="fa fa-minus-square-o font-11" data-price="__price__"></i>' +
+				' <span class="font-11 count" id="the_count_id">1</span>' +
+				'<span class="weight-400 font-11 text-dark"> * _item_name_</span>' +
+				'</div>' +
+				'<div class="col-xs-3">' +
+				'<div class="margin-top-5 pull-right font-10">£<span id="the_count_id_price" class="price">__price__</span></div>' +
+				'</div>' +
+				'</div>';
 			template = template.replace(/_item_name_/g, item_name);
 			template = template.replace(/__price__/g, price.toFixed(2));
 			template = template.replace(/the_count_id/g, changeToId(item_name));
@@ -77,10 +76,9 @@ $(document).ready(function() {
 
 		if (count_val == 1) {
 			$(this).parent().parent().remove();
-			removeItem(price_array,[item_name]);
-		}
-		else {
-			count.text(count_val-1);
+			removeItem(price_array, [item_name]);
+		} else {
+			count.text(count_val - 1);
 		}
 
 		total = parseFloat(total - element_price)
@@ -105,21 +103,21 @@ function changeToId(temp_item_name) {
 	return temp_item_name.toLowerCase().split(' ').join('_');
 }
 
-function removeItem(array,value){  //my clear function
-  if(Array.isArray(array)){  //for multi remove
-    for(var i = array.length - 1; i >= 0; i--) {
-      for(var j = array.length - 1; j >= 0; j--) {
-          if(array[i] === value[j]) {
-             array.splice(i, 1);
-          };
-      }
-    }
-  } else { //for single remove
+function removeItem(array, value) { //my clear function
+	if (Array.isArray(array)) { //for multi remove
+		for (var i = array.length - 1; i >= 0; i--) {
+			for (var j = array.length - 1; j >= 0; j--) {
+				if (array[i] === value[j]) {
+					array.splice(i, 1);
+				};
+			}
+		}
+	} else { //for single remove
 
-    for(var i = array.length - 1; i >= 0; i--) {
-        if(array[i] === number) {
-           array.splice(i, 1);
-        }
-    }
-  }
+		for (var i = array.length - 1; i >= 0; i--) {
+			if (array[i] === number) {
+				array.splice(i, 1);
+			}
+		}
+	}
 }

@@ -125,7 +125,7 @@
 .weight-600 {font-weight: 600 !important}
 .weight-700 {font-weight: 700 !important}
 
-body {font-family: 'Montserrat', sans-serif; background: #ededed;}
+body {font-family: 'Montserrat', sans-serif; background: #ededed;position: relative;}
 
 div.bg-img {
 	margin-top:0px;
@@ -153,12 +153,11 @@ a.list-group-item.active 		{background-color: #222a2d !important;border-color: #
 .menu-items>div.list-group-item 	{border-radius: 0px;font-weight:400;border: none;}
 .panel,.panel-body,.panel-default {border:none}
 .border-bottom-grey 			{border-bottom: solid black 1px}
-.list-group-item,.list-group 	{border-radius: 0px !important}
-.fa-plus-square-o:hover {
-	color: orange;
-	cursor: pointer;
-}
-.fa-minus-square-o:hover{
-	color: red;
-	cursor: pointer;
-}
+.list-group-item,.list-group,.navbar 	{border-radius: 0px !important}
+.fa-plus-square-o:hover 		{color: orange;	cursor: pointer;}
+.fa-minus-square-o:hover		{color: red;	cursor: pointer;}
+.full-width 					{width:100% !important}
+nav.affix 						{background:#FFF;z-index:100;}
+nav.affix a.navbar-brand		{color:#000 !important}
+nav.affix #navbar a.btn-default,
+nav.affix #navbar ul li a i 	{color:#000 !important;border-color: #000}
