@@ -135,6 +135,7 @@ div.bg-img {
 .text-white 					{color:#fff !important}
 .text-dark 						{color: #000;font-size: 20px}
 .bg-white 						{background-color: #fff}
+.bg-dark 						{background-color: #222a2d !important}
 .no-border 						{border-radius: 0px;border: none}
 .restaurant-name 				{color:#fff;margin:40px 40px !important;}
 nav >* ,
@@ -143,4 +144,7 @@ ul.navbar-nav:hover li a,
 .no-text-decoration 			{ text-decoration: none !important}
 a.list-group-item.active 		{background-color: #222a2d !important;border-color: #222a2d}
 .menu-items 					{border-radius: 0px;padding:0px;margin:0px;border:none}
-.menu-items>.list-group-item 	{border-radius: 0px;font-weight:400}
+.menu-items>div.list-group-item 	{border-radius: 0px;font-weight:400;border: none;}
+.panel,.panel-body,.panel-default {border:none}
+.border-bottom-grey {border-bottom: solid black 1px}
+.list-group-item,.list-group {border-radius: 0px !important}
