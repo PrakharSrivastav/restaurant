@@ -161,8 +161,8 @@ nav.affix 						{background:#FFF;z-index:100;}
 nav.affix a.navbar-brand		{color:#000 !important}
 nav.affix #navbar a.btn-default,
 nav.affix #navbar ul li a i 	{color:#000 !important;border-color: #000}
-.fixed-left-menu 				{position:fixed;top:70px;z-index: 10;}
-.fixed-right-menu 				{position:fixed;top:70px;z-index: 10;}
+.fixed-left-menu 				{position:fixed;top:56px;z-index: 10;}
+.fixed-right-menu 				{position:fixed;top:46px;z-index: 10;}
 .affix{
     top: 0px !important;
 }

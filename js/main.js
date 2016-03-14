@@ -11,8 +11,7 @@ $(document).ready(function() {
 		}
 	});
 
-	$(window).scroll(function()
-	{
+	$(window).scroll(function() {
 		fixAlignment()
 	});
 	fixAlignment()
@@ -106,6 +105,13 @@ $(document).ready(function() {
 		}
 	})
 
+	$(".scroll-btn").click(function() {
+		href = $(this).attr("href");
+		// console.log($(this).attr("href"));
+		$('html, body').animate({
+			scrollTop: $(href).offset().top - 60
+		}, 800);
+	});
 });
 
 function changeToId(temp_item_name) {
@@ -131,26 +137,20 @@ function removeItem(array, value) { //my clear function
 	}
 }
 
-function fixAlignment()
-{
-	if(window.pageYOffset > 220)
-	{
-		if(!$("#left-sidebar").hasClass("fixed-left-menu"))
-		{
+function fixAlignment() {
+	if (window.pageYOffset > 220) {
+		if (!$("#left-sidebar").hasClass("fixed-left-menu")) {
 			$("#left-sidebar").addClass("fixed-left-menu")
 			$("#left-sidebar").addClass("pull-left")
 			$("#left-sidebar").width($("#left-sidebar").parent().width())
-			// console.log($("#left-sidebar").parent().width())
+				// console.log($("#left-sidebar").parent().width())
 		}
-		if(!$("#right-sidebar").hasClass("fixed-right-menu"))
-		{
+		if (!$("#right-sidebar").hasClass("fixed-right-menu")) {
 			$("#right-sidebar").addClass("fixed-right-menu")
 			$("#right-sidebar").addClass("pull-right")
 			$("#right-sidebar").width($("#right-sidebar").parent().width())
 		}
-	}
-	else
-	{
+	} else {
 		console.log($("#left-sidebar").parent().width())
 		$("#left-sidebar").removeClass("fixed-left-menu")
 		$("#right-sidebar").removeClass("fixed-right-menu")
