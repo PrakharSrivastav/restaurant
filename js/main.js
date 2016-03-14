@@ -11,8 +11,17 @@ $(document).ready(function() {
 		}
 	});
 
+	$(window).scroll(function()
+	{
+		fixAlignment()
+	});
+	fixAlignment()
 	$('.navbar').affix();
-	// $('#left-sidebar').affix();
+	// $('#left-sidebar').affix(
+	// 	{
+	// 		top:200
+	// 	}
+	// );
 	// code to add and remove the items in the calculator
 	total = 0;
 	grand_total = 0;
@@ -119,5 +128,31 @@ function removeItem(array, value) { //my clear function
 				array.splice(i, 1);
 			}
 		}
+	}
+}
+
+function fixAlignment()
+{
+	if(window.pageYOffset > 220)
+	{
+		if(!$("#left-sidebar").hasClass("fixed-left-menu"))
+		{
+			$("#left-sidebar").addClass("fixed-left-menu")
+			$("#left-sidebar").addClass("pull-left")
+			$("#left-sidebar").width($("#left-sidebar").parent().width())
+			// console.log($("#left-sidebar").parent().width())
+		}
+		if(!$("#right-sidebar").hasClass("fixed-right-menu"))
+		{
+			$("#right-sidebar").addClass("fixed-right-menu")
+			$("#right-sidebar").addClass("pull-right")
+			$("#right-sidebar").width($("#right-sidebar").parent().width())
+		}
+	}
+	else
+	{
+		console.log($("#left-sidebar").parent().width())
+		$("#left-sidebar").removeClass("fixed-left-menu")
+		$("#right-sidebar").removeClass("fixed-right-menu")
 	}
 }
