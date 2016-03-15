@@ -9,8 +9,10 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/ajitcustom.css">
+	<link href="css/animate.min.css" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
 	<!--[if lt IE 9]>
       <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
@@ -19,7 +21,7 @@
 
 <body>
 
-	<div class="bg-img padding-top-70" >
+	<div class="bg-img padding-top-70 animated fadeIn">
 		<nav class="navbar navbar-fixed-top full-width" role="navigation">
 			<div class="container-fluid">
 				<div class="navbar-header">
@@ -59,22 +61,23 @@
 			<p>&nbsp;</p>
 			<div class="row margin-top-40 padding-bottom-15">
 				<div class="col-lg-8" style="position:relative">
-					<img src="img/food.jpg" alt="" class="profile-border margin-right-5  hidden-sm hidden-xs img-responsive profile-picture" style="float:left" />
-					<div class="restaurant-name">
+			
+				<img src="img/food.jpg" alt="" class="profile-border margin-right-5  hidden-sm hidden-xs img-responsive profile-picture animated bounceIn" delay="300ms" style="float:left" />
 
-						<a class="text-white-restaurant-name">fancy restaurant name</a>
-						<p class="weight-300 text-white text-capitalize">cuisine</p>
+				<div class="restaurant-name">
+						<a class="text-white-restaurant-name animated fadeIn">fancy restaurant name</a>
+						<p class="text-white-cuisine">cuisine</p>
 						<a class="text-white-offer">&nbsp;20% Off&nbsp;</a>
 					</div>
 				</div>
 				<div class="col-lg-4  hidden-sm hidden-xs">
 					<div class="padding-top-50 margin-top-40 pull-right">
-						<i class="fa fa-star text-white"></i>
-						<i class="fa fa-star text-white"></i>
-						<i class="fa fa-star text-white"></i>
-						<i class="fa fa-star-half-o text-white"></i>
-						<i class="fa fa-star-o text-white"></i>
-						<span class="weight-300 text-white">(350 Reviews)</span>
+						<i class="fa fa-heart"></i>
+						<i class="fa fa-heart"></i>
+						<i class="fa fa-heart"></i>
+						<i class="fa fa-heart"></i>
+						<i class="fa fa-heart-o"></i>
+						<span class="text-white-cuisine">(350 Reviews)</span>
 					</div>
 				</div>
 			</div>
@@ -94,41 +97,43 @@
 		<div class="row margin-top-20">
 			<div class="col-md-3 col-xs-12">
 
-				<div class="input-group full-width margin-bottom-10">
-					<input type="text" class="form-control " placeholder="Search for...">
+				<div class="input-group full-width">
+					<input type="text" class="form-control sharp" placeholder="Search menu...">
 					<span class="input-group-btn">
-        				<button class="btn btn-success " type="button"><i class="fa fa-search "></i></button>
+        				<button class="btn sharp" type="button"><i class="fa fa-search"></i></button>
       				</span>
 				</div>
-				<div class="list-group margin-top-20 ">
+				<div class="list-group margin-top-20">
 					<a href="#" class="list-group-item active no-border hidden-sm hidden-xs">
-						<h4 class="list-group-item-heading font-13">1000 people have have ordered from this place</h4>
-						<p class="list-group-item-text font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						<span class="sidebar1"><i class="fa fa-map-marker"></i> &nbsp;1000 people have have ordered from here</span>
 					</a>
 					<a class="list-group-item no-padding no-margin no-border">
-						<button type="button" class="btn btn-lg btn-block no-border btn-info text-dark " name="button"> Create Group Order</button>
+						<button type="button" class="btn btn-lg btn-block no-border sidebar" name="grouporder-button">GROUP ORDER <i class="fa fa-angle-right"></i></button>
 					</a>
-					<a class="list-group-item font-12 hidden-sm hidden-xs">The restaurant charges 5% service fee</a>
+					
 				</div>
 
 				<div class="list-group hidden-sm hidden-xs">
 					<div id="left-sidebar">
-						<a href="#" class="list-group-item active">Categories</a>
-						<a href="#starterHeading" class="list-group-item scroll-btn font-14 text-info padding-20">Starters</a>
-						<a href="#mainCourseHeading" class="list-group-item scroll-btn font-14 text-info padding-20">Main course</a>
-						<a href="#dessertHeading" class="list-group-item scroll-btn font-14 text-info padding-20">Desserts</a>
+						
+						<a href="#starterHeading" class="list-group-item scroll-btn sidebar-categories no-border">Starters</a>
+						<a href="#mainCourseHeading" class="list-group-item scroll-btn sidebar-categories no-border">Main course</a>
+						<a href="#dessertHeading" class="list-group-item scroll-btn sidebar-categories no-border">Desserts</a>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-6  col-xs-12 bg-white no-padding" style="display:block">
+			
+			<!--All Menu items-->
+			
+			<div class="col-md-6 col-xs-12 bg-white no-padding" style="display:block">
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="menu">
 						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 							<div class="panel panel-default">
-								<div class="panel-heading bg-dark" role="tab" id="starterHeading">
-									<h4 class="panel-title">
+								<div class="panel-heading" role="tab" id="starterHeading">
+									<h4 class="panel-title menu-header">
 							        <a role="button"  class="collapsed"  data-toggle="collapse" data-parent="#accordion" href="#starters" aria-expanded="true" aria-controls="starters">
-							          <div class="pull-left font-20 text-white">Starters</div>
+							          <div class="pull-left">Starters</div>
 									  <div class="pull-right"><i class="fa-angle-up fa text-white"></i></div>
 									  <div class="clearfix"></div>
 							        </a>
@@ -526,6 +531,7 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
+	<script type="text/javascript" src="js/restaurantsignup/wow.min.js"></script>
 </body>
 
 </html>

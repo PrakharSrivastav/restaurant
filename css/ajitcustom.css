@@ -9,6 +9,7 @@
  .text-menu {
  color: #808080;
  font-size: 12px;
+ letter-spacing: 2px;
  text-transform: uppercase;
  }
  
@@ -67,4 +68,86 @@
  color:#fff; 
  letter-spacing: 1px;
  font-size: 20px;
+ font-family: 'Nunito', sans-serif;
  }
+ 
+ @media (min-width:992px) and (max-width:1200px){
+	.restaurant-name 			{left:150px;bottom:-120px;}
+	.text-white-restaurant-name			{font-size: 18px !important}
+}
+
+@media (min-width:769px) and (max-width:992px) {
+	.restaurant-name 			{left:-30px;margin:0;}
+	.text-white-restaurant-name		{font-size: 16px !important}
+}
+
+@media (max-width:768px) {
+	.restaurant-name 			{left:0px;margin:0;}
+	.text-white-restaurant-name		{font-size: 16px !important}
+}
+
+.text-white-cuisine{
+color:#fff; 
+ opacity: 0.7; 
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ font-size: 12px;
+}
+
+.fa-heart{
+color: red;
+opacity: 0.7;
+}
+
+.fa-heart-o{
+color: red;
+opacity: 0.7;
+}
+
+
+ /*  --------------------------
+ SIDE BAR AREA
+ * -------------------------- */
+ 
+a.list-group-item.active 		{background-color: #fff !important;border-color: #fff; color:#808080; text-align: left}
+
+.sidebar{
+color:#808080;
+font-size: 12px;
+text-align: left;
+background-color: #fff;
+}
+
+.sidebar1{
+color:#808080;
+font-size: 12px;
+text-align: left;
+background-color: #fff;
+}
+
+.sidebar:hover{
+ background-color: #e62e00;
+ color: #fff;
+}
+
+.sidebar-categories{
+color:#808080;
+font-size: 12px;
+text-align: left;
+text-transform: uppercase;
+ letter-spacing: 2px;
+}
+
+.sharp {
+  border-radius:0;
+}
+
+ /*  --------------------------
+ MENU AREA
+ * -------------------------- */
+
+.menu-header{
+text-align: left;
+text-transform: uppercase;
+color:#222a2d !important
+}
