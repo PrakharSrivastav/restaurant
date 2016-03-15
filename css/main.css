@@ -41,6 +41,9 @@
 .padding-45 						{padding: 45px !important}
 .padding-50 						{padding: 50px !important}
 .padding-top-50 					{padding-top: 50px !important}
+.padding-top-60 					{padding-top: 60px !important}
+.padding-top-70 					{padding-top: 70px !important}
+.padding-top-80 					{padding-top: 80px !important}
 .padding-left-50 					{padding-left: 50px !important}
 .padding-right-50 					{padding-right: 50px !important}
 .padding-bottom-50 					{padding-bottom: 50px !important}
@@ -166,6 +169,10 @@ nav.affix #navbar ul li a i 	{color:#000 !important;border-color: #000}
 .fixed-bottom-menu 				{position:fixed;bottom:0px;z-index: 10;width:100%;left:0px}
 .affix{
     top: 0px !important;
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 .sheet {
 	cursor: pointer;
