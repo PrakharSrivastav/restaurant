@@ -141,7 +141,7 @@ div.bg-img {
 
 .text-white 					{color:#fff; text-transform: uppercase !important}
 .text-dark 						{color: #000;font-size: 20px}
-.bg-white 						{background-color: #fff}
+.bg-white 						{background-color: #fff !important}
 .bg-dark 						{background-color: #222a2d !important}
 .no-border 						{border-radius: 0px;border: none}
 .profile-border 				{border-radius: 5px;border: 1px solid grey}
@@ -198,6 +198,8 @@ nav.affix #navbar ul li a i 	{color:#000 !important;border-color: #000}
 	.restaurant-name h3			{font-size: 16px !important}
 }
 
-.container {padding-left:0;padding-right:15px;}
-.row {margin-left:0;margin-right:-15px;}
-.row > div {padding-left:0;padding-right:15px;}
+.container 					{padding-left:0;padding-right:15px;}
+.row 						{margin-left:0;margin-right:-15px;}
+.row > div 					{padding-left:0;padding-right:15px;}
+.grid-page-img-text 		{position:absolute;bottom:10px;left:0px;padding:2px;background:#ededed;opacity: 0.8;color:black;}
+.text-grey 					{color:#d3d3d3;}
