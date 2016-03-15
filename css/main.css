@@ -172,7 +172,17 @@ nav.affix #navbar ul li a i 	{color:#000 !important;border-color: #000}
   top: 0;
 }
 
-@media (max-width:991px) {
+@media (min-width:992px) and (max-width:1200px){
+	.restaurant-name 			{left:150px;bottom:-120px;}
+	.restaurant-name h3			{font-size: 18px !important}
+}
+
+@media (min-width:769px) and (max-width:992px) {
+	.restaurant-name 			{left:-30px;margin:0;}
+	.restaurant-name h3			{font-size: 16px !important}
+}
+
+@media (max-width:768px) {
 	.restaurant-name 			{left:0px;margin:0;}
 	.restaurant-name h3			{font-size: 16px !important}
 }

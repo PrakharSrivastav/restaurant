@@ -138,21 +138,26 @@ function removeItem(array, value) { //my clear function
 }
 
 function fixAlignment() {
-	if (window.pageYOffset > 220) {
-		if (!$("#left-sidebar").hasClass("fixed-left-menu")) {
-			$("#left-sidebar").addClass("fixed-left-menu")
-			$("#left-sidebar").addClass("pull-left")
-			$("#left-sidebar").width($("#left-sidebar").parent().width())
-				// console.log($("#left-sidebar").parent().width())
+	page_width = $("html").width();
+	if(page_width>992)
+	{
+		if (window.pageYOffset > 220) {
+			if (!$("#left-sidebar").hasClass("fixed-left-menu")) {
+				$("#left-sidebar").addClass("fixed-left-menu")
+				$("#left-sidebar").addClass("pull-left")
+				$("#left-sidebar").width($("#left-sidebar").parent().width())
+					// console.log($("#left-sidebar").parent().width())
+			}
+			if (!$("#right-sidebar").hasClass("fixed-right-menu")) {
+				$("#right-sidebar").addClass("fixed-right-menu")
+				$("#right-sidebar").addClass("pull-right")
+				$("#right-sidebar").width($("#right-sidebar").parent().width())
+			}
+		} else {
+			console.log($("#left-sidebar").parent().width())
+			$("#left-sidebar").removeClass("fixed-left-menu")
+			$("#right-sidebar").removeClass("fixed-right-menu")
 		}
-		if (!$("#right-sidebar").hasClass("fixed-right-menu")) {
-			$("#right-sidebar").addClass("fixed-right-menu")
-			$("#right-sidebar").addClass("pull-right")
-			$("#right-sidebar").width($("#right-sidebar").parent().width())
-		}
-	} else {
-		console.log($("#left-sidebar").parent().width())
-		$("#left-sidebar").removeClass("fixed-left-menu")
-		$("#right-sidebar").removeClass("fixed-right-menu")
 	}
+
 }
