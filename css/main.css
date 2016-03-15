@@ -136,7 +136,7 @@ div.bg-img {
 }
 
 
-.text-white 					{color:#d3d3d3 !important}
+.text-white 					{color:#fff; text-transform: uppercase !important}
 .text-dark 						{color: #000;font-size: 20px}
 .bg-white 						{background-color: #fff}
 .bg-dark 						{background-color: #222a2d !important}

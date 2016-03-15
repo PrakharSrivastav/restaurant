@@ -1,14 +1,70 @@
 /* CUSTOM CSS BY AJIT
  * -------------------------- */
-/*
- div.cover {
-	margin-top:0px;
-	background: url(../img/test_image.jpg) ;
-    display: block;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  left: 0;
-  position: fixed;
-  right: 0;
-  z-index: 1;
-}*/
+ 
+ 
+ /*  --------------------------
+ COVER PIC AREA
+ * -------------------------- */
+
+ .text-menu {
+ color: #808080;
+ font-size: 12px;
+ text-transform: uppercase;
+ }
+ 
+ .text-menu:active {
+ color: #595959;
+ }
+ 
+ .text-white-link {
+ color:#fff; 
+ opacity: 0.5; 
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ font-size: 12px !important}
+ 
+ .text-white-link:hover{
+ color:#fff; 
+ opacity: 0.8;
+ text-decoration: none !important}
+ 
+ .btn-like {
+ opacity: 0.7; 
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ font-size: 12px;
+  }
+  
+ .btn-like:hover{
+ background-color:#fff; 
+ opacity: 0.8;
+ text-decoration: none !important}
+  
+ .text-white-icons {
+ color:#fff; 
+ opacity: 0.5; 
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ font-size: 12px;
+ }
+ 
+ .text-white-icons:hover{
+ color:#fff; 
+ opacity: 0.8;
+ text-decoration: none !important}
+ 
+ .text-white-offer{
+ color:#fff; 
+ opacity: 0.9; 
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ font-size: 12px;
+ background-color: #e62e00;
+ border-radius: 5px;
+ }
+ 
+ .text-white-restaurant-name{
+ color:#fff; 
+ letter-spacing: 1px;
+ font-size: 20px;
+ }
