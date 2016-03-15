@@ -75,19 +75,62 @@
  }
  
  
+  @media (min-width:1201px) and (max-width:3200px) {
+  .sidebar-creategroup{
+	color:#808080;
+	font-size: 12px;
+	text-align: left;
+	background-color: #fff;
+	}
+	.sidebar-creategroup:hover{
+	 background-color: #e62e00;
+	 color: #fff;
+	}
+  }
+ 
  @media (min-width:992px) and (max-width:1200px){
 	.restaurant-name 			{left:150px;bottom:-120px;}
 	.text-white-restaurant-name			{font-size: 18px !important}
+	.sidebar-creategroup{
+	color:#808080;
+	font-size: 12px;
+	text-align: left;
+	background-color: #fff;
+	}
+	.sidebar-creategroup:hover{
+	 background-color: #e62e00;
+	 color: #fff;
+	}
 }
 
 @media (min-width:769px) and (max-width:992px) {
 	.restaurant-name 			{left:-30px;margin:0;}
 	.text-white-restaurant-name		{font-size: 16px !important}
+	.sidebar-creategroup{
+	color:#808080;
+	font-size: 12px;
+	text-align: center;
+	background-color: #fff;
+	}
+	.sidebar-creategroup:hover{
+	 background-color: #e62e00;
+	 color: #fff;
+	}
 }
 
 @media (max-width:768px) {
 	.restaurant-name 			{left:0px;margin:0;}
 	.text-white-restaurant-name		{font-size: 16px !important}
+	.sidebar-creategroup{
+	color:#808080;
+	font-size: 12px;
+	text-align: center;
+	background-color: #fff;
+	}
+	.sidebar-creategroup:hover{
+	 background-color: #e62e00;
+	 color: #fff;
+	}
 }
 
 .text-white-cuisine{
@@ -200,4 +243,14 @@ background-color: #1a1a1a;
 .cooking-time{
  font-size: 45px;
  letter-spacing: 2px;
+}
+
+.btn-checkout{
+background-color:#e62e00;
+padding: 10px;
+color: #fff;
+ text-align: center;
+  font-size: 15px;
+   letter-spacing: 2px;
+ text-transform: uppercase;
 }
