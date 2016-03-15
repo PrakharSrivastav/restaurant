@@ -137,8 +137,48 @@ $(document).ready(function() {
 		}
 	});
 
-	
+	$("#type").change(function() {
+		type = $(this).val();
+		day = $("#day");
+		day.empty();
+		if (type.indexOf("book") > -1) {
+			all_dates = getDates();
+			$.each(all_dates,function(key,value){
+				template_dates = '<option class="default" value="_date_">_date_</option>';
+				template_dates = template_dates.replace(/_date_/g,value);
+				day.append(template_dates);
+			})
+		}
+		else {
+			template_default_1 = '<option class="default" value="today">Today</option>';
+			template_default_2 = '<option class="default" value="tomorrow">Tomorrow</option>';
+			day.append(template_default_1);
+			day.append(template_default_2);
+		}
+		day.selectpicker('refresh');
+	});
 });
+
+function getDates() {
+	var today = new Date();
+	var year = today.getFullYear();
+	var month = today.getMonth();
+	var date = today.getDate();
+	dates_array = [];
+	for (var i = 0; i < 30; i++) {
+		var day = new Date(year, month, date + i);
+		dates_array.push(getFormattedDate(day));
+	}
+	return dates_array;
+}
+function getFormattedDate(date) {
+  var year = date.getFullYear();
+  var month = (1 + date.getMonth()).toString();
+  month = month.length > 1 ? month : '0' + month;
+  var day = date.getDate().toString();
+  day = day.length > 1 ? day : '0' + day;
+  return month + '/' + day + '/' + year;
+}
 
 function getLocation() {
 	if (navigator.geolocation) {
