@@ -36,7 +36,6 @@ $(document).ready(function() {
 	$(document).on('click', ".fa-plus-square-o", function() {
 		price = parseFloat($(this).parent().parent().parent().find('span.price').text());
 		item_name = $(this).parent().parent().parent().parent().find('div.item_name').text();
-
 		if ($.inArray(item_name, price_array) > -1) {
 			calculator_item = $("#calculatorItem").find("#" + changeToId(item_name));
 			old_val = calculator_item.text();
