@@ -157,7 +157,7 @@ a.list-group-item.active 		{background-color: #222a2d !important;border-color: #
 .panel,.panel-body,.panel-default {border:none}
 .border-bottom-grey 			{border-bottom: solid black 1px}
 .list-group-item,.list-group,.navbar 	{border-radius: 0px !important}
-.fa-plus-square-o:hover 		{color: orange;	cursor: pointer;}
+.fa-plus-circle:hover 			{color: orange;	cursor: pointer;}
 .fa-minus-square-o:hover		{color: red;	cursor: pointer;}
 .full-width 					{width:100% !important}
 nav.affix 						{background:#FFF;z-index:100;}
