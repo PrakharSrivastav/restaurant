@@ -18,7 +18,7 @@ $(document).ready(function() {
 
 
 	$('.selectpicker').selectpicker({
-	  size: 4
+		size: 4
 	});
 
 	// code to add and remove the items in the calculator
@@ -112,13 +112,12 @@ $(document).ready(function() {
 		}, 800);
 	});
 
-	$(".sheet").click(function(){
-		if($(this).hasClass('fa-compress')){
+	$(".sheet").click(function() {
+		if ($(this).hasClass('fa-compress')) {
 			$(this).removeClass('fa-compress')
 			$(this).addClass('fa-expand')
 			$("#calculator").slideToggle(400)
-		}
-		else{
+		} else {
 			$(this).addClass('fa-compress')
 			$(this).removeClass('fa-expand')
 			$("#calculator").slideToggle(400)
@@ -126,31 +125,32 @@ $(document).ready(function() {
 	})
 
 
-	$("#location").change(function(){
-		location = $(this).val();
-		if(location.indexOf("another") > -1)
-		{
-			alert(1);
+	$("#location").change(function() {
+		loc = $(this).val();
+		if (loc.indexOf("another") > -1) {
+			$("#myModal").modal({
+				keyboard: false,
+				backdrop: "static",
+			});
+		} else if (loc.indexOf("current") > -1) {
+			getLocation();
 		}
-		else if (location.indexOf("current") > -1)
-		{
-
-		}
-
 	});
+
+	
 });
 
 function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-        x.innerHTML = "Geolocation is not supported by this browser.";
-    }
+	if (navigator.geolocation) {
+		navigator.geolocation.getCurrentPosition(showPosition);
+	} else {
+		alert("Geolocation is not supported by this browser.");
+	}
 }
 
 function showPosition(position) {
-    x.innerHTML = "Latitude: " + position.coords.latitude +
-    "<br>Longitude: " + position.coords.longitude;
+	x = "Latitude: " + position.coords.latitude + "\nLongitude: " + position.coords.longitude;
+	alert(x);
 }
 
 
@@ -179,8 +179,7 @@ function removeItem(array, value) { //my clear function
 
 function fixAlignment() {
 	page_width = $("html").width();
-	if(page_width>992)
-	{
+	if (page_width > 992) {
 		$("#right-sidebar").removeClass("fixed-bottom-menu");
 		$("#right-sidebar").removeClass("col-xs-12");
 		if (window.pageYOffset > 400) {
@@ -195,21 +194,18 @@ function fixAlignment() {
 				$("#right-sidebar").addClass("pull-right")
 				$("#right-sidebar").width($("#right-sidebar").parent().width())
 			}
-		}
-		else {
+		} else {
 			// console.log($("#left-sidebar").parent().width())
 			$("#left-sidebar").removeClass("fixed-left-menu")
 			$("#right-sidebar").removeClass("fixed-right-menu")
 		}
 
-		if(window.pageYOffset>40){
+		if (window.pageYOffset > 40) {
 			$(".navbar-fixed-top").addClass('affix')
-		}
-		else{
+		} else {
 			$(".navbar-fixed-top").removeClass('affix')
 		}
-	}
-	else{
+	} else {
 		$("#right-sidebar").removeClass("fixed-right-menu")
 		$("#right-sidebar").addClass("fixed-bottom-menu")
 		$("#right-sidebar").addClass("col-xs-12")
