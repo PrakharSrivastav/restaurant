@@ -197,3 +197,7 @@ nav.affix #navbar ul li a i 	{color:#000 !important;border-color: #000}
 	.restaurant-name 			{left:0px;margin:0;}
 	.restaurant-name h3			{font-size: 16px !important}
 }
+
+.container {padding-left:0;padding-right:15px;}
+.row {margin-left:0;margin-right:-15px;}
+.row > div {padding-left:0;padding-right:15px;}
