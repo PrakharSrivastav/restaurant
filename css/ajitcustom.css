@@ -58,8 +58,7 @@
  text-decoration: none !important}
  
  .text-white-offer{
- color:#fff; 
- opacity: 0.9; 
+ color:#fff;  
  text-transform: uppercase;
  letter-spacing: 2px;
  font-size: 12px;
@@ -143,12 +142,10 @@ color:#fff;
 
 .fa-heart{
 color: red;
-opacity: 0.7;
 }
 
 .fa-heart-o{
 color: red;
-opacity: 0.7;
 }
 
 
@@ -188,6 +185,10 @@ text-transform: uppercase;
 .sharp {
   border-radius:0;
   height: 38px;
+}
+
+.btn-search{
+	background-color: #fff;
 }
 
  /*  --------------------------
@@ -256,8 +257,3 @@ letter-spacing: 2px;
 text-transform: uppercase;
 }
 
-
-.tab-content {
-	margin-left: -18px;
-	
-}
