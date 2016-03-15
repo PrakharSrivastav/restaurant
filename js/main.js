@@ -21,14 +21,6 @@ $(document).ready(function() {
 	  size: 4
 	});
 
-
-
-	// $('.navbar').affix();
-	// $('#left-sidebar').affix(
-	// 	{
-	// 		top:200
-	// 	}
-	// );
 	// code to add and remove the items in the calculator
 	total = 0;
 	grand_total = 0;
@@ -64,7 +56,7 @@ $(document).ready(function() {
 			// $(template).show(1000);
 			calculator_item.append(template);
 
-			console.log(calculator_item.children(".template_added"));
+			// console.log(calculator_item.children(".template_added"));
 		}
 		price_array.push(item_name);
 		total = parseFloat(total + price)
@@ -132,7 +124,35 @@ $(document).ready(function() {
 			$("#calculator").slideToggle(400)
 		}
 	})
+
+
+	$("#location").change(function(){
+		location = $(this).val();
+		if(location.indexOf("another") > -1)
+		{
+			alert(1);
+		}
+		else if (location.indexOf("current") > -1)
+		{
+
+		}
+
+	});
 });
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
+}
+
 
 function changeToId(temp_item_name) {
 	return temp_item_name.toLowerCase().split(' ').join('_');
