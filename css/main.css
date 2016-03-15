@@ -142,6 +142,7 @@ div.bg-img {
 .text-white 					{color:#fff; text-transform: uppercase !important}
 .text-dark 						{color: #000;font-size: 20px}
 .bg-white 						{background-color: #fff !important}
+.bg-dark-lighter				{background-color: #1d3640 !important}
 .bg-dark 						{background-color: #222a2d !important}
 .no-border 						{border-radius: 0px;border: none}
 .profile-border 				{border-radius: 5px;border: 1px solid grey}
@@ -210,3 +211,4 @@ nav.affix #navbar ul li a i 	{color:#000 !important;border-color: #000}
 	width:100%;
 	height:170px;
 }
+div.dotted {height:1px;border-top: dotted grey 1px !important ;width: 100%}
