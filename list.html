@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>List</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-select.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/ajitcustom.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -36,14 +37,61 @@
 				</ul>
 				<a href="#" class="btn btn-default pull-right navbar-btn margin-top-10 margin-right-10 transparent text-white">Login</a>
 			</div>
-			<!-- /.navbar-collapse -->
 		</div>
-		<!-- /.container-fluid -->
 	</nav>
-
+	<div class="container-fluid">
+		<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-offset-2 col-md-8">
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-2">
+					<select class=" form-control selectpicker" title="Order Type">
+						<option value="all">All</option>
+						<option value="delivery">Deivery</option>
+						<option value="takeaway">Take Away</option>
+						<option value="book">Book A Table</option>
+					</select>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-2">
+					<select class=" form-control selectpicker" title="Day">
+						<option class="default" value="today">Today</option>
+						<option class="default" value="tomorrow">Tomorrow</option>
+					</select>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-2">
+					<select class=" form-control selectpicker" title="Time">
+						<option class="default" value="asap">ASAP</option>
+						<option class="default" value="time">13:00</option>
+						<option class="default" value="time">13:15</option>
+						<option class="default" value="time">13:30</option>
+						<option class="default" value="time">13:45</option>
+						<option class="default" value="time">14:00</option>
+						<option class="default" value="time">13:00</option>
+						<option class="default" value="time">13:15</option>
+						<option class="default" value="time">13:30</option>
+						<option class="default" value="time">13:45</option>
+						<option class="default" value="time">14:00</option>
+						<option class="default" value="time">13:00</option>
+						<option class="default" value="time">13:15</option>
+						<option class="default" value="time">13:30</option>
+						<option class="default" value="time">13:45</option>
+						<option class="default" value="time">14:00</option>
+					</select>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-3 col-md-offset-1">
+					<select class=" form-control selectpicker" title="Location">
+						<option class="default" value="asap">Current Location</option>
+						<option class="default" value="time">Another Location</option>
+					</select>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-2">
+					<button type="button" class="btn btn-block btn-info" name="button">Update</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-select.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 

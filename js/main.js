@@ -15,6 +15,14 @@ $(document).ready(function() {
 		fixAlignment()
 	});
 	fixAlignment()
+
+
+	$('.selectpicker').selectpicker({
+	  size: 4
+	});
+
+
+
 	// $('.navbar').affix();
 	// $('#left-sidebar').affix(
 	// 	{
