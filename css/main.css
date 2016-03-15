@@ -163,8 +163,12 @@ nav.affix #navbar a.btn-default,
 nav.affix #navbar ul li a i 	{color:#000 !important;border-color: #000}
 .fixed-left-menu 				{position:fixed;top:56px;z-index: 10;}
 .fixed-right-menu 				{position:fixed;top:46px;z-index: 10;}
+.fixed-bottom-menu 				{position:fixed;bottom:0px;z-index: 10;width:100%;left:0px}
 .affix{
     top: 0px !important;
+}
+.sheet {
+	cursor: pointer;
 }
 .bs-docs-sidenav.affix {
   position: static;

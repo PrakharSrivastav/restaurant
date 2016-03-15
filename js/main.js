@@ -112,6 +112,19 @@ $(document).ready(function() {
 			scrollTop: $(href).offset().top - 60
 		}, 800);
 	});
+
+	$(".sheet").click(function(){
+		if($(this).hasClass('fa-compress')){
+			$(this).removeClass('fa-compress')
+			$(this).addClass('fa-expand')
+			$("#calculator").slideToggle(400)
+		}
+		else{
+			$(this).addClass('fa-compress')
+			$(this).removeClass('fa-expand')
+			$("#calculator").slideToggle(400)
+		}
+	})
 });
 
 function changeToId(temp_item_name) {
@@ -141,6 +154,8 @@ function fixAlignment() {
 	page_width = $("html").width();
 	if(page_width>992)
 	{
+		$("#right-sidebar").removeClass("fixed-bottom-menu");
+		$("#right-sidebar").removeClass("col-xs-12");
 		if (window.pageYOffset > 220) {
 			if (!$("#left-sidebar").hasClass("fixed-left-menu")) {
 				$("#left-sidebar").addClass("fixed-left-menu")
@@ -158,6 +173,12 @@ function fixAlignment() {
 			$("#left-sidebar").removeClass("fixed-left-menu")
 			$("#right-sidebar").removeClass("fixed-right-menu")
 		}
+	}
+	else{
+		$("#right-sidebar").removeClass("fixed-right-menu")
+		$("#right-sidebar").addClass("fixed-bottom-menu")
+		$("#right-sidebar").addClass("col-xs-12")
+		$("#right-sidebar").width($("#right-sidebar").parent().width())
 	}
 
 }
