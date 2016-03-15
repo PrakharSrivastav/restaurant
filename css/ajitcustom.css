@@ -149,5 +149,30 @@ text-transform: uppercase;
 .menu-header{
 text-align: left;
 text-transform: uppercase;
-color:#ff884d !important
+color:#ff3333 !important
+}
+
+.order-header{
+text-align: left;
+text-transform: uppercase;
+color:#e62e00 !important
+letter-spacing: 2px;
+font-size: 20px;
+}
+
+
+.fa-plus-circle{
+color: #ff3333;
+}
+
+.fa-plus-circle:hover{
+color: #cc0000;
+}
+
+.fa-search{
+color: #ff3333;
+}
+
+.fa-search:hover{
+color: #cc0000;
 }
