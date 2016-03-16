@@ -184,27 +184,7 @@ nav.affix #navbar i.fa 			{color:#000 !important;opacity:1.0}
   width: auto;
   top: 0;
 }
-@media (min-width:992px) and (max-width:1200px){
-	.restaurant-name 			{left:150px;bottom:-120px;}
-	.restaurant-name h3			{font-size: 18px !important}
-	/*#calculator_header,#calculator {background:yellow !important}*/
-}
 
-@media (min-width:769px) and (max-width:992px) {
-	.restaurant-name 			{left:-30px;margin:0;}
-	.restaurant-name h3			{font-size: 16px !important}
-	#calculator_header {background:grey !important}
-	#calculator {background:white !important}
-	#right-sidebar {width:100% !important}
-}
-
-@media (max-width:768px) {
-	.restaurant-name 			{left:0px;margin:0;}
-	.restaurant-name h3			{font-size: 16px !important}
-	#calculator_header {background:grey !important}
-	#calculator {background:white !important}
-	#right-sidebar {width:100% !important}
-}
 .fa-star {color:#dbb40b}
 /*.container 					{padding-left:0;padding-right:15px;}
 .row 						{margin-left:0;margin-right:-15px;}
@@ -227,15 +207,58 @@ div.dotted {height:1px;border-top: dotted grey 1px !important ;width: 100%}
 	background-color: #1a82f7;
 	background-image: url(images/linear_bg_1.png);
 	background-repeat: repeat-y;
-	/* Safari 4-5, Chrome 1-9 */
 	background: -webkit-gradient(linear, left top, right top, from(#1a82f7), to(#2F2727));
-	/* Safari 5.1, Chrome 10+ */
 	background: -webkit-linear-gradient(left, #494141, #591c1a);
-	/* Firefox 3.6+ */
 	background: -moz-linear-gradient(left, #494141, #591c1a);
-	/* IE 10 */
 	background: -ms-linear-gradient(left, #494141, #591c1a);
-	/* Opera 11.10+ */
 	background: -o-linear-gradient(left, #494141, #591c1a); }
+}
+/*#video-background 			{margin-top: 300px !important;}*/
+.callout {
+    position: relative;
+    overflow: hidden;
+}
+.bootstrap-select > .btn {
+    height: 46px;
+}
+#height_of_video 			{overflow:hidden;padding:0px !important;margin-top:0px !important}
+#home_page_heading 			{background:#e80f1c;border-radius: 0px;font-size: 20px;border:none;padding:15px;}
+#homepage_header 			{position:absolute;top:100px}
+#menu_text 					{background:#e80f1c;padding:30px;width:100%}
+@media (min-width:992px) and (max-width:1200px){
+	.restaurant-name 			{left:150px;bottom:-120px;}
+	.restaurant-name h3			{font-size: 18px !important}
+}
+
+@media (min-width:769px) and (max-width:992px) {
+	.restaurant-name 			{left:-30px;margin:0;}
+	.restaurant-name h3			{font-size: 16px !important}
+	#calculator_header {background:grey !important}
+	#calculator {background:white !important}
+	#right-sidebar {width:100% !important}
+}
+
+@media ( max-width:768px) {
+	.restaurant-name 			{left:0px;margin:0;}
+	.restaurant-name h3			{font-size: 16px !important}
+	#calculator_header 			{background:grey !important}
+	#calculator 				{background:white !important}
+	#right-sidebar 				{width:100% !important}
+	#home_page_heading 			{padding:13px !important;font-size:16px !important;}
+	#homepage_header 			{top:80px}
+	#video_section 				{
+		background-image:url('../img/intro.jpg');
+		background-repeat:no-repeat center center fixed;
+		background-size:cover;
+		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+		min-height: 100%;
+  		min-width: 1024px;
+  		width: 100%;
+  		height: auto;
+	}
+}
+@media (max-width:768px){
 
 }

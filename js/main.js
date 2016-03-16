@@ -23,7 +23,6 @@ $(document).ready(function() {
 		size: 4
 	});
 
-
 	// code to add and remove the items in the calculator
 	total = 0;
 	grand_total = 0;
@@ -193,12 +192,16 @@ $(document).ready(function() {
 	});
 
 	$("#clear_criteria").click(function(){
-
 		$.each($('.icheckbox_square-blue , .iradio_square-blue'),function(k,v){
 			$(v).iCheck('uncheck');
 		})
 	})
 
+	
+	$("#height_of_video").height($(window).height()-80);
+	if($("html").width() < 900){
+		$("#height_of_video").height($(window).height()-150);
+	}
 	$("#type").change(function() {
 		type = $(this).val();
 		day = $("#day");
