@@ -23,6 +23,7 @@ $(document).ready(function() {
 		size: 4
 	});
 
+
 	// code to add and remove the items in the calculator
 	total = 0;
 	grand_total = 0;
@@ -180,6 +181,23 @@ $(document).ready(function() {
 		loc = null;
 	});
 
+	// this section takes care of the filter section.
+	$("#filter_body").hide();
+	$("#filter_button").click(function(){
+		$("#filter_body").slideToggle(400);
+	});
+	$('input').iCheck({
+	    checkboxClass: 'icheckbox_square-blue',
+	    radioClass: 'iradio_square-blue',
+	    increaseArea: '20%' // optional
+	});
+
+	$("#clear_criteria").click(function(){
+
+		$.each($('.icheckbox_square-blue , .iradio_square-blue'),function(k,v){
+			$(v).iCheck('uncheck');
+		})
+	})
 
 	$("#type").change(function() {
 		type = $(this).val();
