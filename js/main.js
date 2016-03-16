@@ -197,11 +197,17 @@ $(document).ready(function() {
 		})
 	})
 
-	
+	// fix the size of image/video on the home page
 	$("#height_of_video").height($(window).height()-80);
 	if($("html").width() < 900){
 		$("#height_of_video").height($(window).height()-150);
 	}
+
+
+	// checkout button
+	$("#checkout_btn").click(function(){
+		window.location = "login.html";
+	})
 	$("#type").change(function() {
 		type = $(this).val();
 		day = $("#day");
