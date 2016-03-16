@@ -193,15 +193,18 @@ $(document).ready(function() {
 });
 // maintiain the height of the middle section and the left section same
 function maintiainHeights(){
-	left_height = $("#left-sidebar-parent").height();
-	middle_height = $("#middle-section-parent").height();
-	console.log(middle_height);
-	console.log(left_height);
-	if(middle_height > left_height){
-		$("#left-sidebar-parent").height(middle_height);
-	}
-	else{
-		$("#middle-section-parent").height(left_height);
+	page_width = $("html").width();
+	if(page_width>992){
+		left_height = $("#left-sidebar-parent").height();
+		middle_height = $("#middle-section-parent").height();
+		console.log(middle_height);
+		console.log(left_height);
+		if(middle_height > left_height){
+			$("#left-sidebar-parent").height(middle_height);
+		}
+		else{
+			$("#middle-section-parent").height(left_height);
+		}
 	}
 }
 // create the list of time stamps
