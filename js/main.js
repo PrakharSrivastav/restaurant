@@ -73,7 +73,7 @@ $(document).ready(function() {
 		$("#delv_chg").text((4.0).toFixed(2));
 		grand_total = grand_total + (10 * total / 100);
 		$("#service_chg").text((10 * total / 100).toFixed(2));
-		$("#grand_total").text(grand_total.toFixed(2));
+		$(".grand_total").text(grand_total.toFixed(2));
 		if (grand_total > 15) {
 			$("#minimum_amount_msg").hide(100);
 		} else {
@@ -112,7 +112,7 @@ $(document).ready(function() {
 		$("#delv_chg").text((4.0).toFixed(2));
 		grand_total = grand_total + (10 * total / 100);
 		$("#service_chg").text((10 * total / 100).toFixed(2));
-		$("#grand_total").text(grand_total.toFixed(2));
+		$(".grand_total").text(grand_total.toFixed(2));
 
 		// check the minimum logic value
 		if (grand_total > 15) {
@@ -139,6 +139,10 @@ $(document).ready(function() {
 	// this is fr the mobile view
 	// when the screen width is small, the calculator is rezised to be at the
 	// bottom of the page. this section helps is expanding and compacting the calculator
+	if($("html").width() < 992)
+	{
+		$("#calculator").hide();
+	}
 	$(".sheet").click(function() {
 		if ($(this).hasClass('fa-compress')) {
 			$(this).removeClass('fa-compress')
