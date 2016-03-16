@@ -10,8 +10,10 @@
 	<link rel="stylesheet" href="css/bootstrap-select.min.css">
 	<link href="css/lightbox.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/ajitcustom.css">
+
 	<link rel="stylesheet" href="css/blue.css">
+	<link rel="stylesheet" type='text/css' href="css/sidebar.css">
+	<link rel="stylesheet" href="css/ajitcustom.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<!--[if lt IE 9]>
@@ -21,16 +23,11 @@
 </head>
 
 <body>
-	<nav class="navbar bg-dark  navbar-fixed-top full-width" role="navigation">
+	<!-- <nav class="navbar bg-dark  navbar-fixed-top full-width" role="navigation">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="fa fa-bars"></span>
-				</button> -->
 				<a class="navbar-brand no-text-decoration text-uppercase margin-top-5 text-white " href="#">Magic Meal</a>
 			</div>
-			<!--class="collapse navbar-collapse" Collect the nav links, forms, and other content for toggling -->
 			<div  id="navbar">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#"><i class="fa fa-shopping-cart fa-lg no-text-decoration text-white"></i></a></li>
@@ -40,7 +37,150 @@
 				<a href="#" class="btn btn-default pull-right navbar-btn margin-top-10 margin-right-10 transparent text-white text-capitalize">Login</a>
 			</div>
 		</div>
+	</nav> -->
+	<nav class="navbar navbar-fixed-top bg-dark full-width" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header pull-left">
+				<!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="fa fa-bars"></span>
+					<!-- <span class="icon-bar"></span> -->
+					<!-- <span class="icon-bar"></span> -->
+				<!-- </button>  -->
+				<a class="navbar-brand no-text-decoration text-uppercase margin-top-5 text-white margin-top-10" href="#">Magic Meal</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div id="navbar" class="pull-right">
+				<!-- class="collapse navbar-collapse" -->
+				<a href="#" class="btn btn-default navbar-btn margin-top-15 margin-right-10 transparent ">Login</a>
+				<a href="#"><i class="fa fa-shopping-cart fa-lg text-white-icons"></i></a>
+				<a href="#"><i class="fa fa-bell-o fa-lg text-white-icons"></i></a>
+				<a class="navbar-toggle transparent" data-toggle="sidebar" data-target=".sidebar" href="#"><i class="fa fa-bars fa-2x text-white-icons "></i></a>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
 	</nav>
+	<div class="col-xs-8 col-sm-6 col-md-4 sidebar sidebar-right sidebar-animate"  style="margin-top:15px;opacity:0.8">
+		<div class="row padding-15 border-bottom-grey">
+			<div class="row">
+				<div class="col-xs-2 padding-bottom-10">
+					<i class="fa fa-2x fa-user text-grey margin-right-5"></i>
+				</div>
+				<div class="col-xs-10">
+					<a class="text-capitalize font-18 text-grey">My Account</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-2 padding-bottom-10">
+					<i class="fa fa-2x fa-info text-grey margin-right-5"></i>
+				</div>
+				<div class="col-xs-10">
+					<a class="text-capitalize font-18 text-grey">About</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-2 padding-bottom-10">
+					<i class="fa fa-2x fa-question text-grey margin-right-5"></i>
+				</div>
+				<div class="col-xs-10">
+					<a class="text-capitalize font-18 text-grey">Help</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-2 padding-bottom-10">
+					<i class="fa fa-2x fa-phone text-grey margin-right-5"></i>
+				</div>
+				<div class="col-xs-10">
+					<a class="text-capitalize font-18 text-grey">Contact us</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-2 padding-bottom-10">
+					<i class="fa fa-2x fa-sign-in text-grey margin-right-5"></i>
+				</div>
+				<div class="col-xs-10">
+					<a class="text-capitalize font-18 text-grey">Restaurant signup</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-2 padding-bottom-10">
+					<i class="fa fa-2x fa-lightbulb-o text-grey margin-right-5"></i>
+				</div>
+				<div class="col-xs-10">
+					<a class="text-capitalize font-18 text-grey">Suggest a restaurant</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Logged-in-menu -->
+		<div class="row padding-15">
+			<div class="row">
+				<div class="col-xs-2 padding-bottom-10">
+					<i class="fa fa-2x fa-user text-grey margin-right-5"></i>
+				</div>
+				<div class="col-xs-10">
+					<a class="text-capitalize font-18 text-grey">My Account</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-2 padding-bottom-10">
+					<i class="fa fa-2x fa-map-marker text-grey margin-right-5"></i>
+				</div>
+				<div class="col-xs-10">
+					<a class="text-capitalize font-18 text-grey">My address</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-2 padding-bottom-10">
+					<i class="fa fa-2x fa-gift text-grey margin-right-5"></i>
+				</div>
+				<div class="col-xs-10">
+					<a class="text-capitalize font-18 text-grey">My order details</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-2 padding-bottom-10">
+					<i class="fa fa-2x fa-money text-grey margin-right-5"></i>
+				</div>
+				<div class="col-xs-10">
+					<a class="text-capitalize font-18 text-grey">My payment details</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-2 padding-bottom-10">
+					<i class="fa fa-2x fa-question text-grey margin-right-5"></i>
+				</div>
+				<div class="col-xs-10">
+					<a class="text-capitalize font-18 text-grey">Help</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-2 padding-bottom-10">
+					<i class="fa fa-2x fa-phone text-grey margin-right-5"></i>
+				</div>
+				<div class="col-xs-10">
+					<a class="text-capitalize font-18 text-grey">Contact us</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-2 padding-bottom-10">
+					<i class="fa fa-2x fa-lightbulb-o text-grey margin-right-5"></i>
+				</div>
+				<div class="col-xs-10">
+					<a class="text-capitalize font-18 text-grey">Suggest a restaurant</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-2 padding-bottom-10">
+					<i class="fa fa-2x fa-sign-out text-grey margin-right-5"></i>
+				</div>
+				<div class="col-xs-10">
+					<a class="text-capitalize font-18 text-grey">Logout</a>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="container-fluid padding-top-70">
 		<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-offset-2 col-md-8">
 			<div class="row">
@@ -629,6 +769,7 @@
 	<script src="js/bootstrap-select.min.js"></script>
 	<script src="js/lightbox.js"></script>
 	<script src="js/icheck.min.js"></script>
+	<script src="js/sidebar.js"></script>
 	<script src="js/main.js"></script>
 </body>
 

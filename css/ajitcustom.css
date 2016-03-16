@@ -1,7 +1,7 @@
 /* CUSTOM CSS BY AJIT
  * -------------------------- */
- 
- 
+
+
  /*  --------------------------
  COVER PIC AREA
  * -------------------------- */
@@ -12,25 +12,25 @@
  letter-spacing: 2px;
  text-transform: uppercase;
  }
- 
+
  .text-menu:active {
  color: #595959;
  }
- 
+
  .text-white-link {
- color:#fff; 
- opacity: 0.5; 
+ color:#fff;
+ opacity: 0.5;
  text-transform: uppercase;
  letter-spacing: 2px;
  font-size: 12px !important}
- 
+
  .text-white-link:hover{
- color:#fff; 
+ color:#fff;
  opacity: 0.8;
  text-decoration: none !important}
- 
+
  .btn-like {
- opacity: 0.6; 
+ opacity: 0.6;
  text-transform: uppercase;
  letter-spacing: 2px;
  font-size: 12px;
@@ -38,42 +38,42 @@
  color: #000;
  padding: 2px 10px;
   }
-  
+
  .btn-like:hover{
- background-color:#fff; 
+ background-color:#fff;
  opacity: 0.8;
  text-decoration: none !important}
-  
+
  .text-white-icons {
- color:#fff; 
- opacity: 0.5; 
+ color:#fff;
+ opacity: 0.5;
  text-transform: uppercase;
  letter-spacing: 2px;
  font-size: 12px;
  }
- 
+
  .text-white-icons:hover{
- color:#fff; 
+ color:#fff;
  opacity: 0.8;
  text-decoration: none !important}
- 
+
  .text-white-offer{
- color:#fff;  
+ color:#fff;
  text-transform: uppercase;
  letter-spacing: 2px;
  font-size: 12px;
  background-color: #e62e00;
  border-radius: 5px;
  }
- 
+
  .text-white-restaurant-name{
- color:#fff; 
+ color:#fff;
  letter-spacing: 1px;
  font-size: 20px;
  font-family: 'Nunito', sans-serif;
  }
- 
- 
+
+
   @media (min-width:1201px) and (max-width:3200px) {
   .sidebar-creategroup{
 	color:#808080;
@@ -86,7 +86,7 @@
 	 color: #fff;
 	}
   }
- 
+
  @media (min-width:992px) and (max-width:1200px){
 	.restaurant-name 			{left:150px;bottom:-120px;}
 	.text-white-restaurant-name			{font-size: 18px !important}
@@ -133,8 +133,8 @@
 }
 
 .text-white-cuisine{
-color:#fff; 
- opacity: 0.7; 
+color:#fff;
+ opacity: 0.7;
  text-transform: uppercase;
  letter-spacing: 2px;
  font-size: 12px;
@@ -152,7 +152,7 @@ color: red;
  /*  --------------------------
  SIDE BAR AREA
  * -------------------------- */
- 
+
 a.list-group-item.active 		{background-color: #fff !important;border-color: #fff; color:#808080; text-align: left}
 
 .sidebar{
@@ -256,4 +256,3 @@ font-size: 15px;
 letter-spacing: 2px;
 text-transform: uppercase;
 }
-

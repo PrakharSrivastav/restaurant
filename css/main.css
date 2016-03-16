@@ -163,8 +163,7 @@ a.list-group-item.active 		{background-color: #222a2d !important;border-color: #
 .fa-minus-square-o:hover		{color: red;	cursor: pointer;}
 .full-width 					{width:100% !important}
 nav.affix a.navbar-brand		{color:#000 !important}
-nav.affix #navbar a.btn-default,
-nav.affix #navbar ul li a i 	{color:#000 !important;border-color: #000}
+nav.affix #navbar i.fa 			{color:#000 !important;opacity:1.0}
 .fixed-left-menu 				{position:fixed;top:56px;}
 .fixed-right-menu 				{position:fixed;top:46px;}
 .fixed-bottom-menu 				{position:fixed;bottom:0px;width:100%;left:0px}
@@ -212,7 +211,8 @@ nav.affix #navbar ul li a i 	{color:#000 !important;border-color: #000}
 .row 						{margin-left:0;margin-right:-15px;}
 .row > div 					{padding-left:0;padding-right:15px;}*/
 .grid-page-img-text 		{position:absolute;bottom:10px;left:0px;padding:2px;background:#ededed;opacity: 0.8;color:black;}
-.text-grey 					{color:#d3d3d3;}
+.text-grey 					{color:#d3d3d3 !important;}
+.text-grey:hover 	{text-decoration: none;color:#d3d3d3 !important;cursor: pointer}
 .img-responsive-grid 			{
 	background-position: 50%;
   	background-repeat: no-repeat;
@@ -221,3 +221,22 @@ nav.affix #navbar ul li a i 	{color:#000 !important;border-color: #000}
 	height:170px;
 }
 div.dotted {height:1px;border-top: dotted grey 1px !important ;width: 100%}
+/*.sidebar-right { background-color: auto;*/
+
+.sidebar-right{
+	/* fallback */
+	background-color: #1a82f7;
+	background-image: url(images/linear_bg_1.png);
+	background-repeat: repeat-y;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, left top, right top, from(#1a82f7), to(#2F2727));
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(left, #494141, #591c1a);
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(left, #494141, #591c1a);
+	/* IE 10 */
+	background: -ms-linear-gradient(left, #494141, #591c1a);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(left, #494141, #591c1a); }
+
+}
