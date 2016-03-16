@@ -137,8 +137,7 @@ div.bg-img {
     background-repeat: no-repeat;
 	text-transform: uppercase;
 }
-
-
+.notifcation-toggle 			{color:#fff;background-color:red;font-size:9px;padding:2px 3px 2px 3px;border-radius:3px;position:absolute;top:-1px;right:-2px;opacity:0.8}
 .text-white 					{color:#fff; text-transform: uppercase !important}
 .text-dark 						{color: #000;font-size: 20px}
 .bg-white 						{background-color: #fff !important}
