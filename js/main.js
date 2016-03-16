@@ -313,7 +313,7 @@ function fixAlignment() {
 	if (page_width > 992) {
 		$("#right-sidebar").removeClass("fixed-bottom-menu");
 		$("#right-sidebar").removeClass("col-xs-12");
-		if (window.pageYOffset > 400) {
+		if (window.pageYOffset > 380) {
 			if (!$("#left-sidebar").hasClass("fixed-left-menu")) {
 				$("#left-sidebar").addClass("fixed-left-menu")
 				$("#left-sidebar").addClass("pull-left")

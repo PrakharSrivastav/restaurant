@@ -186,7 +186,6 @@ nav.affix #navbar ul li a i 	{color:#000 !important;border-color: #000}
   width: auto;
   top: 0;
 }
-.navbar-fixed-top {position: fixed !important;z-index: 1000}
 @media (min-width:992px) and (max-width:1200px){
 	.restaurant-name 			{left:150px;bottom:-120px;}
 	.restaurant-name h3			{font-size: 18px !important}
@@ -202,9 +201,9 @@ nav.affix #navbar ul li a i 	{color:#000 !important;border-color: #000}
 	.restaurant-name h3			{font-size: 16px !important}
 }
 
-.container 					{padding-left:0;padding-right:15px;}
+/*.container 					{padding-left:0;padding-right:15px;}
 .row 						{margin-left:0;margin-right:-15px;}
-.row > div 					{padding-left:0;padding-right:15px;}
+.row > div 					{padding-left:0;padding-right:15px;}*/
 .grid-page-img-text 		{position:absolute;bottom:10px;left:0px;padding:2px;background:#ededed;opacity: 0.8;color:black;}
 .text-grey 					{color:#d3d3d3;}
 .img-responsive-grid 			{
