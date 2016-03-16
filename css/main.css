@@ -162,7 +162,7 @@ a.list-group-item.active 		{background-color: #222a2d !important;border-color: #
 .fa-plus-circle:hover 			{color: orange;	cursor: pointer;}
 .fa-minus-square-o:hover		{color: red;	cursor: pointer;}
 .full-width 					{width:100% !important}
-nav.affix 						{background:#FFF !important;z-index:100;}
+nav.affix 						{background:#FFF !important;z-index:1000 !important;}
 nav.affix a.navbar-brand		{color:#000 !important}
 nav.affix #navbar a.btn-default,
 nav.affix #navbar ul li a i 	{color:#000 !important;border-color: #000}
@@ -171,6 +171,8 @@ nav.affix #navbar ul li a i 	{color:#000 !important;border-color: #000}
 .fixed-bottom-menu 				{position:fixed;bottom:0px;z-index: 10;width:100%;left:0px}
 .affix{
     top: 0px !important;
+	opacity: 0.6;
+	border-bottom: solid grey 1px;
 	-webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -213,4 +215,4 @@ nav.affix #navbar ul li a i 	{color:#000 !important;border-color: #000}
 	height:170px;
 }
 div.dotted {height:1px;border-top: dotted grey 1px !important ;width: 100%}
-#navbar						{z-index:100}
+#navbar						{z-index:1000 !important}
