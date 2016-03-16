@@ -136,6 +136,17 @@ $(document).ready(function() {
 		href - null;
 	});
 
+
+	// lightbox
+	lightbox.option({
+	 'resizeDuration': 100,
+	 'wrapAround': true,
+	 "alwaysShowNavOnTouchDevices":true,
+	 "disableScrolling":true,
+	 "albumLabel":"",
+	 "fadeDuration":100
+	//  "width":"300"
+   })
 	// this is fr the mobile view
 	// when the screen width is small, the calculator is rezised to be at the
 	// bottom of the page. this section helps is expanding and compacting the calculator
@@ -205,9 +216,11 @@ function maintiainHeights(){
 		console.log(left_height);
 		if(middle_height > left_height){
 			$("#left-sidebar-parent").height(middle_height);
+			$("#middle-section-parent").height(middle_height);
 		}
 		else{
 			$("#middle-section-parent").height(left_height);
+			$("#left-sidebar-parent").height(left_height);
 		}
 	}
 }
