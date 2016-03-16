@@ -189,16 +189,23 @@ nav.affix #navbar ul li a i 	{color:#000 !important;border-color: #000}
 @media (min-width:992px) and (max-width:1200px){
 	.restaurant-name 			{left:150px;bottom:-120px;}
 	.restaurant-name h3			{font-size: 18px !important}
+	/*#calculator_header,#calculator {background:yellow !important}*/
 }
 
 @media (min-width:769px) and (max-width:992px) {
 	.restaurant-name 			{left:-30px;margin:0;}
 	.restaurant-name h3			{font-size: 16px !important}
+	#calculator_header {background:grey !important}
+	#calculator {background:white !important}
+	#right-sidebar {width:100% !important}
 }
 
 @media (max-width:768px) {
 	.restaurant-name 			{left:0px;margin:0;}
 	.restaurant-name h3			{font-size: 16px !important}
+	#calculator_header {background:grey !important}
+	#calculator {background:white !important}
+	#right-sidebar {width:100% !important}
 }
 
 /*.container 					{padding-left:0;padding-right:15px;}
