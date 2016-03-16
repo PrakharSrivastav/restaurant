@@ -133,7 +133,7 @@ $(document).ready(function() {
 		$('html, body').animate({
 			scrollTop: $(href).offset().top - 60
 		}, 800);
-		href - null;
+		href = null;
 	});
 
 
@@ -330,6 +330,11 @@ function removeItem(array, value) { //my clear function
 
 function fixAlignment() {
 	page_width = $("html").width();
+	if (window.pageYOffset > 40) {
+		$(".navbar-fixed-top").addClass('affix')
+	} else {
+		$(".navbar-fixed-top").removeClass('affix')
+	}
 	if (page_width > 992) {
 		$("#right-sidebar").removeClass("fixed-bottom-menu");
 		$("#right-sidebar").removeClass("col-xs-12");
@@ -351,11 +356,7 @@ function fixAlignment() {
 			$("#right-sidebar").removeClass("fixed-right-menu")
 		}
 
-		if (window.pageYOffset > 40) {
-			$(".navbar-fixed-top").addClass('affix')
-		} else {
-			$(".navbar-fixed-top").removeClass('affix')
-		}
+
 	} else {
 		$("#right-sidebar").removeClass("fixed-right-menu")
 		$("#right-sidebar").addClass("fixed-bottom-menu")
