@@ -151,6 +151,7 @@ div.bg-img {
 nav >* ,
 ul.navbar-nav:hover li a,
 .transparent 					{background-color: transparent !important;}
+
 .no-text-decoration 			{ text-decoration: none !important}
 a.list-group-item.active 		{background-color: #222a2d !important;border-color: #222a2d}
 .menu-items 					{border-radius: 0px;padding:0px;margin:0px;border:none}
@@ -212,3 +213,4 @@ nav.affix #navbar ul li a i 	{color:#000 !important;border-color: #000}
 	height:170px;
 }
 div.dotted {height:1px;border-top: dotted grey 1px !important ;width: 100%}
+#navbar						{z-index:100}
