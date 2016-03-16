@@ -189,8 +189,21 @@ $(document).ready(function() {
 		type = null;
 		day.selectpicker('refresh');
 	});
+	maintiainHeights();
 });
-
+// maintiain the height of the middle section and the left section same
+function maintiainHeights(){
+	left_height = $("#left-sidebar-parent").height();
+	middle_height = $("#middle-section-parent").height();
+	console.log(middle_height);
+	console.log(left_height);
+	if(middle_height > left_height){
+		$("#left-sidebar-parent").height(middle_height);
+	}
+	else{
+		$("#middle-section-parent").height(left_height);
+	}
+}
 // create the list of time stamps
 function createHours() {
 	var $r = ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09", 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
