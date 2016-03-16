@@ -208,6 +208,15 @@ $(document).ready(function() {
 	$("#checkout_btn").click(function(){
 		window.location = "login.html";
 	})
+
+	// deliver instructions
+	$("#del_inst").hide();
+	$("#del_ins_btn").click(function(){
+		$("#del_inst").slideToggle(400);
+	});
+
+
+	// type related settings
 	$("#type").change(function() {
 		type = $(this).val();
 		day = $("#day");

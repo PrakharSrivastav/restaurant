@@ -1,208 +1,555 @@
 /*******************************************************************
 * Spacing : Margin and padding realted css rules;
 *******************************************************************/
-.no-padding 						{padding: 0px !important}
-.padding-1 							{padding: 1px !important}
-.padding-2 							{padding: 2px !important}
-.padding-4 							{padding: 4px !important}
-.padding-3 							{padding: 3px !important}
-.padding-5 							{padding: 5px !important}
-.padding-top-5 						{padding-top: 5px !important}
-.padding-left-5 					{padding-left: 5px !important}
-.padding-right-5 					{padding-right: 5px !important}
-.padding-bottom-5 					{padding-bottom: 5px !important}
-.padding-10 						{padding: 10px !important}
-.padding-top-10 					{padding-top: 10px !important}
-.padding-left-10 					{padding-left: 10px !important}
-.padding-right-10 					{padding-right: 10px !important}
-.padding-bottom-10 					{padding-bottom: 10px !important}
-.padding-15 						{padding: 15px !important}
-.padding-top-15 					{padding-top: 15px !important}
-.padding-left-15 					{padding-left: 15px !important}
-.padding-right-15 					{padding-right: 15px !important}
-.padding-bottom-15 					{padding-bottom: 15px !important}
-.padding-20 						{padding: 20px !important}
-.padding-top-20 					{padding-top: 20px !important}
-.padding-left-20 					{padding-left: 20px !important}
-.padding-right-20 					{padding-right: 20px !important}
-.padding-bottom-20 					{padding-bottom: 20px !important}
-.padding-25 						{padding: 25px !important}
-.padding-top-25 					{padding-top: 25px !important}
-.padding-left-25 					{padding-left: 25px !important}
-.padding-right-25 					{padding-right: 25px !important}
-.padding-bottom-25 					{padding-bottom: 25px !important}
-.padding-30 						{padding: 30px !important}
-.padding-35 						{padding: 35px !important}
-.padding-40 						{padding: 40px !important}
-.padding-top-40 					{padding-top: 40px !important}
-.padding-left-40 					{padding-left: 40px !important}
-.padding-right-40 					{padding-right: 40px !important}
-.padding-bottom-40 					{padding-bottom: 40px !important}
-.padding-45 						{padding: 45px !important}
-.padding-50 						{padding: 50px !important}
-.padding-top-50 					{padding-top: 50px !important}
-.padding-top-60 					{padding-top: 60px !important}
-.padding-top-70 					{padding-top: 70px !important}
-.padding-top-80 					{padding-top: 80px !important}
-.padding-left-50 					{padding-left: 50px !important}
-.padding-right-50 					{padding-right: 50px !important}
-.padding-bottom-50 					{padding-bottom: 50px !important}
 
-.no-margin 							{margin: 0px !important}
-.margin-2 							{margin: 2px !important}
-.margin-top-2 						{margin-top: 2px !important}
-.margin-top-3 						{margin-top: 3px !important}
-.margin-top-4 						{margin-top: 4px !important}
-.margin-5 							{margin: 5px !important}
-.margin-top-5 						{margin-top: 5px !important}
-.margin-left-5 						{margin-left: 5px !important}
-.margin-right-5 					{margin-right: 5px !important}
-.margin-bottom-5 					{margin-bottom: 5px !important}
-.margin-10 							{margin: 10px !important}
-.margin-top-10 						{margin-top: 10px !important}
-.margin-top-11 						{margin-top: 11px !important}
-.margin-top-12 						{margin-top: 12px !important}
-.margin-top-13 						{margin-top: 13px !important}
-.margin-top-14 						{margin-top: 14px !important}
-.margin-left-10 					{margin-left: 10px !important}
-.margin-right-10 					{margin-right: 10px !important}
-.margin-bottom-10 					{margin-bottom: 10px !important}
-.margin-top-10 						{margin-top: 10px !important}
-.margin-15 							{margin: 15px !important}
-.margin-top-15 						{margin-top: 15px !important}
-.margin-left-15 					{margin-left: 15px !important}
-.margin-right-15 					{margin-right: 15px !important}
-.margin-bottom-15 					{margin-bottom: 15px !important}
-.margin-20 							{margin: 20px !important}
-.margin-top-20 						{margin-top: 20px !important}
-.margin-left-20 					{margin-left: 20px !important}
-.margin-right-20 					{margin-right: 20px !important}
-.margin-bottom-20 					{margin-bottom: 20px !important}
-.margin-25 							{margin: 25px !important}
-.margin-top-25 						{margin-top: 25px !important}
-.margin-left-25 					{margin-left: 25px !important}
-.margin-right-25 					{margin-right: 25px !important}
-.margin-bottom-25 					{margin-bottom: 25px !important}
-.margin-30 							{margin: 30px !important}
-.margin-top-30 						{margin-top: 30px !important}
-.margin-left-30 					{margin-left: 30px !important}
-.margin-right-30 					{margin-right: 30px !important}
-.margin-bottom-30 					{margin-bottom: 30px !important}
-.margin-top-35 						{margin-top: 35px !important}
-.margin-left-35 					{margin-left: 35px !important}
-.margin-right-35 					{margin-right: 35px !important}
-.margin-bottom-35 					{margin-bottom: 35px !important}
-.margin-top-40 						{margin-top: 40px !important}
-.margin-left-40 					{margin-left: 40px !important}
-.margin-right-40 					{margin-right: 40px !important}
-.margin-bottom-40 					{margin-bottom: 40px !important}
-.margin--5 							{margin: -5px !important}
-.margin-top--10						{margin-top: -10px !important}
-.margin-top--15						{margin-top: -15px !important}
-.margin-top--20						{margin-top: -20px !important}
+.no-padding {
+	padding: 0px !important
+}
+.padding-1 {
+	padding: 1px !important
+}
+.padding-2 {
+	padding: 2px !important
+}
+.padding-4 {
+	padding: 4px !important
+}
+.padding-3 {
+	padding: 3px !important
+}
+.padding-5 {
+	padding: 5px !important
+}
+.padding-top-5 {
+	padding-top: 5px !important
+}
+.padding-left-5 {
+	padding-left: 5px !important
+}
+.padding-right-5 {
+	padding-right: 5px !important
+}
+.padding-bottom-5 {
+	padding-bottom: 5px !important
+}
+.padding-10 {
+	padding: 10px !important
+}
+.padding-top-10 {
+	padding-top: 10px !important
+}
+.padding-left-10 {
+	padding-left: 10px !important
+}
+.padding-right-10 {
+	padding-right: 10px !important
+}
+.padding-bottom-10 {
+	padding-bottom: 10px !important
+}
+.padding-15 {
+	padding: 15px !important
+}
+.padding-top-15 {
+	padding-top: 15px !important
+}
+.padding-left-15 {
+	padding-left: 15px !important
+}
+.padding-right-15 {
+	padding-right: 15px !important
+}
+.padding-bottom-15 {
+	padding-bottom: 15px !important
+}
+.padding-20 {
+	padding: 20px !important
+}
+.padding-top-20 {
+	padding-top: 20px !important
+}
+.padding-left-20 {
+	padding-left: 20px !important
+}
+.padding-right-20 {
+	padding-right: 20px !important
+}
+.padding-bottom-20 {
+	padding-bottom: 20px !important
+}
+.padding-25 {
+	padding: 25px !important
+}
+.padding-top-25 {
+	padding-top: 25px !important
+}
+.padding-left-25 {
+	padding-left: 25px !important
+}
+.padding-right-25 {
+	padding-right: 25px !important
+}
+.padding-bottom-25 {
+	padding-bottom: 25px !important
+}
+.padding-30 {
+	padding: 30px !important
+}
+.padding-35 {
+	padding: 35px !important
+}
+.padding-40 {
+	padding: 40px !important
+}
+.padding-top-40 {
+	padding-top: 40px !important
+}
+.padding-left-40 {
+	padding-left: 40px !important
+}
+.padding-right-40 {
+	padding-right: 40px !important
+}
+.padding-bottom-40 {
+	padding-bottom: 40px !important
+}
+.padding-45 {
+	padding: 45px !important
+}
+.padding-50 {
+	padding: 50px !important
+}
+.padding-top-50 {
+	padding-top: 50px !important
+}
+.padding-top-60 {
+	padding-top: 60px !important
+}
+.padding-top-70 {
+	padding-top: 70px !important
+}
+.padding-top-80 {
+	padding-top: 80px !important
+}
+.padding-left-50 {
+	padding-left: 50px !important
+}
+.padding-right-50 {
+	padding-right: 50px !important
+}
+.padding-bottom-50 {
+	padding-bottom: 50px !important
+}
+.no-margin {
+	margin: 0px !important
+}
+.margin-2 {
+	margin: 2px !important
+}
+.margin-top-2 {
+	margin-top: 2px !important
+}
+.margin-top-3 {
+	margin-top: 3px !important
+}
+.margin-top-4 {
+	margin-top: 4px !important
+}
+.margin-5 {
+	margin: 5px !important
+}
+.margin-top-5 {
+	margin-top: 5px !important
+}
+.margin-left-5 {
+	margin-left: 5px !important
+}
+.margin-right-5 {
+	margin-right: 5px !important
+}
+.margin-bottom-5 {
+	margin-bottom: 5px !important
+}
+.margin-10 {
+	margin: 10px !important
+}
+.margin-top-10 {
+	margin-top: 10px !important
+}
+.margin-top-11 {
+	margin-top: 11px !important
+}
+.margin-top-12 {
+	margin-top: 12px !important
+}
+.margin-top-13 {
+	margin-top: 13px !important
+}
+.margin-top-14 {
+	margin-top: 14px !important
+}
+.margin-left-10 {
+	margin-left: 10px !important
+}
+.margin-right-10 {
+	margin-right: 10px !important
+}
+.margin-bottom-10 {
+	margin-bottom: 10px !important
+}
+.margin-top-10 {
+	margin-top: 10px !important
+}
+.margin-15 {
+	margin: 15px !important
+}
+.margin-top-15 {
+	margin-top: 15px !important
+}
+.margin-left-15 {
+	margin-left: 15px !important
+}
+.margin-right-15 {
+	margin-right: 15px !important
+}
+.margin-bottom-15 {
+	margin-bottom: 15px !important
+}
+.margin-20 {
+	margin: 20px !important
+}
+.margin-top-20 {
+	margin-top: 20px !important
+}
+.margin-left-20 {
+	margin-left: 20px !important
+}
+.margin-right-20 {
+	margin-right: 20px !important
+}
+.margin-bottom-20 {
+	margin-bottom: 20px !important
+}
+.margin-25 {
+	margin: 25px !important
+}
+.margin-top-25 {
+	margin-top: 25px !important
+}
+.margin-left-25 {
+	margin-left: 25px !important
+}
+.margin-right-25 {
+	margin-right: 25px !important
+}
+.margin-bottom-25 {
+	margin-bottom: 25px !important
+}
+.margin-30 {
+	margin: 30px !important
+}
+.margin-top-30 {
+	margin-top: 30px !important
+}
+.margin-left-30 {
+	margin-left: 30px !important
+}
+.margin-right-30 {
+	margin-right: 30px !important
+}
+.margin-bottom-30 {
+	margin-bottom: 30px !important
+}
+.margin-top-35 {
+	margin-top: 35px !important
+}
+.margin-left-35 {
+	margin-left: 35px !important
+}
+.margin-right-35 {
+	margin-right: 35px !important
+}
+.margin-bottom-35 {
+	margin-bottom: 35px !important
+}
+.margin-top-40 {
+	margin-top: 40px !important
+}
+.margin-left-40 {
+	margin-left: 40px !important
+}
+.margin-right-40 {
+	margin-right: 40px !important
+}
+.margin-bottom-40 {
+	margin-bottom: 40px !important
+}
+.margin--5 {
+	margin: -5px !important
+}
+.margin-top--10 {
+	margin-top: -10px !important
+}
+.margin-top--15 {
+	margin-top: -15px !important
+}
+.margin-top--20 {
+	margin-top: -20px !important
+}
+
 /*******************************************************************
 * Font styles
 *******************************************************************/
+
+
 /*@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);*/
-.font-8  	{font-size:8px !important;}
-.font-10  	{font-size:10px !important;}
-.font-11  	{font-size:11px !important;}
-.font-12  	{font-size:12px !important;}
-.font-13  	{font-size:13px !important;}
-.font-14  	{font-size:14px !important;}
-.font-15  	{font-size:15px !important;}
-.font-16  	{font-size:16px !important;}
-.font-17  	{font-size:17px !important;}
-.font-18  	{font-size:18px !important;}
-.font-19  	{font-size:19px !important;}
-.font-20  	{font-size:20px !important;}
-.font-21  	{font-size:21px !important;}
-.font-22  	{font-size:22px !important;}
-.font-23  	{font-size:23px !important;}
 
-.weight-100 {font-weight: 100 !important}
-.weight-200 {font-weight: 200 !important}
-.weight-300 {font-weight: 300 !important}
-.weight-400 {font-weight: 400 !important}
-.weight-500 {font-weight: 500 !important}
-.weight-600 {font-weight: 600 !important}
-.weight-700 {font-weight: 700 !important}
-
-body {font-family: 'Montserrat', sans-serif; background: #ededed;position: relative;}
-
+.font-8 {
+	font-size: 8px !important;
+}
+.font-10 {
+	font-size: 10px !important;
+}
+.font-11 {
+	font-size: 11px !important;
+}
+.font-12 {
+	font-size: 12px !important;
+}
+.font-13 {
+	font-size: 13px !important;
+}
+.font-14 {
+	font-size: 14px !important;
+}
+.font-15 {
+	font-size: 15px !important;
+}
+.font-16 {
+	font-size: 16px !important;
+}
+.font-17 {
+	font-size: 17px !important;
+}
+.font-18 {
+	font-size: 18px !important;
+}
+.font-19 {
+	font-size: 19px !important;
+}
+.font-20 {
+	font-size: 20px !important;
+}
+.font-21 {
+	font-size: 21px !important;
+}
+.font-22 {
+	font-size: 22px !important;
+}
+.font-23 {
+	font-size: 23px !important;
+}
+.weight-100 {
+	font-weight: 100 !important
+}
+.weight-200 {
+	font-weight: 200 !important
+}
+.weight-300 {
+	font-weight: 300 !important
+}
+.weight-400 {
+	font-weight: 400 !important
+}
+.weight-500 {
+	font-weight: 500 !important
+}
+.weight-600 {
+	font-weight: 600 !important
+}
+.weight-700 {
+	font-weight: 700 !important
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #ededed;
+	position: relative;
+}
 div.bg-img {
-	margin-top:0px;
-	background: url(../img/test_image.jpg) ;
+	margin-top: 0px;
+	background: url(../img/test_image.jpg);
 	background-size: cover;
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
 	text-transform: uppercase;
 }
-.notifcation-toggle 			{color:#fff;background-color:red;font-size:9px;padding:2px 3px 2px 3px;border-radius:3px;position:absolute;top:-1px;right:-2px;opacity:0.8}
-.text-white 					{color:#fff; text-transform: uppercase !important}
-.text-dark 						{color: #000;font-size: 20px}
-.bg-white 						{background-color: #fff !important}
-.bg-dark-lighter				{background-color: #1d3640 !important}
-.bg-dark 						{background-color: #222a2d !important}
-.no-border 						{border-radius: 0px;border: none}
-.profile-border 				{border-radius: 5px;border: 1px solid grey}
-.profile-picture 				{width: 120px; height: 120px;}
-.restaurant-name 				{color:#fff;margin:10px 20px !important;position:absolute;bottom:0px;left:130px}
-nav >* ,
-ul.navbar-nav:hover li a,
-.transparent 					{background-color: transparent !important;}
-
-.no-text-decoration 			{ text-decoration: none !important}
-a.list-group-item.active 		{background-color: #222a2d !important;border-color: #222a2d}
-.menu-items 					{border-radius: 0px;padding:0px;margin:0px;border:none}
-.menu-items>div.list-group-item 	{border-radius: 0px;font-weight:400;border: none;}
-.panel,.panel-body,.panel-default {border:none}
-.border-bottom-grey 			{border-bottom: solid black 1px}
-.list-group-item,.list-group,.navbar 	{border-radius: 0px !important}
-.fa-plus-circle:hover 			{color: orange;	cursor: pointer;}
-.fa-minus-square-o:hover		{color: red;	cursor: pointer;}
-.full-width 					{width:100% !important}
-nav.affix a.navbar-brand		{color:#000 !important}
-nav.affix #navbar i.fa 			{color:#000 !important;opacity:1.0}
-.fixed-left-menu 				{position:fixed;top:56px;}
-.fixed-right-menu 				{position:fixed;top:46px;}
-.fixed-bottom-menu 				{position:fixed;bottom:0px;width:100%;left:0px}
-.affix{
-	background:#FFF !important;
-    top: 0px !important;
+.notifcation-toggle {
+	color: #fff;
+	background-color: red;
+	font-size: 9px;
+	padding: 2px 3px 2px 3px;
+	border-radius: 3px;
+	position: absolute;
+	top: -1px;
+	right: -2px;
+	opacity: 0.8
+}
+.text-white {
+	color: #fff;
+	text-transform: uppercase !important
+}
+.text-dark {
+	color: #000;
+	font-size: 20px
+}
+.bg-white {
+	background-color: #fff !important
+}
+.bg-dark-lighter {
+	background-color: #1d3640 !important
+}
+.bg-dark {
+	background-color: #222a2d !important
+}
+.no-border {
+	border-radius: 0px;
+	border: none
+}
+.profile-border {
+	border-radius: 5px;
+	border: 1px solid grey
+}
+.profile-picture {
+	width: 120px;
+	height: 120px;
+}
+.restaurant-name {
+	color: #fff;
+	margin: 10px 20px !important;
+	position: absolute;
+	bottom: 0px;
+	left: 130px
+}
+nav >*, ul.navbar-nav:hover li a, .transparent {
+	background-color: transparent !important;
+}
+.no-text-decoration {
+	text-decoration: none !important
+}
+a.list-group-item.active {
+	background-color: #222a2d !important;
+	border-color: #222a2d
+}
+.menu-items {
+	border-radius: 0px;
+	padding: 0px;
+	margin: 0px;
+	border: none
+}
+.menu-items>div.list-group-item {
+	border-radius: 0px;
+	font-weight: 400;
+	border: none;
+}
+.panel, .panel-body, .panel-default {
+	border: none
+}
+.border-bottom-grey {
+	border-bottom: solid black 1px
+}
+.list-group-item, .list-group, .navbar {
+	border-radius: 0px !important
+}
+.fa-plus-circle:hover {
+	color: orange;
+	cursor: pointer;
+}
+.fa-minus-square-o:hover {
+	color: red;
+	cursor: pointer;
+}
+.full-width {
+	width: 100% !important
+}
+nav.affix a.navbar-brand {
+	color: #000 !important
+}
+nav.affix #navbar i.fa {
+	color: #000 !important;
+	opacity: 1.0
+}
+.fixed-left-menu {
+	position: fixed;
+	top: 56px;
+}
+.fixed-right-menu {
+	position: fixed;
+	top: 46px;
+}
+.fixed-bottom-menu {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	left: 0px
+}
+.affix {
+	background: #FFF !important;
+	top: 0px !important;
 	opacity: 0.6;
 	border-bottom: solid grey 1px;
 	-webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 .sheet {
 	cursor: pointer;
 }
 .bs-docs-sidenav.affix {
-  position: static;
-  width: auto;
-  top: 0;
+	position: static;
+	width: auto;
+	top: 0;
+}
+.fa-star {
+	color: #dbb40b
 }
 
-.fa-star {color:#dbb40b}
 /*.container 					{padding-left:0;padding-right:15px;}
 .row 						{margin-left:0;margin-right:-15px;}
 .row > div 					{padding-left:0;padding-right:15px;}*/
-.grid-page-img-text 		{position:absolute;bottom:10px;left:0px;padding:2px;background:#ededed;opacity: 0.8;color:black;}
-.text-grey 					{color:#d3d3d3 !important;}
-.text-grey:hover 	{text-decoration: none;color:#d3d3d3 !important;cursor: pointer}
-.img-responsive-grid 			{
-	background-position: 50%;
-  	background-repeat: no-repeat;
-  	background-size: cover;
-	width:100%;
-	height:170px;
+
+.grid-page-img-text {
+	position: absolute;
+	bottom: 10px;
+	left: 0px;
+	padding: 2px;
+	background: #ededed;
+	opacity: 0.8;
+	color: black;
 }
-div.dotted {height:1px;border-top: dotted grey 1px !important ;width: 100%}
+.text-grey {
+	color: #d3d3d3 !important;
+}
+.text-grey:hover {
+	text-decoration: none;
+	color: #d3d3d3 !important;
+	cursor: pointer
+}
+.img-responsive-grid {
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 170px;
+}
+div.dotted {
+	height: 1px;
+	border-top: dotted grey 1px !important;
+	width: 100%
+}
+
 /*.sidebar-right { background-color: auto;*/
 
-.sidebar-right{
+.sidebar-right {
 	/* fallback */
 	background-color: #1a82f7;
 	background-image: url(images/linear_bg_1.png);
@@ -211,54 +558,155 @@ div.dotted {height:1px;border-top: dotted grey 1px !important ;width: 100%}
 	background: -webkit-linear-gradient(left, #494141, #591c1a);
 	background: -moz-linear-gradient(left, #494141, #591c1a);
 	background: -ms-linear-gradient(left, #494141, #591c1a);
-	background: -o-linear-gradient(left, #494141, #591c1a); }
+	background: -o-linear-gradient(left, #494141, #591c1a);
 }
+
+}
+
 /*#video-background 			{margin-top: 300px !important;}*/
 .callout {
-    position: relative;
-    overflow: hidden;
+	position: relative;
+	overflow: hidden;
 }
-.bootstrap-select > .btn {
-    height: 46px;
+.bootstrap-select > .home{
+	height: 46px;
 }
-#height_of_video 			{overflow:hidden;padding:0px !important;margin-top:0px !important}
-#home_page_heading 			{background:#e80f1c;border-radius: 0px;font-size: 20px;border:none;padding:15px;}
-#homepage_header 			{position:absolute;top:100px}
-#menu_text 					{background:#e80f1c;padding:30px;width:100%}
-@media (min-width:992px) and (max-width:1200px){
-	.restaurant-name 			{left:150px;bottom:-120px;}
-	.restaurant-name h3			{font-size: 18px !important}
+#height_of_video {
+	overflow: hidden;
+	padding: 0px !important;
+	margin-top: 0px !important
 }
-
-@media (min-width:769px) and (max-width:992px) {
-	.restaurant-name 			{left:-30px;margin:0;}
-	.restaurant-name h3			{font-size: 16px !important}
-	#calculator_header {background:grey !important}
-	#calculator {background:white !important}
-	#right-sidebar {width:100% !important}
+#home_page_heading {
+	background: #e80f1c;
+	border-radius: 0px;
+	font-size: 20px;
+	border: none;
+	padding: 15px;
 }
-
-@media ( max-width:768px) {
-	.restaurant-name 			{left:0px;margin:0;}
-	.restaurant-name h3			{font-size: 16px !important}
-	#calculator_header 			{background:grey !important}
-	#calculator 				{background:white !important}
-	#right-sidebar 				{width:100% !important}
-	#home_page_heading 			{padding:13px !important;font-size:16px !important;}
-	#homepage_header 			{top:80px}
-	#video_section 				{
-		background-image:url('../img/intro.jpg');
-		background-repeat:no-repeat center center fixed;
-		background-size:cover;
-		-webkit-background-size: cover;
-  		-moz-background-size: cover;
-  		-o-background-size: cover;
-		min-height: 100%;
-  		min-width: 1024px;
-  		width: 100%;
-  		height: auto;
+#homepage_header {
+	position: absolute;
+	top: 100px
+}
+#menu_text {
+	background: #e80f1c;
+	padding: 30px;
+	width: 100%
+}
+@media (min-width:992px) and (max-width:1200px) {
+	.restaurant-name {
+		left: 150px;
+		bottom: -120px;
+	}
+	.restaurant-name h3 {
+		font-size: 18px !important
 	}
 }
-@media (max-width:768px){
-
+@media (min-width:769px) and (max-width:992px) {
+	.restaurant-name {
+		left: -30px;
+		margin: 0;
+	}
+	.restaurant-name h3 {
+		font-size: 16px !important
+	}
+	#calculator_header {
+		background: grey !important
+	}
+	#calculator {
+		background: white !important
+	}
+	#right-sidebar {
+		width: 100% !important
+	}
+}
+@media ( max-width:768px) {
+	.restaurant-name {
+		left: 0px;
+		margin: 0;
+	}
+	.restaurant-name h3 {
+		font-size: 16px !important
+	}
+	#calculator_header {
+		background: grey !important
+	}
+	#calculator {
+		background: white !important
+	}
+	#right-sidebar {
+		width: 100% !important
+	}
+	#home_page_heading {
+		padding: 13px !important;
+		font-size: 16px !important;
+	}
+	#homepage_header {
+		top: 80px
+	}
+	#video_section {
+		background-image: url('../img/intro.jpg');
+		background-repeat: no-repeat center center fixed;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		min-height: 100%;
+		min-width: 1024px;
+		width: 100%;
+		height: auto;
+	}
+}
+.tabs-left > .nav-tabs {
+	border-bottom: 0;
+}
+.tab-content > .tab-pane, .pill-content > .pill-pane {
+	display: none;
+}
+.tab-content > .active, .pill-content > .active {
+	display: block;
+}
+.tabs-below > .nav-tabs {
+	border-top: 1px solid #ddd;
+}
+.tabs-below > .nav-tabs > li {
+	margin-top: -1px;
+	margin-bottom: 0;
+}
+.tabs-below > .nav-tabs > li > a {
+	-webkit-border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
+}
+.tabs-below > .nav-tabs > li > a:hover, .tabs-below > .nav-tabs > li > a:focus {
+	border-top-color: #ddd;
+	border-bottom-color: transparent;
+}
+.tabs-below > .nav-tabs > .active > a, .tabs-below > .nav-tabs > .active > a:hover, .tabs-below > .nav-tabs > .active > a:focus {
+	border-color: transparent #ddd #ddd #ddd;
+}
+.tabs-left > .nav-tabs > li {
+	float: none;
+}
+.tabs-left > .nav-tabs > li > a {
+	min-width: 74px;
+	margin-right: 0;
+	margin-bottom: 3px;
+}
+.tabs-left > .nav-tabs {
+	float: left;
+	margin-right: 19px;
+	border-right: 1px solid #ddd;
+}
+.tabs-left > .nav-tabs > li > a {
+	margin-right: -1px;
+	-webkit-border-radius: 4px 0 0 4px;
+	-moz-border-radius: 4px 0 0 4px;
+	border-radius: 4px 0 0 4px;
+}
+.tabs-left > .nav-tabs > li > a:hover, .tabs-left > .nav-tabs > li > a:focus {
+	border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+}
+.tabs-left > .nav-tabs .active > a, .tabs-left > .nav-tabs .active > a:hover, .tabs-left > .nav-tabs .active > a:focus {
+	border-color: #ddd transparent #ddd #ddd;
+	*border-right-color: #ffffff;
 }

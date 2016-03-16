@@ -232,11 +232,11 @@ color: #cc0000;
 }
 
 .order-bg{
-background-color: #1a1a1a;
- border-radius: 10px;
+ background-color: #1a1a1a;
+ border-radius: 5px;
  color: #fff;
  text-align: center;
- padding: 10px;
+ padding: 5px;
  font-size: 12px;
  letter-spacing: 2px;
  text-transform: uppercase;
