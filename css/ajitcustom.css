@@ -290,7 +290,7 @@ padding: 2em;
 }
 
 .loginsubmit{
-	
+	background-color:#ffcc00;
 	width:100%;
 }
 
@@ -335,4 +335,17 @@ color:#fff;
 margin-top: 0.7em;
 opacity:0.8;
 font-size: 1.5em !important
+}
+
+.mainpagesize{
+opacity:0.9;	
+min-width: 40%;
+}
+
+.mainpagesize2{
+color: #000;
+letter-spacing: 2px;
+text-align: center;		
+background-color:#ffcc00;
+text-transform: uppercase;	
 }
