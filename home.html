@@ -12,14 +12,9 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/normalize.min.css">
-	
-	
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/avgrund.css">
-	<link href='http://fonts.googleapis.com/css?family=Headland+One|Open+Sans:400,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
 	
 	<!--[if lt IE 9]>
       <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -38,7 +33,7 @@
 			</div>
 			 
 			<div id="navbar" class="pull-right">
-				<button class="btn btn-login btn-warning btn-sm navbar-btn margin-top-15 margin-right-20" id="show">Login</button>
+				<button type="button" class="btn btn-login btn-warning btn-sm navbar-btn margin-top-15 margin-right-20" data-toggle="modal" data-target="#LoginModal">Login</button>
 			</div>
 	
 
@@ -75,29 +70,38 @@
         
         
 		<div align="center" id="homepage_header" class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-offset-2 col-md-8" style="">
-			<div class="padding-bottom-15"><span class="label" id="home_page_heading">The easy way to takeaway</span></div>
-			<div class="row margin-top-30 padding-top-10">
-				<div class="col-xs-12  col-sm-12 margin-top-10 col-md-3 ">
-					<select id="location" name="location" class="input-lg form-control selectpicker" title="Location">
-						<option class="default" value="current">Current Location</option>
-						<option class="default" value="another">Another Location</option>
-					</select>
-				</div>
-				<div class="col-xs-12 col-sm-12 margin-top-10 col-md-6">
-					<div class="input-group full-width">
-						<input type="text" class="form-control input-lg" placeholder="Search for...">
-						<span class="input-group-btn">
-    						<a class="btn btn-lg"></a>
-    					</span>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-12 margin-top-10 col-md-3">
-					<a class="btn btn-block btn-default btn-lg" href="list.html">Search</a>
-				</div>
-                
-				<!-- <div class="clearfix"></div> -->
-			</div>
+			<div class="padding-bottom-15"><span class="label labelheading" id="home_page_heading">Order takeaway online</span></div>
+			<div class="col-md-offset-4 col-lg-offset-4 col-sm-offset-4 headingbottom animated pulse infinite"><i class="fa fa-heart"></i> The best of your neighbourhood..</div>
+		
+		
+		<div class="btn-group margin-top-30 padding-top-10" role="group" aria-label="Basic example">
+		
+						  <button type="button" class="btn btn-secondary">Delivery</button>
+						  <button type="button" class="btn btn-secondary">Pickup</button>
+						  <button type="button" class="btn btn-secondary">Reserve a table</button>
 		</div>
+		<div class="margin-top-60 padding-top-20">
+				<form action="" class="form-inline" id="home_page_heading">
+					<div class="form-group">
+                        <select name="" id="locationselect" class="form-control">
+                           <option value="0">Select Your location</option>
+                           <option value="1">My location</option>
+                           <option value="2">Another location</option>
+                       </select>
+                   </div>
+					<div class="form-group">
+                        <input type="text" class="form-control" placeholder="Food (optional)">
+                    </div>
+                   <input type="submit" class="btn submitbtn form-control" value="Find my meal">
+               </form></div>
+		
+		
+						
+		
+		
+				<!-- <div class="clearfix"></div> -->
+		
+		
 	</section>
 	<section class="container">
 		<div class="row padding-top-10">
@@ -151,7 +155,30 @@
 
     
 	<!-- Login modal -->
-
+			  <div class="modal fade" id="LoginModal" role="dialog">
+				<div class="modal-dialog modal-sm">
+			 <div class="md-contenthead"><h3>Welcome.</h3></div>
+				  <div class="modal-content">
+					  <div><form>
+									<fieldset class="form-group">
+									<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address">
+									</fieldset>
+									<fieldset class="form-group">
+									<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+									</fieldset>
+									<button type="submit" class="btn sharp loginsubmit">Login</button>
+									<div class="checkbox checkboxed">
+									<label><input type="checkbox">&nbsp &nbsp Remember me</label>
+									</div>
+									<a href="#" class="modal-footer forgotlink pull-right">Forgot password?</a>
+								   </div>	
+								   </form></div>
+				  <div class="md-contentbottom"><p>Simply place an order</br>to create an account</p></div>
+				  </div>
+				  
+				</div>
+			  
+			
 		
     <!-- Map Modal -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
@@ -177,70 +204,6 @@
 	<script src="js/bootstrap-select.min.js"></script>
 	<script src="js/lightbox.js"></script>
 	<script src="js/icheck.min.js"></script>
-	<script src="js/main.js"></script>
-	
-
-	 <script src="js/jquery.avgrund.js"></script>
-
-	 
-	 <script>
-	$(function() {
-		$('#show').avgrund({
-			height: 200,
-			holderClass: 'custom',
-			showClose: true,
-			showCloseText: 'close',
-			onBlurContainer: '.container',
-			template: '<form>' +
-			'<fieldset class="form-group">' +
-			'<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address">' +
-			'</fieldset>' +
-			'<fieldset class="form-group">' +
-			'<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">' +
-			'</fieldset>' +
-			'<button type="submit" class="btn sharp loginsubmit">Login</button>' +
-			'<div class="checkbox checkboxed">' +
-			'<label><input type="checkbox">&nbsp &nbsp Remember me</label>' +
-			'</div>' +
-			'<div class="modal-footer">' +
-			'<div class="md-contentbottom pull-left"><p>Simply place an order</br>to create an account</p></div>' +
-			'</div>' +
-			'</form>'
-		});
-	});
-	</script>
-	
-	<div id="modal-02">
-            <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
-            <div  id="btn-close-modal" class="close-modal-02"> 
-                <i class="fa fa-2x fa-times"></i>
-            </div>
-            
-            <div class="modal-content">
-                <div class="md-contenthead"><h3>Welcome.</h3></div>
-			<div class="md-content">
-					<div><form>
-						<fieldset class="form-group">
-						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address">
-						</fieldset>
-						<fieldset class="form-group">
-						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-						</fieldset>
-						<button type="submit" class="btn sharp loginsubmit">Login</button>
-						<div class="checkbox checkboxed">
-						<label><input type="checkbox">&nbsp &nbsp Remember me</label>
-						</div>
-						<div class="modal-footer">
-						<div class="row">
-						<div class="md-contentbottom col-md-9 pull-left"><p>Simply place an order</br>to create an account</p></div>
-						<button class="md-close btn btn-xs pull-right col-md-3">Close</button>
-					   </div>
-					   </div>	
-					   </form></div>
-			</div>
-            </div>
-        </div>
-
-		
+	<script src="js/main.js"></script>		
 </body>
 </html>
