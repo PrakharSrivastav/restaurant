@@ -15,6 +15,7 @@
 	<link rel="stylesheet" type='text/css' href="css/main.css">
 	<link rel="stylesheet" href="css/blue.css">
 	<link rel="stylesheet" type='text/css' href="css/ajitcustom.css">
+	<link href="css/simple-sidebar.css" rel="stylesheet">
 	<!--[if lt IE 9]>
       <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
@@ -23,41 +24,63 @@
 
 <body>
 
-	<div class="bg-img padding-top-70 animated fadeIn">
-		<nav class="navbar navbar-fixed-top full-width" role="navigation">
-			<div class="container-fluid">
-				<div class="navbar-header pull-left">
-					<!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="fa fa-bars"></span>
-						<!-- <span class="icon-bar"></span> -->
-					<!-- <span class="icon-bar"></span> -->
-					<!-- </button>  -->
-					<a class="navbar-brand no-text-decoration text-uppercase margin-top-5 text-white margin-top-10" href="home.html">Magic Meal</a>
-				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div id="navbar" class="pull-right">
-					<!-- class="collapse navbar-collapse" -->
-					<a href="#" class="btn btn-default navbar-btn margin-top-15 margin-right-10 transparent ">Login</a>
-					<a href="#"><i class="fa fa-shopping-cart fa-lg text-white-icons"></i></a>
-					<a href="#" class="dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<i class="fa fa-bell-o fa-lg text-white-icons"></i>
-					</a>
-					<ul class="list-group dropdown-menu no-padding">
-					  <li class=" list-group-item">some content here for notificationre for notification</li>
-					  <li class=" list-group-item">some content here for notificationre for notification</li>
-					  <li class=" list-group-item">some content here for notification</li>
-					  <li class=" list-group-item">some content here for notification</li>
-					  <li class=" list-group-item">some content here for notificationre for notification</li>
-					  <li class=" list-group-item">some content here for notificationre for notification</li>
-					</ul>
-					<a class="navbar-toggle transparent" data-toggle="sidebar" data-target=".sidebar" href="#"><i class="fa fa-bars fa-2x text-white-icons "></i></a>
-				</div>
-				<!-- /.navbar-collapse -->
+
+	<nav class="navbar navbar-fixed-top full-width" role="navigation">
+		<div class="container-fluid">
+		<div class="navbar-brand text-white pull-right"><a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><i class="fa fa-bars"></i></a>
+		</div>
+			<div class="navbar-header pull-left">
+				<a class="navbar-brand no-text-decoration text-uppercase margin-top-5 text-white margin-top-10" href="home.html">Magic Meal</a>
 			</div>
-			<!-- /.container-fluid -->
-		</nav>
+	
+		</div>
+	</nav>
+	
+	
+
+
+	<div id="wrapper">
+	
+		<!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#">Shortcuts</a>
+                </li>
+                <li>
+                    <a href="#">Overview</a>
+                </li>
+                <li>
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        
+<div id="page-content-wrapper">
+           
+		 
+		 
 		
+				
+			<div class="bg-img padding-top-70 animated fadeIn">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 hidden-sm hidden-xs">
@@ -96,6 +119,9 @@
 
 
 		</div>
+		
+
+			
 	</div>
 	<div class="container">
 		<ul class="nav nav-tabs nav-justified hidden-sm hidden-xs" role="tablist">
@@ -158,7 +184,7 @@
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
 													<div class="col-sm-2 col-xs-2 text-dark">
-														<span class="pull-right font-12">Â£<span class="price">2.00</span></span>
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
 													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
@@ -175,7 +201,7 @@
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
 													<div class="col-sm-2 col-xs-2 text-dark">
-														<span class="pull-right font-12">Â£<span class="price">2.00</span></span>
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
 													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
@@ -192,7 +218,7 @@
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
 													<div class="col-sm-2 col-xs-2 text-dark">
-														<span class="pull-right font-12">Â£<span class="price">2.00</span></span>
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
 													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
@@ -226,7 +252,7 @@
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
 													<div class="col-sm-2 col-xs-2 text-dark">
-														<span class="pull-right font-12">Â£<span class="price">2.00</span></span>
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
 													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
@@ -243,7 +269,7 @@
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
 													<div class="col-sm-2 col-xs-2 text-dark">
-														<span class="pull-right font-12">Â£<span class="price">2.00</span></span>
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
 													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
@@ -260,7 +286,7 @@
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
 													<div class="col-sm-2 col-xs-2 text-dark">
-														<span class="pull-right font-12">Â£<span class="price">2.00</span></span>
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
 													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
@@ -277,7 +303,7 @@
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
 													<div class="col-sm-2 col-xs-2 text-dark">
-														<span class="pull-right font-12">Â£<span class="price">2.00</span></span>
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
 													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
@@ -311,7 +337,7 @@
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
 													<div class="col-sm-2 col-xs-2 text-dark">
-														<span class="pull-right font-12">Â£<span class="price">2.00</span></span>
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
 													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
@@ -328,7 +354,7 @@
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
 													<div class="col-sm-2 col-xs-2 text-dark">
-														<span class="pull-right font-12">Â£<span class="price">2.00</span></span>
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
 													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
@@ -345,7 +371,7 @@
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
 													<div class="col-sm-2 col-xs-2 text-dark">
-														<span class="pull-right font-12">Â£<span class="price">2.00</span></span>
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
 													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
@@ -362,7 +388,7 @@
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
 													<div class="col-sm-2 col-xs-2 text-dark">
-														<span class="pull-right font-12">Â£<span class="price">2.00</span></span>
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
 													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
@@ -379,7 +405,7 @@
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
 													<div class="col-sm-2 col-xs-2 text-dark">
-														<span class="pull-right font-12">Â£<span class="price">2.00</span></span>
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
 													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
@@ -396,7 +422,7 @@
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
 													<div class="col-sm-2 col-xs-2 text-dark">
-														<span class="pull-right font-12">Â£<span class="price">2.00</span></span>
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
 													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
@@ -413,7 +439,7 @@
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
 													<div class="col-sm-2 col-xs-2 text-dark">
-														<span class="pull-right font-12">Â£<span class="price">2.00</span></span>
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
 													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
@@ -430,7 +456,7 @@
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
 													<div class="col-sm-2 col-xs-2 text-dark">
-														<span class="pull-right font-12">Â£<span class="price">2.00</span></span>
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
 													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
@@ -447,7 +473,7 @@
 														<span class="badge weight-500 font-10">30<br>min</span>
 													</div>
 													<div class="col-sm-2 col-xs-2 text-dark">
-														<span class="pull-right font-12">Â£<span class="price">2.00</span></span>
+														<span class="pull-right font-12">£<span class="price">2.00</span></span>
 													</div>
 													<div class="col-sm-1 col-xs-2">
 														<div class="pull-right">
@@ -465,7 +491,7 @@
 					<div role="tabpanel" class="tab-pane padding-10" id="about">
 						<h3 class="text-center weight-400">About Us</h3>
 						<p class="font-16">
-							Having a hard day, stressed at work, kids driving you crazy, donâ€™t worry we understand how hard some days can be. So let us and Stefanos Fish & Chips take the stress out of feeding the family for the evening. Located on 241 Morningside Road, Midlothian,
+							Having a hard day, stressed at work, kids driving you crazy, don’t worry we understand how hard some days can be. So let us and Stefanos Fish & Chips take the stress out of feeding the family for the evening. Located on 241 Morningside Road, Midlothian,
 							offers a wide variety of dishes including Calzone, Kebabs and Munchy boxes.
 						</p>
 						<table class="table table-bordered table-condensed table-hover">
@@ -684,7 +710,7 @@
 			<div class="col-md-3 col xs-12">
 				<div id="right-sidebar">
 					<div class="col-xs-12  order-header padding-10 text-left" id="calculator_header">
-						<span>My Order (Â£<small class="grand_total">0.00</small>)</span>
+						<span>My Order (£<small class="grand_total">0.00</small>)</span>
 						<span class="pull-right visible-sm visible-xs">
 							<i class="fa margin-top-5 text-white sheet fa-expand"></i>
 						</span>
@@ -700,14 +726,14 @@
 					<div class="col-xs-12">
 						<div class="row padding-5" id="calculator">
 							<div id="calculatorItem"></div>
-							<div id="minimum_amount_msg" class="col-xs-12 text-danger  font-14 text-right">Minimum Â£15.00</div>
+							<div id="minimum_amount_msg" class="col-xs-12 text-danger  font-14 text-right">Minimum £15.00</div>
 							<br>
 							<div class="col-xs-9 pull-left">
 								<span class=" font-11 text-dark">Subtotal</span>
 							</div>
 							<div class="col-xs-3">
 								<div class=" pull-right font-10">
-									Â£<span id="subtotal" class="price">00.00</span>
+									£<span id="subtotal" class="price">00.00</span>
 								</div>
 							</div>
 							<div class="col-xs-9 pull-left">
@@ -715,7 +741,7 @@
 							</div>
 							<div class="col-xs-3">
 								<div class=" pull-right font-10">
-									Â£<span class="price" id="vat">00.00</span>
+									£<span class="price" id="vat">00.00</span>
 								</div>
 							</div>
 							<div class="col-xs-9 pull-left">
@@ -723,7 +749,7 @@
 							</div>
 							<div class="col-xs-3">
 								<div class=" pull-right font-10">
-									Â£<span class="price" id="delv_chg">00.00</span>
+									£<span class="price" id="delv_chg">00.00</span>
 								</div>
 							</div>
 							<div class="col-xs-9 pull-left">
@@ -731,7 +757,7 @@
 							</div>
 							<div class="col-xs-3">
 								<div class=" pull-right font-10">
-									Â£<span class="price" id="service_chg">00.00</span>
+									£<span class="price" id="service_chg">00.00</span>
 								</div>
 							</div>
 							<div class="col-xs-9 pull-left">
@@ -739,7 +765,7 @@
 							</div>
 							<div class="col-xs-3">
 								<div class=" pull-right font-10">
-									Â£<span class="price" id="discount">00.00</span>
+									£<span class="price" id="discount">00.00</span>
 								</div>
 							</div>
 							<div class="col-xs-9 pull-left">
@@ -747,7 +773,7 @@
 							</div>
 							<div class="col-xs-3">
 								<div class=" pull-right font-10">
-									Â£<span class="price grand_total">00.00</span>
+									£<span class="price grand_total">00.00</span>
 								</div>
 							</div>
 							<button type="button" id="checkout_btn" class="btn btn-block btn-checkout">
@@ -784,6 +810,16 @@
 			</div>
 		</div>
 	</footer>
+	
+		</div>
+ 
+        <!-- /#page-content-wrapper -->
+
+</div>
+
+    <!-- /#wrapper -->
+	
+	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/bootstrap-select.min.js"></script>
@@ -791,7 +827,20 @@
 	<script src="js/sidebar.js"></script>
 	<script src="js/icheck.min.js"></script>
 	<script src="js/main.js"></script>
-	<script type="text/javascript" src="js/restaurantsignup/wow.min.js"></script>
+		<script src="js/jquery.js"></script>
+
+	    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+	
+	$(window).resize(function(){
+	$("#wrapper").toggleClass("toggled",false);
+	});
+	
+    </script>
+	
 </body>
 
 </html>

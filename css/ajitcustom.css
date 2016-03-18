@@ -339,7 +339,7 @@ font-size: 1.5em !important
 
 .mainpagesize{
 opacity:0.9;	
-min-width: 40%;
+min-width: 30%;
 }
 
 .mainpagesize2{
@@ -349,3 +349,4 @@ text-align: center;
 background-color:#ffcc00;
 text-transform: uppercase;	
 }
+

@@ -17,6 +17,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
 	
 	<link href="css/simple-sidebar.css" rel="stylesheet">
+	<link href="css/responsivescript.css" rel="stylesheet">
 	
 	<!--[if lt IE 9]>
       <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -27,84 +28,105 @@
 </head>
 
 <body>
-   
-	<nav class="navbar navbar-fixed-top full-width" role="navigation">
+   	<nav class="navbar navbar-fixed-top full-width" role="navigation">
 		<div class="container-fluid">
+		<div class="navbar-brand text-white pull-right"><a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><i class="fa fa-bars"></i></a>
+		</div>
 			<div class="navbar-header pull-left">
 				<a class="navbar-brand no-text-decoration text-uppercase margin-top-5 text-white margin-top-10" href="home.html">Magic Meal</a>
 			</div>
-			 
-			<div id="navbar" class="pull-right">
-				<button type="button" class="btn btn-login btn-warning btn-sm navbar-btn margin-top-15 margin-right-20" data-toggle="modal" data-target="#LoginModal">Login</button>
-			</div>
 	
-
-
-			
 		</div>
 	</nav>
+	
+    <div id="wrapper">
+	
+		<!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-user"></i>&nbsp Account</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-shopping-cart"></i>&nbsp Order History</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-users"></i>&nbsp Group Order</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-bell"></i>&nbsp Notification centre</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-phone-square"></i>&nbsp Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
 
 	<section style="position:relative">
-		
-        
-        <div id="height_of_video">
-			<video preload autoplay muted loop="loop" id="video_section" class="full-width">
-				<source src="video/intro.webm" type="video/webm" media="all and (min-width:768px)">
-				<source src="video/intro.mp4" type="video/mp4" media="all and (min-width:768px)">
-				<source src="video/intro.ogv" type="video/ogv" media="all and (min-width:768px)"> Your browser does not support the video tag.
-			</video>
-		</div>
-        
-        
-		<div align="center" id="menu_text">
-			<div class=" text-white container">
-				<div class="col-xs-12 col-sm-12 col-md-4 no-padding">
-					<i class="fa fa-lg fa-cutlery"></i><span class="text-capitalize font-18">&nbsp;&nbsp;1. Pick a Restaurant</span>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-4 no-padding">
-					<i class="fa fa-lg fa-motorcycle"></i><span class="text-capitalize font-18">&nbsp;&nbsp;2. Order a takeaway</span>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-4 no-padding">
-					<i class="fa fa-lg fa-codiepie"></i><span class="text-capitalize font-18">&nbsp;&nbsp;3. Your food is delivered</span>
+	 
+			<div id="height_of_video">
+				<video preload autoplay muted loop="loop" id="video_section" class="full-width">
+					<source src="video/intro.webm" type="video/webm" media="all and (min-width:768px)">
+					<source src="video/intro.mp4" type="video/mp4" media="all and (min-width:768px)">
+					<source src="video/intro.ogv" type="video/ogv" media="all and (min-width:768px)"> Your browser does not support the video tag.
+				</video>
+			</div>
+			
+			
+			<div align="center" id="menu_text">
+				<div class=" text-white container">
+					<div class="col-xs-12 col-sm-12 col-md-4 no-padding">
+						<i class="fa fa-lg fa-cutlery"></i><span class="text-capitalize font-18">&nbsp;&nbsp;1. Pick a Restaurant</span>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 no-padding">
+						<i class="fa fa-lg fa-motorcycle"></i><span class="text-capitalize font-18">&nbsp;&nbsp;2. Order a takeaway</span>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 no-padding">
+						<i class="fa fa-lg fa-codiepie"></i><span class="text-capitalize font-18">&nbsp;&nbsp;3. Your food is delivered</span>
+					</div>
 				</div>
 			</div>
-		</div>
-        
-        
+			
+			
 		<div align="center" id="homepage_header" class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-offset-2 col-md-8" style="">
-			<div class="padding-bottom-15"><span class="label labelheading" id="home_page_heading">Order takeaway online</span></div>
-			<div class="col-md-offset-4 col-lg-offset-4 col-sm-offset-4 headingbottom animated pulse infinite"><i class="fa fa-heart"></i> The best of your neighbourhood..</div>
-		
-		
-		<div class="btn-group margin-top-30 padding-top-10 mainpagesize1" role="group" aria-label="Basic example">
-		
-						  <button type="button" class="btn">Delivery</button>
-						  <button type="button" class="btn">Pickup</button>
-						  <button type="button" class="btn">Reserve a table</button>
+				<div class="padding-bottom-15"><span class="label labelheading" id="home_page_heading">Order takeaway online</span></div>
+				<div class="col-md-offset-4 col-lg-offset-4 col-sm-offset-4 headingbottom animated pulse infinite"><i class="fa fa-heart"></i> The best of your neighbourhood..</div>
+			
+			
+			<div class="btn-group button-size margin-top-30 padding-top-10" role="group" aria-label="Basic example">
+			
+							  <button type="button" class="btn">Delivery</button>
+							  <button type="button" class="btn">Pickup</button>
+							  <button type="button" class="btn">Reserve a table</button>
+			</div>
+			
+			<div class="margin-top-60 padding-top-20">
+					<form action="" class="btn-group-vertical mainpagesize" id="home_page_heading">
+						<div class="form-group">
+							<select name="" id="locationselect" class="form-control">
+							   <option value="0">Select Your location</option>
+							   <option value="1">My location</option>
+							   <option value="2">Another location</option>
+						   </select>
+					   </div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Food (optional)">
+						</div>
+					   <input type="submit" class="btn submitbtn form-control mainpagesize2" value="Find my meal">
+				   </form>
+			</div>
+
 		</div>
-		<div class="margin-top-60 padding-top-20">
-				<form action="" class="btn-group-vertical mainpagesize" id="home_page_heading">
-					<div class="form-group">
-                        <select name="" id="locationselect" class="form-control">
-                           <option value="0">Select Your location</option>
-                           <option value="1">My location</option>
-                           <option value="2">Another location</option>
-                       </select>
-                   </div>
-					<div class="form-group">
-                        <input type="text" class="form-control" placeholder="Food (optional)">
-                    </div>
-                   <input type="submit" class="btn submitbtn form-control mainpagesize2" value="Find my meal">
-               </form></div>
-		<
-		
-						
-		
-		
-				<!-- <div class="clearfix"></div> -->
-		
-		
+					<!-- <div class="clearfix"></div> -->
 	</section>
+	
 	<section class="container">
 		<div class="row padding-top-10">
 			<div class="col-xs-12 col-sm-offset-1 col-sm-10 ">
@@ -133,7 +155,8 @@
 			</div>
 		</div>
 	</section>
-	<!-- Button trigger modal -->
+	
+	
 	<footer class="container-fluid margin-top-20 no-padding no-margin">
 		<div class="row padding-top-25 bg-dark no-margin padding-bottom-25" align="center">
 			<span class="text-grey font-12 padding-right-5 text-capitalize">Blog</span>
@@ -153,36 +176,15 @@
 			</div>
 		</div>
 	</footer>
-	
 
-    
-	<!-- Login modal -->
-			  <div class="modal fade" id="LoginModal" role="dialog">
-				<div class="modal-dialog modal-sm">
-			 <div class="md-contenthead"><h3>Welcome.</h3></div>
-				  <div class="modal-content">
-					  <div><form>
-									<fieldset class="form-group">
-									<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address">
-									</fieldset>
-									<fieldset class="form-group">
-									<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-									</fieldset>
-									<button type="submit" class="btn sharp loginsubmit">Login</button>
-									<div class="checkbox checkboxed">
-									<label><input type="checkbox">&nbsp &nbsp Remember me</label>
-									</div>
-									<a href="#" class="modal-footer forgotlink pull-right">Forgot password?</a>
-								   </div>	
-								   </form></div>
-				  <div class="md-contentbottom"><p>Simply place an order</br>to create an account</p></div>
-				  </div>
-				  
-				</div>
-			  
-			
-		
-    <!-- Map Modal -->
+
+        <!-- /#page-content-wrapper -->
+</div>
+</div>
+
+    <!-- /#wrapper -->
+	
+	<!-- Map Modal -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -200,13 +202,29 @@
 			</div>
 		</div>
 	</div>
-	
+	  
+
+
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/bootstrap-select.min.js"></script>
 	<script src="js/lightbox.js"></script>
 	<script src="js/icheck.min.js"></script>
 	<script src="js/main.js"></script>	
-	<script src="js/sidebar_menu.js"></script>
+	
+	<script src="js/jquery.js"></script>
+
+	    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+	
+	$(window).resize(function(){
+	$("#wrapper").toggleClass("toggled",false);
+	});
+	
+    </script>
+	
 </body>
 </html>
