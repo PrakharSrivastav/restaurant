@@ -1,786 +1,1126 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>List</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap-select.min.css">
-	<link href="css/lightbox.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/main.css">
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
 
-	<link rel="stylesheet" href="css/blue.css">
-	<link rel="stylesheet" type='text/css' href="css/sidebar.css">
-	<link rel="stylesheet" href="css/ajitcustom.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-	<!--[if lt IE 9]>
+    <title>Restaurant listing</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/blue.css" rel="stylesheet">
+    <link href="css/ajitcustom.css" rel="stylesheet">
+    <link href="css/a/animate.css" rel="stylesheet">
+    <link href=
+    "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel=
+    'stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel=
+    'stylesheet' type='text/css'>
+    <link href="css/toastr.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+     <!--[if lt IE 9]>
       <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
 
 <body>
-	<!-- <nav class="navbar bg-dark  navbar-fixed-top full-width" role="navigation">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand no-text-decoration text-uppercase margin-top-5 text-white " href="#">Magic Meal</a>
-			</div>
-			<div  id="navbar">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#"><i class="fa fa-shopping-cart fa-lg no-text-decoration text-white"></i></a></li>
-					<li><a href="#"><i class="fa fa-bell-o fa-lg no-text-decoration text-white"></i></a></li>
-					<li><a href="#"><i class="fa fa-bars fa-lg no-text-decoration text-white"></i></a></li>
-				</ul>
-				<a href="#" class="btn btn-default pull-right navbar-btn margin-top-10 margin-right-10 transparent text-white text-capitalize">Login</a>
-			</div>
-		</div>
-	</nav> -->
-	<nav class="navbar navbar-fixed-top bg-dark full-width" role="navigation">
-		<div class="container-fluid">
-			<div class="navbar-header pull-left">
-				<!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="fa fa-bars"></span>
-					<!-- <span class="icon-bar"></span> -->
-					<!-- <span class="icon-bar"></span> -->
-				<!-- </button>  -->
-				<a class="navbar-brand no-text-decoration text-uppercase margin-top-5 text-white margin-top-10" href="home.html">Magic Meal</a>
-			</div>
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div id="navbar" class="pull-right">
-				<!-- class="collapse navbar-collapse" -->
-				<a href="#" class="btn btn-default navbar-btn margin-top-15 margin-right-10 transparent ">Login</a>
-				<a href="#"><i class="fa fa-shopping-cart fa-lg text-white-icons"></i></a>
-				<a href="#" class="dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="position:relative">
-					<i class="fa fa-bell-o fa-lg text-white-icons"></i> <span class="notifcation-toggle">1</span>
-				</a>
-				<ul class="list-group dropdown-menu no-padding margin-left-10">
-				  <li class=" list-group-item">some content here for notificationre for notification</li>
-				  <li class=" list-group-item">some content here for notificationre for notification</li>
-				  <li class=" list-group-item">some content here for notification</li>
-				  <li class=" list-group-item">some content here for notification</li>
-				  <li class=" list-group-item">some content here for notificationre for notification</li>
-				  <li class=" list-group-item">some content here for notificationre for notification</li>
-				</ul>
-				<a class="navbar-toggle transparent" data-toggle="sidebar" data-target=".sidebar" href="#"><i class="fa fa-bars fa-2x text-white-icons "></i></a>
-			</div>
-			<!-- /.navbar-collapse -->
-		</div>
-		<!-- /.container-fluid -->
-	</nav>
-	<div class="col-xs-8 col-sm-6 col-md-4 sidebar sidebar-right sidebar-animate"  style="margin-top:15px;opacity:0.8">
-		<div class="row padding-15 border-bottom-grey">
-			<div class="row">
-				<div class="col-xs-2 padding-bottom-10">
-					<i class="fa fa-2x fa-user text-grey margin-right-5"></i>
-				</div>
-				<div class="col-xs-10">
-					<a class="text-capitalize font-18 text-grey">My Account</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-2 padding-bottom-10">
-					<i class="fa fa-2x fa-info text-grey margin-right-5"></i>
-				</div>
-				<div class="col-xs-10">
-					<a class="text-capitalize font-18 text-grey">About</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-2 padding-bottom-10">
-					<i class="fa fa-2x fa-question text-grey margin-right-5"></i>
-				</div>
-				<div class="col-xs-10">
-					<a class="text-capitalize font-18 text-grey">Help</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-2 padding-bottom-10">
-					<i class="fa fa-2x fa-phone text-grey margin-right-5"></i>
-				</div>
-				<div class="col-xs-10">
-					<a class="text-capitalize font-18 text-grey">Contact us</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-2 padding-bottom-10">
-					<i class="fa fa-2x fa-sign-in text-grey margin-right-5"></i>
-				</div>
-				<div class="col-xs-10">
-					<a class="text-capitalize font-18 text-grey">Restaurant signup</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-2 padding-bottom-10">
-					<i class="fa fa-2x fa-lightbulb-o text-grey margin-right-5"></i>
-				</div>
-				<div class="col-xs-10">
-					<a class="text-capitalize font-18 text-grey">Suggest a restaurant</a>
-				</div>
-			</div>
-		</div>
+    <nav class="navbar navbar-fixed-top bg-dark full-width" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header pull-left">
+                <a class=
+                "navbar-brand no-text-decoration text-uppercase margin-top-5 text-white margin-top-10"
+                href="home.html">Magic Meal</a>
+            </div>
 
-		<!-- Logged-in-menu -->
-		<div class="row padding-15">
-			<div class="row">
-				<div class="col-xs-2 padding-bottom-10">
-					<i class="fa fa-2x fa-user text-grey margin-right-5"></i>
-				</div>
-				<div class="col-xs-10">
-					<a class="text-capitalize font-18 text-grey">My Account</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-2 padding-bottom-10">
-					<i class="fa fa-2x fa-map-marker text-grey margin-right-5"></i>
-				</div>
-				<div class="col-xs-10">
-					<a class="text-capitalize font-18 text-grey">My address</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-2 padding-bottom-10">
-					<i class="fa fa-2x fa-gift text-grey margin-right-5"></i>
-				</div>
-				<div class="col-xs-10">
-					<a class="text-capitalize font-18 text-grey">My order details</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-2 padding-bottom-10">
-					<i class="fa fa-2x fa-money text-grey margin-right-5"></i>
-				</div>
-				<div class="col-xs-10">
-					<a class="text-capitalize font-18 text-grey">My payment details</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-2 padding-bottom-10">
-					<i class="fa fa-2x fa-question text-grey margin-right-5"></i>
-				</div>
-				<div class="col-xs-10">
-					<a class="text-capitalize font-18 text-grey">Help</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-2 padding-bottom-10">
-					<i class="fa fa-2x fa-phone text-grey margin-right-5"></i>
-				</div>
-				<div class="col-xs-10">
-					<a class="text-capitalize font-18 text-grey">Contact us</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-2 padding-bottom-10">
-					<i class="fa fa-2x fa-lightbulb-o text-grey margin-right-5"></i>
-				</div>
-				<div class="col-xs-10">
-					<a class="text-capitalize font-18 text-grey">Suggest a restaurant</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-2 padding-bottom-10">
-					<i class="fa fa-2x fa-sign-out text-grey margin-right-5"></i>
-				</div>
-				<div class="col-xs-10">
-					<a class="text-capitalize font-18 text-grey">Logout</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container-fluid padding-top-70">
-		<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-offset-2 col-md-8">
-			<div class="row">
-				<div class="col-xs-6 margin-top-10 col-sm-6 col-md-2">
-					<select id="type" name="type" class=" form-control selectpicker" title="Order Type">
-						<option value="all">All</option>
-						<option value="delivery">Delivery</option>
-						<option value="takeaway">Take Away</option>
-						<option value="book">Book A Table</option>
-					</select>
-				</div>
-				<div class="col-xs-6 margin-top-10 col-sm-6 col-md-2">
-					<select id="day" name="day" class=" form-control selectpicker" title="Day">
-						<option class="default" value="today">Today</option>
-						<option class="default" value="tomorrow">Tomorrow</option>
-					</select>
-				</div>
-				<div class="col-xs-6 margin-top-10 col-sm-6 col-md-2">
-					<select id="time" name="time" class=" form-control selectpicker" title="Time">
 
-					</select>
-				</div>
-				<div class="col-xs-6 margin-top-10 col-sm-6 col-md-3 col-md-offset-1">
-					<select id="location" name="location" class=" form-control selectpicker" title="Location">
-						<option class="default" value="current">Current Location</option>
-						<option class="default" value="another">Another Location</option>
-					</select>
-				</div>
-				<div class="col-xs-12 margin-top-10 col-sm-6 col-md-2">
-					<button type="button" class="btn btn-block btn-info" name="button">Update</button>
-				</div>
-			</div>
-			<div class="row margin-top-10">
-				<div class="col-xs-12 col-sm-6 col-md-6">
-					<div class="input-group full-width margin-bottom-10">
-						<input type="text" class="form-control " placeholder="Search for...">
-						<span class="input-group-btn">
-	        				<a class="btn btn-success"><i class="fa fa-search "></i></a>
-	      				</span>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-5">
-					<a class="btn btn-block btn-info" id="filter_button">Filter</a>
-				</div>
-			</div>
-			<div class="row padding-15" id="filter_body">
-			  	<div class="col-xs-12 bg-white no-padding" >
-					<form>
-						<div class="row margin-10">
-							<h4 class="text-center">Cuisine</h4>
-						  	<div class="col-xs-12 col-sm-4 col-md-3">
-								<input type="checkbox"><label class="margin-top-3"> &nbsp;&nbsp;American</label><span class="margin-top-3 pull-right">3</span>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-3">
-								<input type="checkbox"><label class="margin-top-3"> &nbsp;&nbsp;British</label><span class="margin-top-3 pull-right">3</span>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-3">
-								<input type="checkbox"><label class="margin-top-3"> &nbsp;&nbsp;Bubble Tea</label><span class="margin-top-3 pull-right">3</span>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-3">
-								<input type="checkbox"><label class="margin-top-3"> &nbsp;&nbsp;Burgers</label><span class="margin-top-3 pull-right">3</span>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-3">
-								<input type="checkbox"><label class="margin-top-3"> &nbsp;&nbsp;Café</label><span class="margin-top-3 pull-right">3</span>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-3">
-								<input type="checkbox"><label class="margin-top-3"> &nbsp;&nbsp;Chicken</label><span class="margin-top-3 pull-right">3</span>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-3">
-								<input type="checkbox"><label class="margin-top-3"> &nbsp;&nbsp;Delicatessen</label><span class="margin-top-3 pull-right">3</span>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-3">
-								<input type="checkbox"><label class="margin-top-3"> &nbsp;&nbsp;European</label><span class="margin-top-3 pull-right">3</span>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-3">
-								<input type="checkbox"><label class="margin-top-3"> &nbsp;&nbsp;Greek</label><span class="margin-top-3 pull-right">3</span>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-3">
-								<input type="checkbox"><label class="margin-top-3"> &nbsp;&nbsp;Indian</label><span class="margin-top-3 pull-right">3</span>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-3">
-								<input type="checkbox"><label class="margin-top-3"> &nbsp;&nbsp;Italian</label><span class="margin-top-3 pull-right">3</span>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-3">
-								<input type="checkbox"><label class="margin-top-3"> &nbsp;&nbsp;Japanese</label><span class="margin-top-3 pull-right">3</span>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-3">
-								<input type="checkbox"><label class="margin-top-3"> &nbsp;&nbsp;Juices</label><span class="margin-top-3 pull-right">3</span>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-3">
-								<input type="checkbox"><label class="margin-top-3"> &nbsp;&nbsp;Lebanese</label><span class="margin-top-3 pull-right">3</span>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-3">
-								<input type="checkbox"><label class="margin-top-3"> &nbsp;&nbsp;Mexican</label><span class="margin-top-3 pull-right">3</span>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-3">
-								<input type="checkbox"><label class="margin-top-3"> &nbsp;&nbsp;Middle Eastern</label><span class="margin-top-3 pull-right">3</span>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-3">
-								<input type="checkbox"><label class="margin-top-3"> &nbsp;&nbsp;Nepalese</label><span class="margin-top-3 pull-right">3</span>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-3">
-								<input type="checkbox"><label class="margin-top-3"> &nbsp;&nbsp;North African</label><span class="margin-top-3 pull-right">3</span>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-3">
-								<input type="checkbox"><label class="margin-top-3"> &nbsp;&nbsp;Pan Asian</label><span class="margin-top-3 pull-right">3</span>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-3">
-								<input type="checkbox"><label class="margin-top-3"> &nbsp;&nbsp;Pizza</label><span class="margin-top-3 pull-right">3</span>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-3">
-								<input type="checkbox"><label class="margin-top-3"> &nbsp;&nbsp;Scottish</label><span class="margin-top-3 pull-right">3</span>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-3">
-								<input type="checkbox"><label class="margin-top-3"> &nbsp;&nbsp;Sushi</label><span class="margin-top-3 pull-right">3</span>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-3">
-								<input type="checkbox"><label class="margin-top-3"> &nbsp;&nbsp;Thai</label><span class="margin-top-3 pull-right">3</span>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-3">
-								<input type="checkbox"><label class="margin-top-3"> &nbsp;&nbsp;Tibetan</label><span class="margin-top-3 pull-right">3</span>
-							</div>
-						</div>
-						<div class="row padding-left-15 padding-right-15">
-						  	<div class="col-xs-12 col-sm-4 padding-15" style="border:solid lightgrey 1px;">
-								<h4 class="text-center">Price</h4>
-								<input type="radio" name="price"> <label class="margin-top-3"> &nbsp;&nbsp;&nbsp;&nbsp;</label><br>
-								<input type="radio" name="price"> <label class="margin-top-3"> &nbsp;&nbsp;&nbsp;&nbsp;£</label><br>
-								<input type="radio" name="price"> <label class="margin-top-3"> &nbsp;&nbsp;&nbsp;&nbsp;££</label>
-							</div>
-						  	<div class="col-xs-12 col-sm-4 padding-15" style="border:solid lightgrey 1px;">
-								<h4 class="text-center">Delivery Time</h4>
-								<input type="radio" name="time"> <label class="margin-top-3"> &nbsp;&nbsp;&nbsp;&nbsp;30 Minutes</label><br>
-								<input type="radio" name="time"> <label class="margin-top-3"> &nbsp;&nbsp;&nbsp;&nbsp;45 Minutes</label><br>
-								<input type="radio" name="time"> <label class="margin-top-3"> &nbsp;&nbsp;&nbsp;&nbsp;60 Minutes</label>
-							</div>
-						  	<div class="col-xs-12 col-sm-4 padding-15" style="border:solid lightgrey 1px;">
-								<h4 class="text-center">Distance</h4>
-								<input type="radio" name="distance"> <label class="margin-top-3"> &nbsp;&nbsp;&nbsp;&nbsp;0.25 Km</label><br>
-								<input type="radio" name="distance"> <label class="margin-top-3"> &nbsp;&nbsp;&nbsp;&nbsp;0.50 Km</label><br>
-								<input type="radio" name="distance"> <label class="margin-top-3"> &nbsp;&nbsp;&nbsp;&nbsp;1.00 Km</label>
-							</div>
-						</div>
-						<div class="col-xs-12 bg-white padding-15" >
-							<button type="reset" name="button" class="btn btn-info pull-right" id="clear_criteria">Clear Criteria</button>
-						</div>
-					</form>
-				</div>
-			</div>
-			<div class="row">
-				<div class="margin-top-10 col-md-4 col-sm-6 col-xs-12">
-					<a href="menu.html">
-						<img src="img/food.jpg" class="img-responsive img-rounded   img-responsive-grid">
-						<div class="full-width grid-page-img-text">
-							<div class="text-capitalize font-13">
-								<div class="pull-left">
-									<span>Name of the restaurant</span>
-									<br/>
-									<span class="cost-rating">££</span>
-								</div>
-								<div class="pull-right padding-right-25 padding-top-10">30 Mins</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="margin-top-10 col-md-4 col-sm-6 col-xs-12">
-					<a href="menu.html">
-						<img src="img/test_image.jpg" class="img-responsive img-rounded   img-responsive-grid">
-						<div class="full-width grid-page-img-text">
-							<div class="text-capitalize font-13">
-								<div class="pull-left">
-									<span>Name of the restaurant</span>
-									<br/>
-									<span class="cost-rating">££</span>
-								</div>
-								<div class="pull-right padding-right-25 padding-top-10">30 Mins</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="margin-top-10 col-md-4 col-sm-6 col-xs-12">
-					<a href="menu.html">
-						<img src="img/test_image2.jpg" class="img-responsive  img-rounded   img-responsive-grid">
-						<div class="full-width grid-page-img-text">
-							<div class="text-capitalize font-13">
-								<div class="pull-left">
-									<span>Name of the restaurant</span>
-									<br/>
-									<span class="cost-rating">££</span>
-								</div>
-								<div class="pull-right padding-right-25 padding-top-10">30 Mins</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="margin-top-10 col-md-4 col-sm-6 col-xs-12">
-					<a href="menu.html">
-						<img src="img/test_image3.jpg" class="img-responsive  img-rounded   img-responsive-grid">
-						<div class="full-width grid-page-img-text">
-							<div class="text-capitalize font-13">
-								<div class="pull-left">
-									<span>Name of the restaurant</span>
-									<br/>
-									<span class="cost-rating">££</span>
-								</div>
-								<div class="pull-right padding-right-25 padding-top-10">30 Mins</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="margin-top-10 col-md-4 col-sm-6 col-xs-12">
-					<a href="menu.html">
-						<img src="img/test_image4.jpg" class="img-responsive  img-rounded   img-responsive-grid">
-						<div class="full-width grid-page-img-text">
-							<div class="text-capitalize font-13">
-								<div class="pull-left">
-									<span>Name of the restaurant</span>
-									<br/>
-									<span class="cost-rating">££</span>
-								</div>
-								<div class="pull-right padding-right-25 padding-top-10">30 Mins</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="margin-top-10 col-md-4 col-sm-6 col-xs-12">
-					<a href="menu.html">
-						<img src="img/test_image5.jpg" class="img-responsive  img-rounded   img-responsive-grid">
-						<div class="full-width grid-page-img-text">
-							<div class="text-capitalize font-13">
-								<div class="pull-left">
-									<span>Name of the restaurant</span>
-									<br/>
-									<span class="cost-rating">££</span>
-								</div>
-								<div class="pull-right padding-right-25 padding-top-10">30 Mins</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="margin-top-10 col-md-4 col-sm-6 col-xs-12">
-					<a href="menu.html">
-						<img src="img/test_image6.jpg" class="img-responsive  img-rounded   img-responsive-grid">
-						<div class="full-width grid-page-img-text">
-							<div class="text-capitalize font-13">
-								<div class="pull-left">
-									<span>Name of the restaurant</span>
-									<br/>
-									<span class="cost-rating">££</span>
-								</div>
-								<div class="pull-right padding-right-25 padding-top-10">30 Mins</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="margin-top-10 col-md-4 col-sm-6 col-xs-12">
-					<a href="menu.html">
-						<img src="img/test_image7.jpg" class="img-responsive  img-rounded   img-responsive-grid">
-						<div class="full-width grid-page-img-text">
-							<div class="text-capitalize font-13">
-								<div class="pull-left">
-									<span>Name of the restaurant</span>
-									<br/>
-									<span class="cost-rating">££</span>
-								</div>
-								<div class="pull-right padding-right-25 padding-top-10">30 Mins</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="margin-top-10 col-md-4 col-sm-6 col-xs-12">
-					<a href="menu.html">
-						<img src="img/test_image8.jpg" class="img-responsive  img-rounded   img-responsive-grid">
-						<div class="full-width grid-page-img-text">
-							<div class="text-capitalize font-13">
-								<div class="pull-left">
-									<span>Name of the restaurant</span>
-									<br/>
-									<span class="cost-rating">££</span>
-								</div>
-								<div class="pull-right padding-right-25 padding-top-10">30 Mins</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="margin-top-10 col-md-4 col-sm-6 col-xs-12">
-					<a href="menu.html">
-						<img src="img/test_image9.jpg" class="img-responsive  img-rounded   img-responsive-grid">
-						<div class="full-width grid-page-img-text">
-							<div class="text-capitalize font-13">
-								<div class="pull-left">
-									<span>Name of the restaurant</span>
-									<br/>
-									<span class="cost-rating">££</span>
-								</div>
-								<div class="pull-right padding-right-25 padding-top-10">30 Mins</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="margin-top-10 col-md-4 col-sm-6 col-xs-12">
-					<a href="menu.html">
-						<img src="img/test_image10.jpg" class="img-responsive  img-rounded   img-responsive-grid">
-						<div class="full-width grid-page-img-text">
-							<div class="text-capitalize font-13">
-								<div class="pull-left">
-									<span>Name of the restaurant</span>
-									<br/>
-									<span class="cost-rating">££</span>
-								</div>
-								<div class="pull-right padding-right-25 padding-top-10">30 Mins</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="margin-top-10 col-md-4 col-sm-6 col-xs-12">
-					<a href="menu.html">
-						<img src="img/test_image11.jpg" class="img-responsive  img-rounded   img-responsive-grid">
-						<div class="full-width grid-page-img-text">
-							<div class="text-capitalize font-13">
-								<div class="pull-left">
-									<span>Name of the restaurant</span>
-									<br/>
-									<span class="cost-rating">££</span>
-								</div>
-								<div class="pull-right padding-right-25 padding-top-10">30 Mins</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="margin-top-10 col-md-4 col-sm-6 col-xs-12">
-					<a href="menu.html">
-						<img src="img/test_image12.jpg" class="img-responsive  img-rounded   img-responsive-grid">
-						<div class="full-width grid-page-img-text">
-							<div class="text-capitalize font-13">
-								<div class="pull-left">
-									<span>Name of the restaurant</span>
-									<br/>
-									<span class="cost-rating">££</span>
-								</div>
-								<div class="pull-right padding-right-15 padding-top-10">30 Mins</div>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="row margin-top-30 bg-white  padding-25" style="border-top:solid #0ba0e0 5px">
-				<h3 class="text-center font-18">Some Restaurants Are Not Available</h3>
-				<div class="help-block text-center font-15 padding-20"><small>These restaurants are unavailable for the selected delivery time. Please choose a different time to order from these restaurants.</small></div>
-				<div class="list-group">
-					<a href="menu.html" class="list-group-item row">
-						<div class="font-13 col-sm-4 text-danger">
-							<i class="fa fa-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit
-						</div>
-						<div class="col-sm-2 font-13">
-							Italian
-						</div>
-						<div class="col-sm-1 font-12">
-							££
-						</div>
-						<div class="col-sm-2 font-12">
-							25 Mins
-						</div>
-						<div class="col-sm-2 font-12">
-							0.7 Kms
-						</div>
-						<div class="col-sm-1 font-12">
-							<i class="fa fa-angle-double-right text-primary pull-right"></i>
-						</div>
+            <div class="pull-right margin-top-5" id="navbar">
+                <a href="#"><i class=
+                "fa fa-shopping-basket text-white-icons1"></i></a> <span class=
+                "text-white-icons1 margin-right-20">₹ 200</span> <button class=
+                "btn btn-login btn-warning btn-sm navbar-btn margin-top-10 margin-right-20"
+                data-target="#LoginModal" data-toggle="modal" type=
+                "button">Login</button>
+            </div>
+        </div>
+    </nav>
+    <!-- /.navbar-collapse -->
 
-					</a>
-					<a href="menu.html" class="list-group-item row">
-						<div class="font-13 col-sm-4 text-danger">
-							<i class="fa fa-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit
-						</div>
-						<div class="col-sm-2 font-13">
-							Italian
-						</div>
-						<div class="col-sm-1 font-12">
-							££
-						</div>
-						<div class="col-sm-2 font-12">
-							25 Mins
-						</div>
-						<div class="col-sm-2 font-12">
-							0.7 Kms
-						</div>
-						<div class="col-sm-1 font-12">
-							<i class="fa fa-angle-double-right text-primary pull-right"></i>
-						</div>
 
-					</a>
-					<a href="menu.html" class="list-group-item row">
-						<div class="font-13 col-sm-4 text-danger">
-							<i class="fa fa-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit
-						</div>
-						<div class="col-sm-2 font-13">
-							Italian
-						</div>
-						<div class="col-sm-1 font-12">
-							££
-						</div>
-						<div class="col-sm-2 font-12">
-							25 Mins
-						</div>
-						<div class="col-sm-2 font-12">
-							0.7 Kms
-						</div>
-						<div class="col-sm-1 font-12">
-							<i class="fa fa-angle-double-right text-primary pull-right"></i>
-						</div>
+    <div class="container-fluid padding-top-70">
+        <div class=
+        "col-xs-12 col-sm-6 col-sm-offset-2 col-md-offset-2 col-md-6 col-lg-6">
+            <div class="row ">
+                <div class="col-xs-6 margin-top-10 col-sm-6 col-md-2">
+                    <label for="type" class="generaltext">Order for</label>
+                    <select class="form-control selectpicker" id="type" name=
+                    "type">
+                        <option value="delivery">
+                            Delivery
+                        </option>
 
-					</a>
-					<a href="menu.html" class="list-group-item row">
-						<div class="font-13 col-sm-4 text-danger">
-							<i class="fa fa-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit
-						</div>
-						<div class="col-sm-2 font-13">
-							Italian
-						</div>
-						<div class="col-sm-1 font-12">
-							££
-						</div>
-						<div class="col-sm-2 font-12">
-							25 Mins
-						</div>
-						<div class="col-sm-2 font-12">
-							0.7 Kms
-						</div>
-						<div class="col-sm-1 font-12">
-							<i class="fa fa-angle-double-right text-primary pull-right"></i>
-						</div>
+                        <option value="takeaway">
+                            Take Away
+                        </option>
 
-					</a>
-					<a href="menu.html" class="list-group-item row">
-						<div class="font-13 col-sm-4 text-danger">
-							<i class="fa fa-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit
-						</div>
-						<div class="col-sm-2 font-13">
-							Italian
-						</div>
-						<div class="col-sm-1 font-12">
-							££
-						</div>
-						<div class="col-sm-2 font-12">
-							25 Mins
-						</div>
-						<div class="col-sm-2 font-12">
-							0.7 Kms
-						</div>
-						<div class="col-sm-1 font-12">
-							<i class="fa fa-angle-double-right text-primary pull-right"></i>
-						</div>
+                        <option value="book">
+                            Book A Table
+                        </option>
+                    </select>
+                </div>
 
-					</a>
-					<a href="menu.html" class="list-group-item row">
-						<div class="font-13 col-sm-4 text-danger">
-							<i class="fa fa-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit
-						</div>
-						<div class="col-sm-2 font-13">
-							Italian
-						</div>
-						<div class="col-sm-1 font-12">
-							££
-						</div>
-						<div class="col-sm-2 font-12">
-							25 Mins
-						</div>
-						<div class="col-sm-2 font-12">
-							0.7 Kms
-						</div>
-						<div class="col-sm-1 font-12">
-							<i class="fa fa-angle-double-right text-primary pull-right"></i>
-						</div>
 
-					</a>
-					<a href="menu.html" class="list-group-item row">
-						<div class="font-13 col-sm-4 text-danger">
-							<i class="fa fa-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit
-						</div>
-						<div class="col-sm-2 font-13">
-							Italian
-						</div>
-						<div class="col-sm-1 font-12">
-							££
-						</div>
-						<div class="col-sm-2 font-12">
-							25 Mins
-						</div>
-						<div class="col-sm-2 font-12">
-							0.7 Kms
-						</div>
-						<div class="col-sm-1 font-12">
-							<i class="fa fa-angle-double-right text-primary pull-right"></i>
-						</div>
+                <div class="col-xs-6 margin-top-10 col-sm-6 col-md-2">
+                    <label for="day" class="generaltext">Day</label>
+                    <select class=" form-control selectpicker" id="day" name=
+                    "day">
+                        <option class="default" value="today">
+                            Today
+                        </option>
 
-					</a>
-					<a href="menu.html" class="list-group-item row">
-						<div class="font-13 col-sm-4 text-danger">
-							<i class="fa fa-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit
-						</div>
-						<div class="col-sm-2 font-13">
-							Italian
-						</div>
-						<div class="col-sm-1 font-12">
-							££
-						</div>
-						<div class="col-sm-2 font-12">
-							25 Mins
-						</div>
-						<div class="col-sm-2 font-12">
-							0.7 Kms
-						</div>
-						<div class="col-sm-1 font-12">
-							<i class="fa fa-angle-double-right text-primary pull-right"></i>
-						</div>
+                        <option class="default" value="tomorrow">
+                            Tomorrow
+                        </option>
+                    </select>
+                </div>
 
-					</a>
-				</div>
-			</div>
-			<div class="margin-top-40 row">
-				<div class="col-xs-12 dotted "></div>
-			</div>
-			<div class="row margin-top-30">
-				<div class="col-xs-6">
-					<span class="help-block font-12">
-						Know a great restaurant that really should be on here, but isn't? Let us know !
-					</span>
-				</div>
-				<div class="col-xs-6">
-					<div class="input-group">
-						<input type="text" class="form-control" placeholder="Restaurant Name">
-						<span class="input-group-btn">
-					        <button class="btn btn-info text-uppercase" type="button">make it happen!</button>
-						</span>
-					</div>
-				</div>
-			</div>
-		</div>
 
-	</div>
-	<!-- Button trigger modal -->
+                <div class="col-xs-6 margin-top-10 col-sm-6 col-md-2">
+                    <label for="time" class="generaltext">Time</label>
+                    <select class=" form-control selectpicker" id="time" name=
+                    "time">
+                        </select>
+                </div>
 
-	<footer class="container-fluid margin-top-20 no-padding no-margin">
-		<div class="row padding-top-25 bg-dark no-margin padding-bottom-25" align="center">
-			<span class="text-grey font-12 padding-right-5 text-capitalize">Blog</span>
-			<span class="text-grey font-12 padding-right-5 text-capitalize">Careers</span>
-			<span class="text-grey font-12 padding-right-5 text-capitalize">Contact</span>
-			<span class="text-grey font-12 padding-right-5 text-uppercase">FAQ</span>
-			<span class="text-grey font-12 padding-right-5 text-capitalize">legal</span>
-			<span class="text-grey font-12 padding-right-5 text-capitalize">privacy</span>
-			<span class="text-grey font-12 padding-right-5 text-capitalize">cookie</span>
-			<span class="text-grey font-12 padding-right-5 text-capitalize">site map</span>
-		</div>
-		<div class="row padding-top-25 bg-dark-lighter padding-bottom-25 no-margin">
-			<div class="text-grey padding-left-15 pull-left">
-				<i class="fa fa-twitter-square fa-2x"></i>
-				<i class="fa fa-google-plus-square fa-2x"></i>
-				<i class="fa fa-instagram fa-2x"></i>
-			</div>
-			<div class="text-grey padding-right-25 pull-right">
-				<span class="font-12 text-capitalize">&copy; 2016 Company name</span>
-			</div>
-		</div>
-	</footer>
-	<!-- Modal -->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title" id="myModalLabel">Please provide your location</h4>
-				</div>
-				<div class="modal-body no-padding no-margin">
-					<img src="img/google_image.jpeg" class="full-width img-responsive">
-				</div>
-				<div class="padding-10" align="center">
-					<!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
-					<button type="button" class="btn btn-danger">Confirm Location</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/bootstrap-select.min.js"></script>
-	<script src="js/lightbox.js"></script>
-	<script src="js/icheck.min.js"></script>
-	<script src="js/sidebar.js"></script>
-	<script src="js/main.js"></script>
+
+                <div class=
+                "col-xs-6 margin-top-10 col-sm-6 col-md-3 col-md-offset-1">
+                    <label for="location" class="generaltext">Location</label>
+                    <select class=" form-control selectpicker" id=
+                                "locationselect"
+                    name="location">
+                        <option class="default" value="1">
+                            Current Location
+                        </option>
+
+                        <option class="default" value="2">
+                            Selected Location
+                        </option>
+                    </select>
+                </div>
+
+
+                <div class="col-xs-12 margin-top-10 col-sm-6 col-md-2">
+                    <label for="updatebutton" class="generaltext">&nbsp</label>
+                    <button class="btn sharp loginsubmit text-black" name="updatebutton" type=
+                    "button">Update</button>
+                </div>
+            </div>
+
+
+            <div class="row margin-top-10 textwithinfilter">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="input-group full-width margin-bottom-10">
+                        <input class="form-control sharp" placeholder="Search dishes or restaurants"
+                        type="text"> <span class="input-group-btn"><a class=
+                        "btn sharp searchborder"><i class=
+                        "fa fa-search-plus"></i></a></span>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-5">
+                    <a class="btn sharp loginsubmit text-black" id=
+                    "filter_button">Filter <i class="fa fa-lg fa-caret-down"></i></a>
+                </div>
+            </div>
+
+
+            <div class="row padding-15 font-12 textwithinfilter generaltext" id="filter_body">
+                <div class="col-xs-12 bg-white no-padding animated pulse" style="border-top:solid #ff3300 3px">
+                    <form>
+                        <div class="row margin-10">
+                            <h4 class="text-center">Cuisine</h4>
+
+
+                            <div class="col-xs-12 col-sm-4 col-md-3">
+                                <input type="checkbox"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;American</label><span class="margin-top-3 pull-right">3</span>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-4 col-md-3">
+                                <input type="checkbox"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;British</label><span class="margin-top-3 pull-right">3</span>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-4 col-md-3">
+                                <input type="checkbox"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;Bubble
+                                Tea</label><span class=
+                                "margin-top-3 pull-right">3</span>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-4 col-md-3">
+                                <input type="checkbox"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;Burgers</label><span class="margin-top-3 pull-right">3</span>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-4 col-md-3">
+                                <input type="checkbox"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;Café</label><span class="margin-top-3 pull-right">3</span>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-4 col-md-3">
+                                <input type="checkbox"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;Chicken</label><span class="margin-top-3 pull-right">3</span>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-4 col-md-3">
+                                <input type="checkbox"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;Delicatessen</label><span class="margin-top-3 pull-right">3</span>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-4 col-md-3">
+                                <input type="checkbox"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;European</label><span class="margin-top-3 pull-right">3</span>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-4 col-md-3">
+                                <input type="checkbox"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;Greek</label><span class="margin-top-3 pull-right">3</span>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-4 col-md-3">
+                                <input type="checkbox"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;Indian</label><span class="margin-top-3 pull-right">3</span>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-4 col-md-3">
+                                <input type="checkbox"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;Italian</label><span class="margin-top-3 pull-right">3</span>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-4 col-md-3">
+                                <input type="checkbox"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;Japanese</label><span class="margin-top-3 pull-right">3</span>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-4 col-md-3">
+                                <input type="checkbox"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;Juices</label><span class="margin-top-3 pull-right">3</span>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-4 col-md-3">
+                                <input type="checkbox"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;Lebanese</label><span class="margin-top-3 pull-right">3</span>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-4 col-md-3">
+                                <input type="checkbox"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;Mexican</label><span class="margin-top-3 pull-right">3</span>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-4 col-md-3">
+                                <input type="checkbox"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;Middle
+                                Eastern</label><span class=
+                                "margin-top-3 pull-right">3</span>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-4 col-md-3">
+                                <input type="checkbox"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;Nepalese</label><span class="margin-top-3 pull-right">3</span>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-4 col-md-3">
+                                <input type="checkbox"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;North
+                                African</label><span class=
+                                "margin-top-3 pull-right">3</span>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-4 col-md-3">
+                                <input type="checkbox"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;Pan
+                                Asian</label><span class=
+                                "margin-top-3 pull-right">3</span>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-4 col-md-3">
+                                <input type="checkbox"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;Pizza</label><span class="margin-top-3 pull-right">3</span>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-4 col-md-3">
+                                <input type="checkbox"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;Scottish</label><span class="margin-top-3 pull-right">3</span>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-4 col-md-3">
+                                <input type="checkbox"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;Sushi</label><span class="margin-top-3 pull-right">3</span>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-4 col-md-3">
+                                <input type="checkbox"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;Thai</label><span class="margin-top-3 pull-right">3</span>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-4 col-md-3">
+                                <input type="checkbox"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;Tibetan</label><span class="margin-top-3 pull-right">3</span>
+                            </div>
+                        </div>
+
+
+                        <div class="row padding-left-15 padding-right-15">
+                            <div class="col-xs-12 col-sm-4 padding-15" style=
+                            "border-top:solid lightgrey 1px;">
+                                <h4 class="text-left">Price</h4>
+                                <input name="price" type="radio"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;&nbsp;&nbsp; ₹</label><br>
+
+                                <input name="price" type="radio"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;&nbsp;&nbsp; ₹₹</label><br>
+
+                                <input name="price" type="radio"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;&nbsp;&nbsp; ₹₹₹</label>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-4 padding-15" style=
+                            "border-top:solid lightgrey 1px;">
+                                <h4 class="text-left">Cooking Time</h4>
+                                <input name="time" type="radio"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;&nbsp;&nbsp;30
+                                Minutes</label><br>
+                                <input name="time" type="radio"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;&nbsp;&nbsp;45
+                                Minutes</label><br>
+                                <input name="time" type="radio"> <label class=
+                                "margin-top-3">&nbsp;&nbsp;&nbsp;&nbsp;60
+                                Minutes</label>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-4 padding-15" style=
+                            "border-top:solid lightgrey 1px;">
+                                <h4 class="text-left">Distance</h4>
+                                <input name="distance" type="radio">
+                                <label class=
+                                "margin-top-3">&nbsp;&nbsp;&nbsp;&nbsp;0-2
+                                Km</label><br>
+                                <input name="distance" type="radio">
+                                <label class=
+                                "margin-top-3">&nbsp;&nbsp;&nbsp;&nbsp;2-5
+                                Km</label><br>
+                                <input name="distance" type="radio">
+                                <label class=
+                                "margin-top-3">&nbsp;&nbsp;&nbsp;&nbsp;>5
+                                Km</label>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xs-12 bg-white padding-15">
+                            <button class="btn sharp loginsubmit text-black pull-right" id=
+                            "clear_criteria" name="button" type="reset">Clear
+                            Criteria</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="row animated fadeInUp">
+                <div class="margin-top-10 col-md-4 col-sm-6 col-xs-12 pickgradient">
+                    <a href="menu.html"><img class=
+                    "img-responsive img-rounded img-responsive-grid" src=
+                    "img/food.jpg">
+
+                    <div class="container full-width grid-page-img-text">
+                        <div class="font-12">
+                            <div class="pull-left">
+                                <span>Name of the restaurant</span><br>
+                                <span class="cost-rating">££</span>
+                            </div>
+
+
+                            <div class=
+                            "pull-right padding-right-25 padding-top-10">
+                                30 Mins
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+
+
+                <div class="margin-top-10 col-md-4 col-sm-6 col-xs-12">
+                    <a href="menu.html"><img class=
+                    "img-responsive img-rounded img-responsive-grid" src=
+                    "img/test_image.jpg">
+
+                    <div class="full-width grid-page-img-text">
+                        <div class="text-capitalize font-13">
+                            <div class="pull-left">
+                                <span>Name of the restaurant</span><br>
+                                <span class="cost-rating">££</span>
+                            </div>
+
+
+                            <div class=
+                            "pull-right padding-right-25 padding-top-10">
+                                30 Mins
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+
+
+                <div class="margin-top-10 col-md-4 col-sm-6 col-xs-12">
+                    <a href="menu.html"><img class=
+                    "img-responsive img-rounded img-responsive-grid" src=
+                    "img/test_image2.jpg">
+
+                    <div class="full-width grid-page-img-text">
+                        <div class="text-capitalize font-13">
+                            <div class="pull-left">
+                                <span>Name of the restaurant</span><br>
+                                <span class="cost-rating">££</span>
+                            </div>
+
+
+                            <div class=
+                            "pull-right padding-right-25 padding-top-10">
+                                30 Mins
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+
+
+                <div class="margin-top-10 col-md-4 col-sm-6 col-xs-12">
+                    <a href="menu.html"><img class=
+                    "img-responsive img-rounded img-responsive-grid" src=
+                    "img/test_image3.jpg">
+
+                    <div class="full-width grid-page-img-text">
+                        <div class="text-capitalize font-13">
+                            <div class="pull-left">
+                                <span>Name of the restaurant</span><br>
+                                <span class="cost-rating">££</span>
+                            </div>
+
+
+                            <div class=
+                            "pull-right padding-right-25 padding-top-10">
+                                30 Mins
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+
+
+                <div class="margin-top-10 col-md-4 col-sm-6 col-xs-12">
+                    <a href="menu.html"><img class=
+                    "img-responsive img-rounded img-responsive-grid" src=
+                    "img/test_image4.jpg">
+
+                    <div class="full-width grid-page-img-text">
+                        <div class="text-capitalize font-13">
+                            <div class="pull-left">
+                                <span>Name of the restaurant</span><br>
+                                <span class="cost-rating">££</span>
+                            </div>
+
+
+                            <div class=
+                            "pull-right padding-right-25 padding-top-10">
+                                30 Mins
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+
+
+                <div class="margin-top-10 col-md-4 col-sm-6 col-xs-12">
+                    <a href="menu.html"><img class=
+                    "img-responsive img-rounded img-responsive-grid" src=
+                    "img/test_image5.jpg">
+
+                    <div class="full-width grid-page-img-text">
+                        <div class="text-capitalize font-13">
+                            <div class="pull-left">
+                                <span>Name of the restaurant</span><br>
+                                <span class="cost-rating">££</span>
+                            </div>
+
+
+                            <div class=
+                            "pull-right padding-right-25 padding-top-10">
+                                30 Mins
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+
+
+                <div class="margin-top-10 col-md-4 col-sm-6 col-xs-12">
+                    <a href="menu.html"><img class=
+                    "img-responsive img-rounded img-responsive-grid" src=
+                    "img/test_image6.jpg">
+
+                    <div class="full-width grid-page-img-text">
+                        <div class="text-capitalize font-13">
+                            <div class="pull-left">
+                                <span>Name of the restaurant</span><br>
+                                <span class="cost-rating">££</span>
+                            </div>
+
+
+                            <div class=
+                            "pull-right padding-right-25 padding-top-10">
+                                30 Mins
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+
+
+                <div class="margin-top-10 col-md-4 col-sm-6 col-xs-12">
+                    <a href="menu.html"><img class=
+                    "img-responsive img-rounded img-responsive-grid" src=
+                    "img/test_image7.jpg">
+
+                    <div class="full-width grid-page-img-text">
+                        <div class="text-capitalize font-13">
+                            <div class="pull-left">
+                                <span>Name of the restaurant</span><br>
+                                <span class="cost-rating">££</span>
+                            </div>
+
+
+                            <div class=
+                            "pull-right padding-right-25 padding-top-10">
+                                30 Mins
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+
+
+                <div class="margin-top-10 col-md-4 col-sm-6 col-xs-12">
+                    <a href="menu.html"><img class=
+                    "img-responsive img-rounded img-responsive-grid" src=
+                    "img/test_image8.jpg">
+
+                    <div class="full-width grid-page-img-text">
+                        <div class="text-capitalize font-13">
+                            <div class="pull-left">
+                                <span>Name of the restaurant</span><br>
+                                <span class="cost-rating">££</span>
+                            </div>
+
+
+                            <div class=
+                            "pull-right padding-right-25 padding-top-10">
+                                30 Mins
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+
+
+                <div class="margin-top-10 col-md-4 col-sm-6 col-xs-12">
+                    <a href="menu.html"><img class=
+                    "img-responsive img-rounded img-responsive-grid" src=
+                    "img/test_image9.jpg">
+
+                    <div class="full-width grid-page-img-text">
+                        <div class="text-capitalize font-13">
+                            <div class="pull-left">
+                                <span>Name of the restaurant</span><br>
+                                <span class="cost-rating">££</span>
+                            </div>
+
+
+                            <div class=
+                            "pull-right padding-right-25 padding-top-10">
+                                30 Mins
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+
+
+                <div class="margin-top-10 col-md-4 col-sm-6 col-xs-12">
+                    <a href="menu.html"><img class=
+                    "img-responsive img-rounded img-responsive-grid" src=
+                    "img/test_image10.jpg">
+
+                    <div class="full-width grid-page-img-text">
+                        <div class="text-capitalize font-13">
+                            <div class="pull-left">
+                                <span>Name of the restaurant</span><br>
+                                <span class="cost-rating">££</span>
+                            </div>
+
+
+                            <div class=
+                            "pull-right padding-right-25 padding-top-10">
+                                30 Mins
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+
+
+                <div class="margin-top-10 col-md-4 col-sm-6 col-xs-12">
+                    <a href="menu.html"><img class=
+                    "img-responsive img-rounded img-responsive-grid" src=
+                    "img/test_image11.jpg">
+
+                    <div class="full-width grid-page-img-text">
+                        <div class="text-capitalize font-13">
+                            <div class="pull-left">
+                                <span>Name of the restaurant</span><br>
+                                <span class="cost-rating">££</span>
+                            </div>
+
+
+                            <div class=
+                            "pull-right padding-right-25 padding-top-10">
+                                30 Mins
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+
+
+                <div class="margin-top-10 col-md-4 col-sm-6 col-xs-12">
+                    <a href="menu.html"><img class=
+                    "img-responsive img-rounded img-responsive-grid" src=
+                    "img/test_image12.jpg">
+
+                    <div class="full-width grid-page-img-text">
+                        <div class="text-capitalize font-13">
+                            <div class="pull-left">
+                                <span>Name of the restaurant</span><br>
+                                <span class="cost-rating">££</span>
+                            </div>
+
+
+                            <div class=
+                            "pull-right padding-right-15 padding-top-10">
+                                30 Mins
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+
+
+            <div class="row margin-top-30 bg-white padding-25" style="border-top:solid #ff3300 3px">
+                <h3 class="text-center font-18 generaltext">Some Restaurants Are Not
+                Available</h3>
+
+
+                <div class="help-block text-center font-15 padding-20">
+                    <small>These restaurants are unavailable for the selected
+                    delivery time. Please choose a different time to order from
+                    these restaurants.</small>
+                </div>
+
+
+                <div class="list-group generaltext">
+                    <a class="list-group-item row" href="menu.html">
+                    <div class="font-13 col-sm-4 text-danger">
+                        <i class=
+                        "fa fa-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum
+                        dolor sit
+                    </div>
+
+
+                    <div class="col-sm-2 font-13">
+                        Italian
+                    </div>
+
+
+                    <div class="col-sm-1 font-12">
+                        ££
+                    </div>
+
+
+                    <div class="col-sm-2 font-12">
+                        25 Mins
+                    </div>
+
+
+                    <div class="col-sm-2 font-12">
+                        0.7 Kms
+                    </div>
+
+
+                    <div class="col-sm-1 font-12">
+                        <i class=
+                        "fa fa-angle-double-right text-primary pull-right"></i>
+                    </div></a> <a class="list-group-item row" href="menu.html">
+                    <div class="font-13 col-sm-4 text-danger">
+                        <i class=
+                        "fa fa-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum
+                        dolor sit
+                    </div>
+
+
+                    <div class="col-sm-2 font-13">
+                        Italian
+                    </div>
+
+
+                    <div class="col-sm-1 font-12">
+                        ££
+                    </div>
+
+
+                    <div class="col-sm-2 font-12">
+                        25 Mins
+                    </div>
+
+
+                    <div class="col-sm-2 font-12">
+                        0.7 Kms
+                    </div>
+
+
+                    <div class="col-sm-1 font-12">
+                        <i class=
+                        "fa fa-angle-double-right text-primary pull-right"></i>
+                    </div></a> <a class="list-group-item row" href="menu.html">
+                    <div class="font-13 col-sm-4 text-danger">
+                        <i class=
+                        "fa fa-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum
+                        dolor sit
+                    </div>
+
+
+                    <div class="col-sm-2 font-13">
+                        Italian
+                    </div>
+
+
+                    <div class="col-sm-1 font-12">
+                        ££
+                    </div>
+
+
+                    <div class="col-sm-2 font-12">
+                        25 Mins
+                    </div>
+
+
+                    <div class="col-sm-2 font-12">
+                        0.7 Kms
+                    </div>
+
+
+                    <div class="col-sm-1 font-12">
+                        <i class=
+                        "fa fa-angle-double-right text-primary pull-right"></i>
+                    </div></a> <a class="list-group-item row" href="menu.html">
+                    <div class="font-13 col-sm-4 text-danger">
+                        <i class=
+                        "fa fa-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum
+                        dolor sit
+                    </div>
+
+
+                    <div class="col-sm-2 font-13">
+                        Italian
+                    </div>
+
+
+                    <div class="col-sm-1 font-12">
+                        ££
+                    </div>
+
+
+                    <div class="col-sm-2 font-12">
+                        25 Mins
+                    </div>
+
+
+                    <div class="col-sm-2 font-12">
+                        0.7 Kms
+                    </div>
+
+
+                    <div class="col-sm-1 font-12">
+                        <i class=
+                        "fa fa-angle-double-right text-primary pull-right"></i>
+                    </div></a> <a class="list-group-item row" href="menu.html">
+                    <div class="font-13 col-sm-4 text-danger">
+                        <i class=
+                        "fa fa-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum
+                        dolor sit
+                    </div>
+
+
+                    <div class="col-sm-2 font-13">
+                        Italian
+                    </div>
+
+
+                    <div class="col-sm-1 font-12">
+                        ££
+                    </div>
+
+
+                    <div class="col-sm-2 font-12">
+                        25 Mins
+                    </div>
+
+
+                    <div class="col-sm-2 font-12">
+                        0.7 Kms
+                    </div>
+
+
+                    <div class="col-sm-1 font-12">
+                        <i class=
+                        "fa fa-angle-double-right text-primary pull-right"></i>
+                    </div></a> <a class="list-group-item row" href="menu.html">
+                    <div class="font-13 col-sm-4 text-danger">
+                        <i class=
+                        "fa fa-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum
+                        dolor sit
+                    </div>
+
+
+                    <div class="col-sm-2 font-13">
+                        Italian
+                    </div>
+
+
+                    <div class="col-sm-1 font-12">
+                        ££
+                    </div>
+
+
+                    <div class="col-sm-2 font-12">
+                        25 Mins
+                    </div>
+
+
+                    <div class="col-sm-2 font-12">
+                        0.7 Kms
+                    </div>
+
+
+                    <div class="col-sm-1 font-12">
+                        <i class=
+                        "fa fa-angle-double-right text-primary pull-right"></i>
+                    </div></a> <a class="list-group-item row" href="menu.html">
+                    <div class="font-13 col-sm-4 text-danger">
+                        <i class=
+                        "fa fa-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum
+                        dolor sit
+                    </div>
+
+
+                    <div class="col-sm-2 font-13">
+                        Italian
+                    </div>
+
+
+                    <div class="col-sm-1 font-12">
+                        ££
+                    </div>
+
+
+                    <div class="col-sm-2 font-12">
+                        25 Mins
+                    </div>
+
+
+                    <div class="col-sm-2 font-12">
+                        0.7 Kms
+                    </div>
+
+
+                    <div class="col-sm-1 font-12">
+                        <i class=
+                        "fa fa-angle-double-right text-primary pull-right"></i>
+                    </div></a> <a class="list-group-item row" href="menu.html">
+                    <div class="font-13 col-sm-4 text-danger">
+                        <i class=
+                        "fa fa-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum
+                        dolor sit
+                    </div>
+
+
+                    <div class="col-sm-2 font-13">
+                        Italian
+                    </div>
+
+
+                    <div class="col-sm-1 font-12">
+                        ££
+                    </div>
+
+
+                    <div class="col-sm-2 font-12">
+                        25 Mins
+                    </div>
+
+
+                    <div class="col-sm-2 font-12">
+                        0.7 Kms
+                    </div>
+
+
+                    <div class="col-sm-1 font-12">
+                        <i class=
+                        "fa fa-angle-double-right text-primary pull-right"></i>
+                    </div></a>
+                </div>
+            </div>
+
+
+            <div class="margin-top-10 row">
+                <div class="col-xs-12 solid">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-xs-6">
+                    <a class="help-block font-12" data-target="#RestaurantModal" data-toggle=
+    "modal" href="#RestaurantModal"><i class="fa fa-bell red"></i> Suggest a
+    takeaway</a>
+                </div>
+            </div>
+                                            
+        </div>
+    </div>
+    <!-- Button trigger modal -->
+
+
+    <footer class="container-fluid no-padding no-margin">
+        <div align="center" class=
+        "row padding-top-25 bg-dark no-margin padding-bottom-25">
+            <span class=
+            "text-grey font-12 padding-right-5 text-capitalize">Blog</span>
+            <span class=
+            "text-grey font-12 padding-right-5 text-capitalize">Careers</span>
+            <span class=
+            "text-grey font-12 padding-right-5 text-capitalize">Contact</span>
+            <span class=
+            "text-grey font-12 padding-right-5 text-uppercase">FAQ</span>
+            <span class=
+            "text-grey font-12 padding-right-5 text-capitalize">legal</span>
+            <span class=
+            "text-grey font-12 padding-right-5 text-capitalize">privacy</span>
+            <span class=
+            "text-grey font-12 padding-right-5 text-capitalize">cookie</span>
+            <span class=
+            "text-grey font-12 padding-right-5 text-capitalize">site map</span>
+
+            <div class="text-grey padding-left-15 pull-left">
+                <a href="https://www.facebook.com/magicmeal.co.in/" target=
+                "blank"><i class=
+                "a1 fa fa-facebook-square fa-lg"></i></a>&nbsp; <a href=
+                "https://twitter.com/magicmeal_co_in" target="blank"><i class=
+                "a1 fa fa-twitter-square fa-lg"></i></a>
+            </div>
+
+
+            <div class="text-grey padding-right-25 pull-right">
+                <span class="font-12 text-capitalize">&copy; Magic Meal |
+                2016</span>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal -->
+    <!-- Login modal -->
+
+
+    <div class="modal fade" id="LoginModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="md-contenthead">
+                <h3>Welcome.</h3>
+            </div>
+
+
+            <div class="modal-content" style="border-top:solid #ff3300 3px">
+                <div>
+                    <form>
+                        <fieldset class="form-group">
+                            <input class="form-control" id="exampleInputEmail1"
+                            placeholder="Email Address" type="email">
+                        </fieldset>
+
+
+                        <fieldset class="form-group">
+                            <input class="form-control" id=
+                            "exampleInputPassword1" placeholder="Password"
+                            type="password">
+                        </fieldset>
+                        <button class="btn sharp loginsubmit" type=
+                        "submit">Login</button>
+
+                        <div class="checkbox checkboxed">
+                            <label><input type="checkbox">&nbsp; &nbsp;
+                            Remember me</label>
+                        </div>
+                        <a class="modal-footer forgotlink pull-right" href=
+                        "#">Forgot password?</a>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="md-contentbottom">
+                <p>Simply place an order<br>
+                to create an account</p>
+            </div>
+        </div>
+    </div>
+    <!-- Login modal end -->
+    <!-- Suggest restaurant modal -->
+
+
+    <div class="modal fade" id="RestaurantModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="md-contenthead">
+                <h3>Suggest A Restaurant.</h3>
+            </div>
+
+
+            <div class="modal-content" style="border-top:solid #ff3300 3px">
+                <div>
+                    <form class="form-horizontal">
+                        <fieldset>
+                            <!-- Text input-->
+
+
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <input class="form-control input-md" id=
+                                    "textinput" name="textinput" placeholder=
+                                    "Restaurant name (eg: Sunburst restaurant)"
+                                    required="" type="text">
+                                </div>
+                            </div>
+                            <!-- Text input-->
+
+
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <input class="form-control input-md" id=
+                                    "textinput" name="textinput" placeholder=
+                                    "City (eg: Chennai)" required="" type=
+                                    "text">
+                                </div>
+                            </div>
+                            <!-- Button -->
+
+
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <button class="btn sharp loginsubmit" id=
+                                    "singlebutton" name=
+                                    "singlebutton">Submit</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="md-contentbottom">
+                <p>Know a great restaurant that really should be on here,<br>
+                but isn't? Let us know !</p>
+            </div>
+        </div>
+    </div>
+    <!-- Suggest restaurant modal end  -->
+    <!-- Suggest map modal  -->
+
+
+    <div class="modal fade" id="mapmodal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-header">
+                Search or click on the map to choose a location.
+            </div>
+            <div class="modal-content">
+                <div class="modal-body">
+                    <input class="controls" id="pac-input" placeholder=
+                    "Search Box" type="text">
+
+                    <div id="map">
+                    </div>
+                    <button class="confirmlocation btn">Confirm
+                    Location</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Suggest map modal end  -->
+    
+    
+    <script src=
+    "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+    </script> 
+    <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')     
+    </script>
+    <script src="js/jquery.min.js">
+    </script> 
+    <script src="js/bootstrap.min.js">
+    </script> 
+    <script src="js/bootstrap-select.min.js">
+    </script> 
+    <script src="js/lightbox.js">
+    </script> 
+    <script src="js/icheck.min.js">
+    </script> 
+    <script src="js/main.js">
+    </script>
+    <script src="js/toastr.js">
+    </script>
+    <script src="js/custommap.js">
+    </script> 
+    <script async defer src=
+    "https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places&callback=initAutocomplete">
+    </script>
 </body>
-
 </html>

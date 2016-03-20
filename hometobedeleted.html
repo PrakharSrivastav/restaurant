@@ -15,15 +15,20 @@
 	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
-	
+	<link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/searchbar.css">
 	<link href="css/simple-sidebar.css" rel="stylesheet">
-	
+    
+     <link rel="stylesheet" href="css/toastr.css"> 		
+    <link rel="stylesheet" href="css/custom.css"> 	
 	<!--[if lt IE 9]>
       <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 	<link rel="stylesheet" href="css/blue.css">
 	<link rel="stylesheet" href="css/ajitcustom.css">
+    
+    <script src="js/modernizr-2.6.2.min.js"></script>
 </head>
 
 <body>
@@ -32,6 +37,7 @@
 		<div class="container-fluid">
 			<div class="navbar-header pull-left">
 				<a class="navbar-brand no-text-decoration text-uppercase margin-top-5 text-white margin-top-10" href="home.html">Magic Meal</a>
+                <!--<a class="button navbar-brand margin-top-5" href="">MAGIC MEAL</a>-->
 			</div>
 			 
 			<div id="navbar" class="pull-right">
@@ -43,11 +49,11 @@
 			
 		</div>
 	</nav>
-
+<div class="slider-area">
 	<section style="position:relative">
 		
         
-        <div id="height_of_video">
+        <div id="height_of_video" class="blurvideo">
 			<video preload autoplay muted loop="loop" id="video_section" class="full-width">
 				<source src="video/intro.webm" type="video/webm" media="all and (min-width:768px)">
 				<source src="video/intro.mp4" type="video/mp4" media="all and (min-width:768px)">
@@ -73,38 +79,71 @@
         
 		<div align="center" id="homepage_header" class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-offset-2 col-md-8" style="">
 			<div class="padding-bottom-15"><span class="label labelheading" id="home_page_heading">Order takeaway online</span></div>
-			<div class="col-md-offset-4 col-lg-offset-4 col-sm-offset-4 headingbottom animated pulse infinite"><i class="fa fa-heart"></i> The best of your neighbourhood..</div>
+			<div class="col-md-offset-4 col-lg-offset-4 col-sm-offset-4 headingbottom animated pulse infinite"><i class="fa fa-heart"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi deserunt deleniti, ullam commodi sit ipsam laboriosam velit adipisci quibusdam aliquam teneturo!</div>
 		
-		
-		<div class="btn-group margin-top-30 padding-top-10 mainpagesize1" role="group" aria-label="Basic example">
-		
-						  <button type="button" class="btn">Delivery</button>
-						  <button type="button" class="btn">Pickup</button>
-						  <button type="button" class="btn">Reserve a table</button>
-		</div>
-		<div class="margin-top-60 padding-top-20">
-				<form action="" class="btn-group-vertical mainpagesize" id="home_page_heading">
-					<div class="form-group">
-                        <select name="" id="locationselect" class="form-control">
-                           <option value="0">Select Your location</option>
-                           <option value="1">My location</option>
-                           <option value="2">Another location</option>
-                       </select>
-                   </div>
-					<div class="form-group">
-                        <input type="text" class="form-control" placeholder="Food (optional)">
+        </div>
+        
+        
+        
+		<div class="container slider-content">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
+                        <h2>Order takeaway online</h2>
+                        <p><i class="fa fa-heart"></i> The best of your neighbourhood..</p>
+                        <div class="search-form wow pulse" data-wow-delay="0.8s">
+                            <form action="" class=" form-inline">
+                                
+                                <div class="form-group">
+                                    <select name="" id="" class="form-control">
+                                        <option selected>Delivery</option>
+                                        <option>Pickup</option>
+                                        <option>Reserve a table</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                <select name="" id="locationselect" class="form-control">
+                                   <option value="0">Select Your location</option>
+                                   <option value="1">My location</option>
+                                   <option value="2">Another location</option>
+                                   </select>
+                                 </div>
+                                
+                                <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Food (optional)">
+                                </div>
+
+                                <input type="submit" class="btn" value="Search">
+                            </form>
+                        </div> 
                     </div>
-                   <input type="submit" class="btn submitbtn form-control mainpagesize2" value="Find my meal">
-               </form></div>
-		<
-		
-						
-		
-		
+                </div>
+            </div>
+        </div>
+ 
+           
+            
+    <div id="mapmodal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                Search or click on the map to choose a location.
+                </div>
+               <div class="modal-content1">
+                  <div class="modal-body">
+                     <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+                     <div id="map"></div>
+                     <button class="confirmlocation btn">Confirm Location</button>
+                 </div>
+             </div>
+         </div>
+     </div>
 				<!-- <div class="clearfix"></div> -->
-		
-		
+
 	</section>
+    
+    
+    
+    
 	<section class="container">
 		<div class="row padding-top-10">
 			<div class="col-xs-12 col-sm-offset-1 col-sm-10 ">
@@ -180,27 +219,9 @@
 				  
 				</div>
 			  
-			
-		
-    <!-- Map Modal -->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title" id="myModalLabel">Please provide your location</h4>
-				</div>
-				<div class="modal-body no-padding no-margin">
-					<img src="img/google_image.jpeg" class="full-width img-responsive">
-				</div>
-				<div class="padding-10" align="center">
-					<!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
-					<button type="button" class="btn btn-danger">Confirm Location</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')           </script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/bootstrap-select.min.js"></script>
@@ -208,5 +229,9 @@
 	<script src="js/icheck.min.js"></script>
 	<script src="js/main.js"></script>	
 	<script src="js/sidebar_menu.js"></script>
+    
+<script src="js/toastr.js"></script>
+<script src="js/custommap.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places&callback=initAutocomplete"async defer></script>
 </body>
 </html>

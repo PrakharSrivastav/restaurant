@@ -1,0 +1,63 @@
+.slider-area{
+	position: relative;
+	height: 630px
+}
+
+.slider-content{
+	position: absolute;
+	top:20%;
+	left: 50%;
+	margin-left: -585px;
+	text-align: center;
+	color: #fff;
+    opacity: 0.9;
+}
+
+.slider-content h2 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.slider-content p {
+  font-size: 14px;
+  margin-bottom: 60px;
+}
+
+.search-form {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px 0;
+}
+
+.search-form {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px 0;
+}
+
+.form-inline .form-control, .form-inline .form-control {
+  background: none repeat scroll 0 0 #eeeeee;
+  border-radius: 1px;
+  color: #333;
+  font-style: italic;
+  height: 40px;
+  margin-right: 10px;
+  width: 195px;
+}
+.form-inline input[type=submit]{
+	background: #00AEEF;
+	color: #fff;
+	height: 40px;
+	width: 90px;
+	border-radius: 1px;
+	font-weight: bold;
+	font-size: 16px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.form-inline input[type=submit]:hover{
+	background: #00A2DE
+}
