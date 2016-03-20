@@ -183,6 +183,7 @@ $(document).ready(function() {
 	// this section takes care of the filter section.
 	$("#filter_body").hide();
 	$("#filter_button").click(function(){
+		console.log($("#filter_body"))
 		$("#filter_body").slideToggle(400);
 	});
 	$('input').iCheck({

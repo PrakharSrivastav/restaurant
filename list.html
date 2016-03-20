@@ -32,6 +32,9 @@
         .container{
             width: auto !important;
         }
+        .img-responsive {
+            width:100% !important;
+        }
     }
     </style>
 </head>
@@ -55,7 +58,7 @@
 
 
 	<div class="container padding-top-70">
-		<div class="col-xs-12">
+
 			<div class="row ">
 				<div class="col-xs-6 margin-top-10 col-sm-6 col-md-2">
 					<label for="type" class="generaltext">Order for</label>
@@ -120,7 +123,7 @@
 			<div class="row margin-top-10 textwithinfilter">
 				<div class="col-xs-12 col-sm-6 col-md-6">
 					<div class="input-group full-width margin-bottom-10">
-						<input class="form-control sharp" placeholder="Search dishes or restaurants" type="text">
+						<input class="form-control sharp" placeholder="Search dishes or restaurants" type="text"/>
                         <span class="input-group-btn">
                             <a class="btn sharp searchborder">
                                 <i class="fa fa-search-plus"></i>
@@ -129,14 +132,13 @@
 					</div>
 				</div>
 
-
-				<div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-5">
+				<div class=" col-xs-12 col-sm-6 col-md-6">
 					<a class="btn sharp loginsubmit text-black" id="filter_button">Filter <i class="fa fa-lg fa-caret-down"></i></a>
 				</div>
 			</div>
 
 
-			<div class="container padding-5 font-12 textwithinfilter generaltext" id="filter_body">
+			<div class=" font-12 textwithinfilter generaltext" id="filter_body">
 				<div class="col-xs-12 bg-white no-padding animated pulse" style="border-top:solid #ff3300 3px">
 					<form>
 						<div class="row margin-10">
@@ -812,7 +814,7 @@
 			</div>
 
 		</div>
-	</div>
+	<!-- </div> -->
 	<!-- Button trigger modal -->
 
 
@@ -970,8 +972,7 @@
 	</script>
 	<script src="js/icheck.min.js">
 	</script>
-	<script src="js/main.js">
-	</script>
+	<script src="js/main.js"></script>
 	<script src="js/toastr.js">
 	</script>
 	<script src="js/custommap.js">
