@@ -552,8 +552,7 @@ nav.affix #navbar i.fa {
 	background-size: cover;
 	width: 230px !important;
 	height: 140px !important;
-	padding:3px;
-
+	padding:0px !important;
 }
 /*#container {
 		   display: flex;
