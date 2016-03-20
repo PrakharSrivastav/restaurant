@@ -98,7 +98,7 @@ background-color: #00aeef;
 }
 .navbar{
 	margin-bottom: 0px;
-	min-height: 100px;
+	/*min-height: 100px;*/
 }
 .navbar-default {
   background-image: none;
@@ -128,7 +128,7 @@ background-color: #00aeef;
 	text-align: center;
 	color: #fff;
     opacity: 0.9;
-    font-family: 'Nunito', sans-serif;	
+    font-family: 'Nunito', sans-serif;
 }
 .slider-content h2 {
   font-size: 40px;
@@ -248,7 +248,7 @@ background-color: #00aeef;
 	-o-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 }
-.single-work.active{	
+.single-work.active{
 	background: #00AEEF
 }
 .single-work.active h3{
@@ -343,7 +343,7 @@ background-color: #00aeef;
 }
 
 .tab-content ul.job-seeker li a .overlay{
-	
+
 }
 .tab-content ul.job-seeker li a .overlay h3 {
   bottom: -100px;

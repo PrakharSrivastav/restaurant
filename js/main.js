@@ -391,8 +391,6 @@ function fixAlignment() {
 			$("#left-sidebar").removeClass("fixed-left-menu")
 			$("#right-sidebar").removeClass("fixed-right-menu")
 		}
-
-
 	} else {
 		$("#right-sidebar").removeClass("fixed-right-menu")
 		$("#right-sidebar").addClass("fixed-bottom-menu")
@@ -401,4 +399,3 @@ function fixAlignment() {
 	}
 
 }
-
