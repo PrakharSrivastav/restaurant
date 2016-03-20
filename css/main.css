@@ -311,6 +311,9 @@
 .font-8 {
 	font-size: 8px !important;
 }
+.font-9 {
+	font-size: 9px !important;
+}
 .font-10 {
 	font-size: 10px !important;
 }
@@ -547,10 +550,17 @@ nav.affix #navbar i.fa {
 	background-position: 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 230px;
-	height: 140px;
-}
+	width: 230px !important;
+	height: 140px !important;
+	padding:3px;
 
+}
+/*#container {
+		   display: flex;
+		   justify-content: space-between;
+}*/
+
+/*#container a {display:inline; list-style-type:none;}*/
 .pickgradient {
   display:inline-block;
   background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 100%); /* FF3.6+ */
@@ -696,6 +706,7 @@ div.dotted {
 		width: 100%;
 		height: auto;
 	}
+	.img-responsive-grid{}
 }
 .tabs-left > .nav-tabs {
 	border-bottom: 0;
