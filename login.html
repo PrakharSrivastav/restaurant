@@ -25,16 +25,16 @@
 
 	<div class="bg-img padding-top-70 animated fadeIn">
 		<nav class="navbar navbar-fixed-top full-width margin-bottom-5" role="navigation">
-		<div class="container-fluid">
-			<div class="navbar-header pull-left">
-				<a class="navbar-brand no-text-decoration text-uppercase margin-top-5 text-white margin-top-10" href="index.html">Magic Meal</a>
-				<!--<a class="button navbar-brand margin-top-5" href="">MAGIC MEAL</a>-->
+			<div class="container-fluid">
+				<div class="navbar-header pull-left">
+					<a class="navbar-brand no-text-decoration text-uppercase margin-top-5 text-white margin-top-10" href="index.html">Magic Meal</a>
+					<!--<a class="button navbar-brand margin-top-5" href="">MAGIC MEAL</a>-->
+				</div>
+				<div class="pull-right" id="navbar">
+					<button class="btn btn-login btn-warning btn-sm navbar-btn margin-top-15 margin-right-20" data-target="#LoginModal" data-toggle="modal" type="button">Login</button>
+				</div>
 			</div>
-			<div class="pull-right" id="navbar">
-				<button class="btn btn-login btn-warning btn-sm navbar-btn margin-top-15 margin-right-20" data-target="#LoginModal" data-toggle="modal" type="button">Login</button>
-			</div>
-		</div>
-	</nav>
+		</nav>
 
 		<div class="container">
 			<div class="row">
@@ -72,46 +72,44 @@
 	</div>
 	<div class="container">
 		<div class=" margin-top-20" id="main_content">
-			<div class="col-md-3 col-xs-12 no-padding">
-
-			</div>
+			<div class="col-md-3 col-xs-12 no-padding"></div>
 
 			<!--All Menu items-->
 
 			<div class="col-md-6 col-xs-12 bg-white no-padding" style="border-top:solid #ff3333 3px" id="middle-section-parent">
-				<div class="bg-white padding-10"  >
+				<div class="bg-white padding-10">
 					<form action="" class="padding-20" method="post">
 						<div class="col-xs-12 text-center margin-bottom-30 padding-10">
 							<span class="text-uppercase font-18">Create an Account</span>
 						</div>
 						<div class="col-xs-12 col-sm-6">
 							<div class="form-group">
-							  <label for="firstname" class="text-uppercase">first name</label>
-							  <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+								<label for="firstname" class="text-uppercase">first name</label>
+								<input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6">
 							<div class="form-group">
-							  <label for="lastname" class="text-uppercase">last name</label>
-							  <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+								<label for="lastname" class="text-uppercase">last name</label>
+								<input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
 							</div>
 						</div>
 						<div class="col-xs-12">
 							<div class="form-group">
-							  <label for="email" class="text-uppercase">Email</label>
-							  <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+								<label for="email" class="text-uppercase">Email</label>
+								<input type="email" class="form-control" id="email" name="email" placeholder="Email">
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6">
 							<div class="form-group">
-							  <label for="password" class="text-uppercase">password</label>
-							  <input type="password" class="form-control" id="password" name="password" placeholder="password">
+								<label for="password" class="text-uppercase">password</label>
+								<input type="password" class="form-control" id="password" name="password" placeholder="password">
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6">
 							<div class="form-group">
-							  <label for="phone" class="text-uppercase">Mobile phone</label>
-							  <input type="text" class="form-control" id="phone" name="phone" placeholder="Mobile Number">
+								<label for="phone" class="text-uppercase">Mobile phone</label>
+								<input type="text" class="form-control" id="phone" name="phone" placeholder="Mobile Number">
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6 pull-right">
@@ -120,25 +118,29 @@
 					</form>
 					<div class="clearfix"></div>
 					<div class="margin-30 padding-30">
-						<div class="col-xs-5"><hr></div>
+						<div class="col-xs-5">
+							<hr>
+						</div>
 						<div class="col-xs-2 margin-top-10 text-center"><span class="badge" style="background:lightgrey;padding:5px;">OR</span></div>
-						<div class="col-xs-5"><hr></div>
+						<div class="col-xs-5">
+							<hr>
+						</div>
 					</div>
 					<div class="padding-20 margin-top-30 margin-bottom-30">
-						<form action=""  method="post">
+						<form action="" method="post">
 							<div class="col-xs-12 text-center margin-bottom-30 padding-10">
 								<span class="text-uppercase font-18">have an Account ?</span>
 							</div>
 							<div class="col-xs-12 col-sm-6">
 								<div class="form-group">
-								  <label for="email" class="text-uppercase">Email</label>
-								  <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+									<label for="email" class="text-uppercase">Email</label>
+									<input type="email" class="form-control" id="email" name="email" placeholder="Email">
 								</div>
 							</div>
 							<div class="col-xs-12 col-sm-6">
 								<div class="form-group">
-								  <label for="password" class="text-uppercase">password</label>
-								  <input type="password" class="form-control" id="password" name="password" placeholder="password">
+									<label for="password" class="text-uppercase">password</label>
+									<input type="password" class="form-control" id="password" name="password" placeholder="password">
 								</div>
 							</div>
 							<div class="col-xs-12 col-sm-6 pull-left">
@@ -228,17 +230,11 @@
 								Want to order more?
 								<a href="menu.html" class="btn btn-link font-15 text-info"> Go back to menu</a>
 							</div>
-
 						</div>
-
 					</div>
-
 				</div>
-
 			</div>
-
 		</div>
-
 	</div>
 
 
@@ -246,7 +242,7 @@
 
 	<!-- Footter -->
 
-	<footer class="container-fluid no-padding no-margin">
+	<footer class="container-fluid no-padding no-margin margin-top-30 padding-top-40">
 		<div align="center" class="row padding-top-25 bg-dark no-margin padding-bottom-25">
 			<span class="text-grey font-12 padding-right-5 text-capitalize">Blog</span>
 			<span class="text-grey font-12 padding-right-5 text-capitalize">Careers</span>
