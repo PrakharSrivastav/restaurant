@@ -591,7 +591,9 @@ img{
   z-index:-1;
   display:block;
 }
-
+.profile-picture{
+	z-index:0
+}
 div.dotted {
 	height: 1px;
 	border-top: dotted grey 1px !important;
