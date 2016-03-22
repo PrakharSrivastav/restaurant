@@ -83,7 +83,23 @@ $(document).ready(function() {
 		price = null;
 		item_name = null;
 	});
+
+	// create the default hours based on the current time
 	createHours();
+	$("#day").change(function(){
+		d = $(this).val();
+		// if the day selected is today
+		if(d.indexOf("today") > -1){
+			createHours();
+		}
+		// if the day selected is tomorrow
+		else{
+			createTomorrowHours();
+		}
+	});
+
+
+
 	// code to activate the remove functionality in the calculator
 	$(document).on('click', ".fa-minus-square-o", function() {
 		// get the elements
@@ -261,6 +277,38 @@ function maintiainHeights(){
 		}
 	}
 }
+function createTomorrowHours() {
+	var $r = ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09", 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
+	var $m = ["00", 15, 30, 45];
+	var timeNow = new Date();
+	var hours = timeNow.getHours();
+	var minutes = timeNow.getMinutes();
+	var time = $("#time");
+	time.empty();
+	time.append('<option class="default" value="asap">ASAP</option>');
+	var first_timestamp = "";
+	var count = 0;
+	$.each($r, function(key, $hour) {
+			$.each($m, function($key, $min) {
+
+				template = '<option value="__time__">__time__</option>';
+				template = template.replace(/__time__/g,$hour + ":" + $min)
+				time.append(template);
+			})
+	});
+
+	var $r = null;
+	var $m = null;
+	var timeNow = null;
+	var hours = null;
+	var minutes = null;
+	var count = null;
+	var first_timestamp = null;
+	time.selectpicker('refresh');
+}
+
+
+
 // create the list of time stamps
 function createHours() {
 	var $r = ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09", 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
