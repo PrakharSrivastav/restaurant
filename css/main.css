@@ -588,10 +588,10 @@ nav.affix #navbar .text-white-icons1{
 }
 img{
   position:relative;
-  z-index:-1;
+  /*z-index:-1;*/
   display:block;
 }
-.profile-picture{
+.profile-picture, .library-img{
 	z-index:0
 }
 div.dotted {
