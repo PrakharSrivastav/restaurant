@@ -414,6 +414,14 @@ border-width: 1px;
 color: #b32400;
 }
 
+.overlay{
+margin-top: -30px;
+}
+
+.padding-25 {
+	padding: 25px !important
+}
+
 <<<<<<< Updated upstream
 
 =======
