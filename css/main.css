@@ -487,6 +487,10 @@ nav.affix #navbar i.fa {
 	color: #000 !important;
 	opacity: 1.0
 }
+nav.affix #navbar .text-white-icons1{
+	color: #000 !important;
+	opacity: 1.0
+}
 .fixed-left-menu {
 	position: fixed;
 	top: 56px;
