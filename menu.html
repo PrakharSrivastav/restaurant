@@ -25,17 +25,17 @@
 
 	<div class="bg-img padding-top-70 animated fadeIn">
 		<nav class="navbar navbar-fixed-top full-width margin-bottom-5" role="navigation">
-		<div class="container-fluid">
-			<div class="navbar-header pull-left">
-				<a class="navbar-brand no-text-decoration text-uppercase margin-top-5 text-white margin-top-10" href="home.html">Magic Meal</a>
-				<!--<a class="button navbar-brand margin-top-5" href="">MAGIC MEAL</a>-->
+			<div class="container-fluid">
+				<div class="navbar-header pull-left">
+					<a class="navbar-brand no-text-decoration text-uppercase margin-top-5 text-white margin-top-10" href="home.html">Magic Meal</a>
+					<!--<a class="button navbar-brand margin-top-5" href="">MAGIC MEAL</a>-->
+				</div>
+				<div class="pull-right" id="navbar">
+					<button class="btn btn-login btn-warning btn-sm navbar-btn margin-top-15 margin-right-20" data-target="#LoginModal" data-toggle="modal" type="button">Login</button>
+				</div>
 			</div>
-			<div class="pull-right" id="navbar">
-				<button class="btn btn-login btn-warning btn-sm navbar-btn margin-top-15 margin-right-20" data-target="#LoginModal" data-toggle="modal" type="button">Login</button>
-			</div>
-		</div>
-	</nav>
-		
+		</nav>
+
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 hidden-sm hidden-xs">
@@ -736,26 +736,20 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="margin-top-10 row">
-				<div class="col-xs-12 solid">
-				</div>
+			<div class="col-xs-12 solid">
 			</div>
-
-
-			<div class="row">
-				<div class="col-xs-6">
-					<a class="help-block font-12" data-target="#RestaurantModal" data-toggle="modal" href="#RestaurantModal"><i class="fa fa-bell red"></i> Suggest a
-    takeaway</a>
-				</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-6">
+				<a class="help-block font-12" data-target="#RestaurantModal" data-toggle="modal" href="#RestaurantModal">
+					<i class="fa fa-bell red"></i> Suggest a takeaway
+				</a>
 			</div>
+		</div>
 	</div>
-	
-	
-	
-
 	<!-- Footter -->
-
 	<footer class="container-fluid no-padding no-margin">
 		<div align="center" class="row padding-top-25 bg-dark no-margin padding-bottom-25">
 			<span class="text-grey font-12 padding-right-5 text-capitalize">Blog</span>
@@ -766,7 +760,6 @@
 			<span class="text-grey font-12 padding-right-5 text-capitalize">privacy</span>
 			<span class="text-grey font-12 padding-right-5 text-capitalize">cookie</span>
 			<span class="text-grey font-12 padding-right-5 text-capitalize">site map</span>
-
 			<div class="text-grey padding-left-15 pull-left">
 				<a href="https://www.facebook.com/magicmeal.co.in/" target="blank">
 					<i class="a1 fa fa-facebook-square fa-lg"></i>
@@ -782,23 +775,17 @@
 		</div>
 	</footer>
 	<!-- Login modal -->
-
-
 	<div class="modal fade" id="LoginModal" role="dialog">
 		<div class="modal-dialog modal-sm">
-			<div class="md-contenthead">
-				<h3>Welcome.</h3>
+			<div class="modal-header">
+				<h3 class="modal-title">Welcome.</h3>
 			</div>
-
-
 			<div class="modal-content" style="border-top:solid #ff3300 3px">
 				<div>
 					<form>
 						<fieldset class="form-group">
 							<input class="form-control" id="exampleInputEmail1" placeholder="Email Address" type="email">
 						</fieldset>
-
-
 						<fieldset class="form-group">
 							<input class="form-control" id="exampleInputPassword1" placeholder="Password" type="password">
 						</fieldset>
@@ -812,8 +799,6 @@
 					</form>
 				</div>
 			</div>
-
-
 			<div class="md-contentbottom">
 				<p>Simply place an order
 					<br> to create an account</p>
@@ -822,38 +807,28 @@
 	</div>
 	<!-- Login modal end -->
 	<!-- Suggest restaurant modal -->
-
-
 	<div class="modal fade" id="RestaurantModal" role="dialog">
 		<div class="modal-dialog">
-			<div class="md-contenthead">
-				<h3>Suggest A Restaurant.</h3>
+			<div class="modal-header">
+				<h3 class="modal-title">Suggest A Restaurant.</h3>
 			</div>
-
-
 			<div class="modal-content" style="border-top:solid #ff3300 3px">
 				<div>
 					<form class="form-horizontal">
 						<fieldset>
 							<!-- Text input-->
-
-
 							<div class="form-group">
 								<div class="col-md-12">
 									<input class="form-control input-md" id="textinput" name="textinput" placeholder="Restaurant name (eg: Sunburst restaurant)" required="" type="text">
 								</div>
 							</div>
 							<!-- Text input-->
-
-
 							<div class="form-group">
 								<div class="col-md-12">
 									<input class="form-control input-md" id="textinput" name="textinput" placeholder="City (eg: Chennai)" required="" type="text">
 								</div>
 							</div>
 							<!-- Button -->
-
-
 							<div class="form-group">
 								<div class="col-md-12">
 									<button class="btn sharp loginsubmit" id="singlebutton" name="singlebutton">Submit</button>
@@ -863,8 +838,6 @@
 					</form>
 				</div>
 			</div>
-
-
 			<div class="md-contentbottom">
 				<p>Know a great restaurant that really should be on here,
 					<br> but isn't? Let us know !</p>
@@ -872,9 +845,6 @@
 		</div>
 	</div>
 	<!-- Suggest restaurant modal end  -->
-	
-	
-	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/bootstrap-select.min.js"></script>

@@ -740,28 +740,23 @@
 							0.7 Kms
 						</div>
 
-
 						<div class="col-sm-1 font-12">
 							<i class="fa fa-angle-double-right text-primary pull-right"></i>
 						</div>
 					</a>
 				</div>
 			</div>
-
-
 			<div class="margin-top-10 row">
 				<div class="col-xs-12 solid">
 				</div>
 			</div>
-
-
 			<div class="row">
 				<div class="col-xs-6">
-					<a class="help-block font-12" data-target="#RestaurantModal" data-toggle="modal" href="#RestaurantModal"><i class="fa fa-bell red"></i> Suggest a
-    takeaway</a>
+					<a class="help-block font-12" data-target="#RestaurantModal" data-toggle="modal" href="#RestaurantModal">
+						<i class="fa fa-bell red"></i> Suggest a takeaway
+					</a>
 				</div>
 			</div>
-
 		</div>
 	<!-- </div> -->
 	<!-- Button trigger modal -->
@@ -777,14 +772,11 @@
 			<span class="text-grey font-12 padding-right-5 text-capitalize">privacy</span>
 			<span class="text-grey font-12 padding-right-5 text-capitalize">cookie</span>
 			<span class="text-grey font-12 padding-right-5 text-capitalize">site map</span>
-
 			<div class="text-grey padding-left-15 pull-left">
 				<a href="https://www.facebook.com/magicmeal.co.in/" target="blank"><i class=
                 "a1 fa fa-facebook-square fa-lg"></i></a>&nbsp; <a href="https://twitter.com/magicmeal_co_in" target="blank"><i class=
                 "a1 fa fa-twitter-square fa-lg"></i></a>
 			</div>
-
-
 			<div class="text-grey padding-right-25 pull-right">
 				<span class="font-12 text-capitalize">&copy; Magic Meal |
                 2016</span>
@@ -794,77 +786,28 @@
 	<!-- Modal -->
 	<!-- Login modal -->
 
-
-	<div class="modal fade" id="LoginModal" role="dialog">
-		<div class="modal-dialog modal-sm">
-			<div class="md-contenthead">
-				<h3>Welcome.</h3>
-			</div>
-
-
-			<div class="modal-content" style="border-top:solid #ff3300 3px">
-				<div>
-					<form>
-						<fieldset class="form-group">
-							<input class="form-control" id="exampleInputEmail1" placeholder="Email Address" type="email">
-						</fieldset>
-
-
-						<fieldset class="form-group">
-							<input class="form-control" id="exampleInputPassword1" placeholder="Password" type="password">
-						</fieldset>
-						<button class="btn sharp loginsubmit" type="submit">Login</button>
-
-						<div class="checkbox checkboxed">
-							<label>
-								<input type="checkbox">&nbsp; &nbsp; Remember me</label>
-						</div>
-						<a class="modal-footer forgotlink pull-right" href="#">Forgot password?</a>
-					</form>
-				</div>
-			</div>
-
-
-			<div class="md-contentbottom">
-				<p>Simply place an order
-					<br> to create an account</p>
-			</div>
-		</div>
-	</div>
-	<!-- Login modal end -->
-	<!-- Suggest restaurant modal -->
-
-
 	<div class="modal fade" id="RestaurantModal" role="dialog">
 		<div class="modal-dialog">
-			<div class="md-contenthead">
-				<h3>Suggest A Restaurant.</h3>
+			<div class=" modal-header">
+				<h3 class="modal-title">Suggest A Restaurant.</h3>
 			</div>
-
-
 			<div class="modal-content" style="border-top:solid #ff3300 3px">
 				<div>
 					<form class="form-horizontal">
 						<fieldset>
 							<!-- Text input-->
-
-
 							<div class="form-group">
 								<div class="col-md-12">
 									<input class="form-control input-md" id="textinput" name="textinput" placeholder="Restaurant name (eg: Sunburst restaurant)" required="" type="text">
 								</div>
 							</div>
 							<!-- Text input-->
-
-
 							<div class="form-group">
 								<div class="col-md-12">
 									<input class="form-control input-md" id="textinput" name="textinput" placeholder="City (eg: Chennai)" required="" type="text">
 								</div>
 							</div>
 							<!-- Button -->
-
-
 							<div class="form-group">
 								<div class="col-md-12">
 									<button class="btn sharp loginsubmit" id="singlebutton" name="singlebutton">Submit</button>
@@ -874,11 +817,11 @@
 					</form>
 				</div>
 			</div>
-
-
 			<div class="md-contentbottom">
-				<p>Know a great restaurant that really should be on here,
-					<br> but isn't? Let us know !</p>
+				<p>
+					Know a great restaurant that really should be on here,
+					<br> but isn't? Let us know !
+				</p>
 			</div>
 		</div>
 	</div>
@@ -889,7 +832,7 @@
     <div class="modal fade" id="mapmodal" role="dialog">
 		<div class="modal-dialog  padding-top-30">
 			<div class="modal-header padding-top-30 margin-top-30">
-				Search or click on the map to choose a location.
+				<h3 class="modal-title">Search or click on the map to choose a location.</h3>
 			</div>
 			<div class="modal-content1">
 				<div class="modal-body">
@@ -900,6 +843,38 @@
 			</div>
 		</div>
 	</div>
+	<div class="modal fade" id="LoginModal" role="dialog" style="z-index:100 !important">
+		<div class="modal-dialog modal-sm" style="z-index:100 !important">
+			<div class="modal-header"  style="z-index:100 !important">
+				<h3 class="modal-title">Welcome.</h3>
+			</div>
+			<div class="modal-content" style="border-top:solid #ff3300 3px">
+				<div>
+					<form>
+						<fieldset class="form-group">
+							<input class="form-control" id="exampleInputEmail1" placeholder="Email Address" type="email">
+						</fieldset>
+						<fieldset class="form-group">
+							<input class="form-control" id="exampleInputPassword1" placeholder="Password" type="password">
+						</fieldset>
+						<button class="btn sharp loginsubmit" type="submit">Login</button>
+						<div class="checkbox checkboxed">
+							<label><input type="checkbox">&nbsp; &nbsp; Remember me</label>
+						</div>
+						<a class="modal-footer forgotlink pull-right" href="#">Forgot password?</a>
+					</form>
+				</div>
+			</div>
+			<div class="md-contentbottom">
+				<p>
+					Simply place an order
+					<br> to create an account
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- Login modal end -->
+	<!-- Suggest restaurant modal -->
 	<!-- Suggest map modal end  -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

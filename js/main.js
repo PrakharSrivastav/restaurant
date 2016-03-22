@@ -98,7 +98,8 @@ $(document).ready(function() {
 		}
 	});
 
-
+	// modal z-index
+	$(".modal, .md-contenthead, .modal-title").css("z-index",1500);
 
 	// code to activate the remove functionality in the calculator
 	$(document).on('click', ".fa-minus-square-o", function() {
