@@ -27,13 +27,17 @@ $(document).ready(function() {
 	total = 0;
 	grand_total = 0;
 	var price_array = [];
+	cooking_time_array = [];
 	times = ["00:00", "00:15", "00:30", "00:45", "01:00", "01:15", "01:30", "01:45", "02:00", "02:15", "02:30", "02:45", "03:00", "03:15", "03:30", "03:45", "04:00", "04:15", "04:30", "04:45", "05:00", "05:15", "05:30", "05:45", "06:00", "06:15", "06:30", "06:45", "07:00", "07:15", "07:30", "07:45", "08:00", "08:15", "08:30", "08:45", "09:00", "09:15", "09:30", "09:45", "10:00", "10:15", "10:30", "10:45", "11:00", "11:15", "11:30", "11:45", "12:00", "12:15", "12:30", "12:45", "13:00", "13:15", "13:30", "13:45", "14:00", "14:15", "14:30", "14:45", "15:00", "15:15", "15:30", "15:45", "16:00", "16:15", "16:30", "16:45", "17:00", "17:15", "17:30", "17:45", "18:00", "18:15", "18:30", "18:45", "19:00", "19:15", "19:30", "19:45", "20:00", "20:15", "20:30", "20:45", "21:00", "21:15", "21:30", "21:45", "22:00", "22:15", "22:30", "22:45", "23:00", "23:15", "23:30", "23:45"];
 	$(document).on('click', ".fa-plus-circle", function() {
 		// get the elements from dom
 		price = parseFloat($(this).parent().parent().parent().find('span.price').text());
 		item_name = $(this).parent().parent().parent().parent().find('div.item_name').text();
-
+		cooking_time = parseInt($(this).parent().parent().parent().find("span.cooking_time").text()) + 5;
+		cooking_time_array.push(cooking_time);
+		$("#cooking-time").text(cookingTime(cooking_time));
 		// check if the current element is in the array
+
 		if ($.inArray(item_name, price_array) > -1) {
 			calculator_item = $("#calculatorItem").find("#" + changeToId(item_name));
 			old_val = calculator_item.text();
@@ -47,17 +51,20 @@ $(document).ready(function() {
 			template = '<div class="template_added"  style="display: visible;">' +
 				'<div class="col-xs-9 pull-left">' +
 				'<i class="fa fa-minus-square-o font-11" data-price="__price__"></i>' +
+				'<input type="hidden" class="item_name" value="_item_name_">' +
 				' <span class="font-11 count" id="the_count_id">1</span>' +
 				'<span class="weight-400 font-11 text-dark"> * _item_name_</span>' +
 				'</div>' +
 				'<div class="col-xs-3">' +
 				'<div class="margin-top-5 pull-right font-10">£<span id="the_count_id_price" class="price">__price__</span></div>' +
+				'<input type="hidden" class="c_time" value="__time__">' +
 				'</div>' +
 				'</div>';
 			template = template.replace(/_item_name_/g, item_name);
 			template = template.replace(/__price__/g, price.toFixed(2));
 			template = template.replace(/the_count_id/g, changeToId(item_name));
 			template = template.replace(/the_count_id/g, changeToId(item_name)); // not replacing the _price part
+			template = template.replace(/__time__/g, cooking_time);
 			calculator_item = $("#calculatorItem");
 			calculator_item.append(template);
 			template = null;
@@ -65,6 +72,7 @@ $(document).ready(function() {
 
 		// adjust the values in the calculator
 		price_array.push(item_name);
+		// console.log(price_array)
 		total = parseFloat(total + price)
 		$("#subtotal").text(total.toFixed(2));
 		grand_total = total + (5 * total / 100);
@@ -86,39 +94,47 @@ $(document).ready(function() {
 
 	// create the default hours based on the current time
 	createHours();
-	$("#day").change(function(){
+	$("#day").change(function() {
 		d = $(this).val();
 		// if the day selected is today
-		if(d.indexOf("today") > -1){
+		if (d.indexOf("today") > -1) {
 			createHours();
 		}
 		// if the day selected is tomorrow
-		else{
+		else {
 			createTomorrowHours();
 		}
 	});
 
 	// modal z-index
-	$(".modal, .md-contenthead, .modal-title").css("z-index",1500);
+	$(".modal, .md-contenthead, .modal-title").css("z-index", 1500);
 
 	// code to activate the remove functionality in the calculator
 	$(document).on('click', ".fa-minus-square-o", function() {
 		// get the elements
 		element_price = parseFloat($(this).attr('data-price'));
 		count = $(this).parent().find(".count");
+		c_time = $(this).parent().parent().find(".c_time").val();
 		count_val = parseInt(count.text());
-
+		item_name = $(this).parent().find(".item_name").val();
 		// check if the element is the last element . if yes the
 		// delete the stuff from the calculator
 		if (count_val == 1) {
 			$(this).parent().parent().remove();
-			removeItem(price_array, [item_name]);
+			removeItem(price_array, item_name);
 		}
 		// else just reducte the coount dont remove enything
 		else {
 			count.text(count_val - 1);
 		}
 
+		removeItem(cooking_time_array, c_time);
+		if (cooking_time_array.length == 0) {
+			$("#cooking-time").text("NA");
+		} else {
+			$("#cooking-time").text(cookingTimeRemoval());
+		}
+		// console.log(price_array)
 		// adjust the reading in the calculator
 		// this is the meat of the calculation
 		total = parseFloat(total - element_price)
@@ -156,19 +172,18 @@ $(document).ready(function() {
 
 	// lightbox
 	lightbox.option({
-	 'resizeDuration': 100,
-	 'wrapAround': true,
-	 "alwaysShowNavOnTouchDevices":true,
-	 "disableScrolling":true,
-	 "albumLabel":"",
-	 "fadeDuration":100
-	//  "width":"300"
-   })
-	// this is fr the mobile view
-	// when the screen width is small, the calculator is rezised to be at the
-	// bottom of the page. this section helps is expanding and compacting the calculator
-	if($("html").width() < 992)
-	{
+			'resizeDuration': 100,
+			'wrapAround': true,
+			"alwaysShowNavOnTouchDevices": true,
+			"disableScrolling": true,
+			"albumLabel": "",
+			"fadeDuration": 100
+				//  "width":"300"
+		})
+		// this is fr the mobile view
+		// when the screen width is small, the calculator is rezised to be at the
+		// bottom of the page. this section helps is expanding and compacting the calculator
+	if ($("html").width() < 992) {
 		$("#calculator").hide();
 	}
 	$(".sheet").click(function() {
@@ -199,37 +214,37 @@ $(document).ready(function() {
 
 	// this section takes care of the filter section.
 	$("#filter_body").hide();
-	$("#filter_button").click(function(){
-		console.log($("#filter_body"))
+	$("#filter_button").click(function() {
+		// console.log($("#filter_body"))
 		$("#filter_body").slideToggle(400);
 	});
 	$('input').iCheck({
-	    checkboxClass: 'icheckbox_square-blue',
-	    radioClass: 'iradio_square-blue',
-	    // increaseArea: '1%' // optional
+		checkboxClass: 'icheckbox_square-blue',
+		radioClass: 'iradio_square-blue',
+		// increaseArea: '1%' // optional
 	});
 
-	$("#clear_criteria").click(function(){
-		$.each($('.icheckbox_square-blue , .iradio_square-blue'),function(k,v){
+	$("#clear_criteria").click(function() {
+		$.each($('.icheckbox_square-blue , .iradio_square-blue'), function(k, v) {
 			$(v).iCheck('uncheck');
 		})
 	})
 
 	// fix the size of image/video on the home page
-	$("#height_of_video").height($(window).height()-10);
-	if($("html").width() < 900){
-		$("#height_of_video").height($(window).height()-60);
+	$("#height_of_video").height($(window).height() - 10);
+	if ($("html").width() < 900) {
+		$("#height_of_video").height($(window).height() - 60);
 	}
 
 
 	// checkout button
-	$("#checkout_btn").click(function(){
+	$("#checkout_btn").click(function() {
 		window.location = "login.html";
 	})
 
 	// deliver instructions
 	$("#del_inst").hide();
-	$("#del_ins_btn").click(function(){
+	$("#del_ins_btn").click(function() {
 		$("#del_inst").slideToggle(400);
 	});
 
@@ -260,24 +275,48 @@ $(document).ready(function() {
 	});
 	maintiainHeights();
 });
+
+
+// function to calculate highest cooking time
+function cookingTime(newtime) {
+	var retVal = newtime;
+	$.each(cooking_time_array, function(k, v) {
+		if (newtime < parseInt(v)) {
+			retVal = v;
+		}
+	})
+	return retVal;
+}
+
+// function to calculate highest cooking time
+function cookingTimeRemoval() {
+	var retVal = 0;
+	$.each(cooking_time_array, function(k, v) {
+		if (retVal < parseInt(v)) {
+			retVal = v;
+		}
+	})
+	return retVal;
+}
+
 // maintiain the height of the middle section and the left section same
-function maintiainHeights(){
+function maintiainHeights() {
 	page_width = $("html").width();
-	if(page_width>992){
+	if (page_width > 992) {
 		left_height = $("#left-sidebar-parent").height();
 		middle_height = $("#middle-section-parent").height();
-		console.log(middle_height);
-		console.log(left_height);
-		if(middle_height > left_height){
+		// console.log(middle_height);
+		// console.log(left_height);
+		if (middle_height > left_height) {
 			$("#left-sidebar-parent").height(middle_height);
 			$("#middle-section-parent").height(middle_height);
-		}
-		else{
+		} else {
 			$("#middle-section-parent").height(left_height);
 			$("#left-sidebar-parent").height(left_height);
 		}
 	}
 }
+
 function createTomorrowHours() {
 	var $r = ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09", 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
 	var $m = ["00", 15, 30, 45];
@@ -290,12 +329,11 @@ function createTomorrowHours() {
 	var first_timestamp = "";
 	var count = 0;
 	$.each($r, function(key, $hour) {
-			$.each($m, function($key, $min) {
-
-				template = '<option value="__time__">__time__</option>';
-				template = template.replace(/__time__/g,$hour + ":" + $min)
-				time.append(template);
-			})
+		$.each($m, function($key, $min) {
+			template = '<option value="__time__">__time__</option>';
+			template = template.replace(/__time__/g, $hour + ":" + $min)
+			time.append(template);
+		})
 	});
 
 	var $r = null;
@@ -323,25 +361,25 @@ function createHours() {
 	var first_timestamp = "";
 	var count = 0;
 	$.each($r, function(key, $hour) {
-		if(parseInt(hours) <= parseInt($hour)){
+		if (parseInt(hours) <= parseInt($hour)) {
 			$.each($m, function($key, $min) {
-				if(count == 0){
+				if (count == 0) {
 					first_timestamp = $hour + ":" + $min;
 					count++;
 				}
 				template = '<option value="__time__">__time__</option>';
-				template = template.replace(/__time__/g,$hour + ":" + $min)
+				template = template.replace(/__time__/g, $hour + ":" + $min)
 				time.append(template);
 			})
 		}
 	});
 	$.each($r, function(key, $hour) {
 		$.each($m, function($key, $min) {
-			if(first_timestamp.indexOf($hour + ":" + $min) != -1){
+			if (first_timestamp.indexOf($hour + ":" + $min) != -1) {
 				return false;
 			}
 			template = '<option value="__time__">__time__</option>';
-			template = template.replace(/__time__/g,$hour + ":" + $min)
+			template = template.replace(/__time__/g, $hour + ":" + $min)
 			time.append(template);
 		})
 	});
@@ -396,20 +434,11 @@ function changeToId(temp_item_name) {
 }
 
 function removeItem(array, value) { //my clear function
-	if (Array.isArray(array)) { //for multi remove
-		for (var i = array.length - 1; i >= 0; i--) {
-			for (var j = array.length - 1; j >= 0; j--) {
-				if (array[i] === value[j]) {
-					array.splice(i, 1);
-				};
-			}
-		}
-	} else { //for single remove
-
-		for (var i = array.length - 1; i >= 0; i--) {
-			if (array[i] === number) {
-				array.splice(i, 1);
-			}
+	for (var i = array.length - 1; i >= 0; i--) {
+		if (array[i] == value) {
+			array.splice(i, 1);
+			// console.log(array);
+			return false;
 		}
 	}
 }
