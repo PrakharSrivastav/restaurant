@@ -777,3 +777,5 @@ div.dotted {
 	border-color: #ddd transparent #ddd #ddd;
 	*border-right-color: #ffffff;
 }
+.tweets                 {background:#f5f5f0;border-radius:0px !important;margin-bottom:-15px !important;
+                         box-shadow:-2px 2px 4px #888;}
