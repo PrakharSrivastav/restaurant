@@ -533,19 +533,13 @@ nav.affix #navbar .text-white-icons1{
 
 .grid-page-img-text {
 	position: absolute;
-	bottom: 10px;
-	/*padding: 5px;*/
+	bottom: 0px;
 	opacity: 0.8;
 	color: #fff;
     font-family: 'Nunito', sans-serif;
-    letter-spacing: 1px;
     font-size: 10px;
     text-transform: uppercase;
 	left:0px;
-	padding-right:10px;
-
-	overflow: hidden !important;
-	padding-left:20px
 }
 .get-gradient{
 	background-color: #1a82f7;
@@ -566,14 +560,13 @@ nav.affix #navbar .text-white-icons1{
 	cursor: pointer
 }
 .img-responsive-grid {
-
 	width: 230px !important;
 	height: 140px !important;
-	padding:0px !important;
 }
 
 .pickgradient {
-  display:inline-block;
+  /*display:inline-block;*/
+  border-radius: 4px;
   background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.85)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.85) 100%); /* Chrome10+,Safari5.1+ */
