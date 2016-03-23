@@ -50,7 +50,7 @@
 				<div class="col-md-6 col-md-offset-3">
 					<img src="img/food.jpg" alt="" class="profile-border margin-right-5  hidden-sm hidden-xs img-responsive profile-picture animated bounceIn" style="float:left" />
 					<div class="restaurant-name">
-						<button type="button" class="btn btn-like" name="button"><i class="fa fa-thumbs-up"></i> Like</button>
+						<button type="button" class="btn btn-like hidden-sm hidden-xs hidden-md" name="button"><i class="fa fa-thumbs-up"></i> Like</button>
 						<br>
 						<span class="text-white-restaurant-name animated fadeIn">Sunburst restaurant</span>
 						<p class="text-white-cuisine">Mexican cuisine</p>
@@ -133,14 +133,14 @@
 							</div>
 							<div class="tabbable tabs-left">
 								<ul class="nav nav-tabs">
-									<li class="active"><a href="#credit_card" data-toggle="tab">Credit/Debit card</a></li>
-									<li><a href="#paypal" data-toggle="tab">PayPal</a></li>
-									<li><a href="#paytm" data-toggle="tab">PayTm</a></li>
-									<li><a href="#cashondel" data-toggle="tab">Cash on Delivery</a></li>
+									<li class="active"><a href="#credit_card" data-toggle="tab" class="font-10">Card</a></li>
+									<li><a href="#paypal" data-toggle="tab" class="font-10">PayPal</a></li>
+									<li><a href="#paytm" data-toggle="tab" class="font-10">PayTm</a></li>
+									<li><a href="#cashondel" data-toggle="tab" class="font-10">Cash on<br>Delivery</a></li>
 								</ul>
-								<div class="tab-content">
+								<div class="tab-content no-padding">
 									<div class="tab-pane active" id="credit_card">
-										<div class="col-sm-8">
+										<div class="col-xs-8 no-padding">
 											<form class="form-horizontal" method="post">
 												<!-- <div class="form-group">
 													<label for="card" class="col-sm-4 margin-top-5 control-label font-11">Card Type :</label>
@@ -154,26 +154,26 @@
 													</div>
 												</div> -->
 												<div class="form-group margin-top-2">
-													<label for="card_num" class="col-sm-4 margin-top-5 control-label font-11">Card Number :</label>
-													<div class="col-sm-8">
+													<label for="card_num" class="col-xs-4 margin-top-5 control-label font-10">Card Number :</label>
+													<div class="col-xs-8">
 														<input type="text" class="form-control input-sm" id="card_num" name="card_num" placeholder="Card Number">
 													</div>
 												</div>
 												<div class="form-group margin-top-2">
-													<label for="card_num" class="col-sm-4 margin-top-5 control-label font-11">Name :</label>
-													<div class="col-sm-8">
+													<label for="card_num" class="col-xs-4 margin-top-5 control-label font-10">Name :</label>
+													<div class="col-xs-8">
 														<input type="text" class="form-control input-sm" id="card_num" name="card_num" placeholder="Card Number">
 													</div>
 												</div>
 												<div class="form-group margin-top-2">
-													<label for="cvv" class="col-sm-4 margin-top-5 control-label font-11">CVV Num :</label>
-													<div class="col-sm-8">
+													<label for="cvv" class="col-xs-4 margin-top-5 control-label font-10">CVV Num :</label>
+													<div class="col-xs-8">
 														<input type="text" class="form-control input-sm" id="cvv" name="cvv" placeholder="CVV Number">
 													</div>
 												</div>
 												<div class="form-group margin-top-2">
-													<label for="cvv" class="col-sm-4 margin-top-5 control-label font-11">Expiery Date :</label>
-													<div class="col-sm-4">
+													<label for="cvv" class="col-xs-4 margin-top-5 control-label font-10">Expiery Date :</label>
+													<div class="col-xs-4">
 														<select   id="month" name="month" class="form-control">
 															<option selected="selected">Month</option>
 															<option>1</option>
@@ -190,7 +190,7 @@
 															<option>12</option>
 														</select>
 													</div>
-													<div class="col-sm-4">
+													<div class="col-xs-4">
 														<select   id="Year" name="Year" class="form-control">
 															<option selected="selected">Year</option>
 															<option>16</option>
@@ -212,17 +212,17 @@
 										</div>
 									</div>
 									<div class="tab-pane" id="paypal">
-										<div class="col-sm-8">
+										<div class="col-xs-8">
 											<form class="form-horizontal" method="post">
 												<div class="form-group margin-top-2">
-													<label for="email" class="col-sm-4 margin-top-5 control-label font-11">Email-id :</label>
-													<div class="col-sm-8">
+													<label for="email" class="col-xs-4 margin-top-5 control-label font-10">Email-id :</label>
+													<div class="col-xs-8">
 														<input type="email" class="form-control input-sm" id="email" name="email" placeholder="Email-id">
 													</div>
 												</div>
 												<div class="form-group margin-top-2">
-													<label for="password" class="col-sm-4 margin-top-5 control-label font-11">Password :</label>
-													<div class="col-sm-8">
+													<label for="password" class="col-xs-4 margin-top-5 control-label font-10">Password :</label>
+													<div class="col-xs-8">
 														<input type="password" class="form-control input-sm" id="password" name="password" placeholder="Password">
 													</div>
 												</div>
@@ -231,17 +231,17 @@
 										</div>
 									</div>
 									<div class="tab-pane" id="paytm">
-										<div class="col-sm-8">
+										<div class="col-xs-8">
 											<form class="form-horizontal" method="post">
 												<div class="form-group margin-top-2">
-													<label for="username" class="col-sm-4 margin-top-5 control-label font-11">Username :</label>
-													<div class="col-sm-8">
+													<label for="username" class="col-xs-4 margin-top-5 control-label font-10">Username :</label>
+													<div class="col-xs-8">
 														<input type="text" class="form-control input-sm" id="username" name="username" placeholder="Username">
 													</div>
 												</div>
 												<div class="form-group margin-top-2">
-													<label for="password" class="col-sm-4 margin-top-5 control-label font-11">Password :</label>
-													<div class="col-sm-8">
+													<label for="password" class="col-xs-4 margin-top-5 control-label font-10">Password :</label>
+													<div class="col-xs-8">
 														<input type="password" class="form-control input-sm" id="password" name="password" placeholder="Password">
 													</div>
 												</div>
@@ -250,10 +250,10 @@
 										</div>
 									</div>
 									<div class="tab-pane" id="cashondel">
-										<div class="col-sm-8">
+										<div class="col-xs-8">
 											<h4 class="text-left"><small>You can make the payment on delivery</small></h4>
 											<input type="checkbox">
-											<label class="margin-top-3 font-11">Cash on Delivery</label>
+											<label class="margin-top-3 font-10">Cash on Delivery</label>
 											<br><br>
 											<button class="btn btn-block btn-info">Continue And Pay</button>
 										</div>
