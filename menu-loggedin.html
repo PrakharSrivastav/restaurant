@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Menu</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="css/lightbox.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+	<link href="css/simple-sidebar.css" rel="stylesheet">
+	<link rel="stylesheet" type='text/css' href="css/main.css">
+	<link rel="stylesheet" href="css/blue.css">
+	<link rel="stylesheet" type='text/css' href="css/ajitcustom.css">
+	<!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<nav class="navbar navbar-fixed-top full-width" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-brand text-white pull-right"><a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><i class="fa fa-bars"></i></a>
+			</div>
+			<div class="navbar-header pull-left">
+				<a class="navbar-brand no-text-decoration text-uppercase margin-top-5 text-white margin-top-10" href="index-loggedin.html">Magic Meal</a>
+			</div>
+
+		</div>
+	</nav>
+
+	<div id="wrapper">
+
+		<!-- Sidebar -->
+		<div id="sidebar-wrapper">
+			<ul class="sidebar-nav">
+				<li class="sidebar-brand">
+					<a href="#"></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-user"></i>&nbsp Account</a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-shopping-cart"></i>&nbsp Order History</a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-users"></i>&nbsp Group Order</a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-bell"></i>&nbsp Notification centre</a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-phone-square"></i>&nbsp Contact</a>
+				</li>
+			</ul>
+		</div>
+		<!-- /#sidebar-wrapper -->
+
+		<!-- Page Content -->
+		<div id="page-content-wrapper">
+			<div class="bg-img padding-top-70 animated fadeIn">
+				<!-- <nav class="navbar navbar-fixed-top full-width margin-bottom-5" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header pull-left">
+					<a class="navbar-brand no-text-decoration text-uppercase margin-top-5 text-white margin-top-10" href="index.html">Magic Meal</a>
+					<!--<a class="button navbar-brand margin-top-5" href="">MAGIC MEAL</a>
+				</div>
+				<div class="pull-right" id="navbar">
+					<button class="btn btn-login btn-warning btn-sm navbar-btn margin-top-15 margin-right-20" data-target="#LoginModal" data-toggle="modal" type="button">Login</button>
+				</div>
+			</div>
+		</nav> -->
+
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 hidden-sm hidden-xs">
+							<a href="list-loggedin.html" class="btn btn-lg btn-link text-white-link"><i class="fa fa-angle-left"></i> BACK TO RESULTS</a>
+						</div>
+
+					</div>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<div class="row margin-top-40 padding-bottom-15">
+						<div class="col-lg-8">
+							<img src="img/food.jpg" alt="" class="profile-border margin-right-5  hidden-sm hidden-xs img-responsive profile-picture animated bounceIn" style="float:left" />
+							<div class="restaurant-name">
+								<button type="button" class="btn btn-like" name="button"><i class="fa fa-thumbs-up"></i> Like</button>
+								</br>
+								<span class="text-white-restaurant-name animated fadeIn">Sunburst restaurant</span>
+								<p class="text-white-cuisine">Mexican cuisine</p>
+								<span class="text-white-offer">&nbsp;20% Off&nbsp;</span>
+							</div>
+						</div>
+						<div class="col-lg-4  hidden-sm hidden-xs">
+							<div class="padding-top-50 margin-top-40 pull-right">
+								<i class="fa fa-heart"></i>
+								<i class="fa fa-heart"></i>
+								<i class="fa fa-heart"></i>
+								<i class="fa fa-heart"></i>
+								<i class="fa fa-heart-o"></i>
+								<span class="text-white-cuisine">(350 Reviews)</span>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+			<div class="container">
+				<ul class="nav nav-tabs nav-justified hidden-sm hidden-xs" role="tablist">
+					<li role="presentation" class="active"><a href="#menu" aria-controls="home" role="tab" data-toggle="tab" class="no-text-decoration text-menu">Menu</a></li>
+					<li role="presentation"><a href="#about" aria-controls="home" role="tab" data-toggle="tab" class="no-text-decoration text-menu">About</a></li>
+					<li role="presentation"><a href="#reviews" aria-controls="home" role="tab" data-toggle="tab" class="no-text-decoration text-menu">Reviews</a></li>
+					<li role="presentation"><a href="#photos" aria-controls="home" role="tab" data-toggle="tab" class="no-text-decoration text-menu">Photos</a></li>
+					<li role="presentation"><a href="#social" aria-controls="home" role="tab" data-toggle="tab" class="no-text-decoration text-menu">Social</a></li>
+				</ul>
+
+				<div class=" margin-top-20" id="main_content">
+					<div class="col-md-3 col-xs-12s animated bg-white fadeInUp no-padding" id="left-sidebar-parent">
+						<div class="input-group full-width" style="border-top:solid #ff3333 3px">
+							<input type="text" class="form-control sharp no-border" placeholder="Search menu...">
+							<span class="input-group-btn">
+        				<button class="btn btn-search sharp" type="button"><i class="fa fa-search"></i></button>
+      				</span>
+						</div>
+						<div class="list-group">
+							<a href="#" class="list-group-item active no-border hidden-sm hidden-xs">
+								<span class="sidebar1"><i class="fa fa-map-marker"></i> &nbsp;1000 people have ordered from here</span>
+							</a>
+							<a class="list-group-item no-padding no-margin no-border">
+								<button type="button" class="btn btn-lg btn-block no-border sidebar-creategroup" name="grouporder-button">GROUP ORDER <i class="fa fa-plus"></i></button>
+							</a>
+						</div>
+						<div class="remove-padding list-group hidden-sm hidden-xs" style="z-index:10!important;position:relative">
+							<div id="left-sidebar">
+								<a href="#starterHeading" class="list-group-item scroll-btn sidebar-categories no-border">Starters</a>
+								<a href="#mainCourseHeading" class="list-group-item scroll-btn sidebar-categories no-border">Main course</a>
+								<a href="#dessertHeading" class="list-group-item scroll-btn sidebar-categories no-border">Desserts</a>
+							</div>
+						</div>
+					</div>
+
+					<!--All Menu items-->
+
+					<div class="col-md-6 col-xs-12 bg-white no-padding" id="middle-section-parent" style="display:block;">
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="menu">
+								<div class="panel-group" role="tablist" aria-multiselectable="true">
+									<div class="panel panel-default animated fadeInUp">
+										<div class="panel-heading" style="border-top:solid #ff3333 3px" role="tab" id="starterHeading">
+											<h4 class="panel-title menu-header">
+							        <a role="button"  class="collapsed"  data-toggle="collapse" data-parent="#accordion" href="#starters" aria-expanded="true" aria-controls="starters">
+							          <div class="pull-left">Starters</div>
+									  <div class="pull-right"><i class="fa-angle-up fa"></i></div>
+									  <div class="clearfix"></div>
+							        </a>
+							      </h4>
+										</div>
+										<div id="starters" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="starterHeading">
+											<div class="panel-body no-margin no-padding">
+												<div class="list-group menu-items no-padding no-margin">
+													<div class="list-group-item">
+														<div class="item_name">Starter Item 1</div>
+														<div class="row">
+															<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+															<div class="col-sm-1 hidden-sm hidden-xs">
+																<span class="badge weight-500 font-10"><span class="cooking_time">11</span>
+																<br>min</span>
+															</div>
+															<div class="col-sm-2 col-xs-2 text-dark">
+																<span class="pull-right font-12">£<span class="price">2.00</span></span>
+															</div>
+															<div class="col-sm-1 col-xs-2">
+																<div class="pull-right">
+																	<i class="fa fa-lg fa-plus-circle"></i>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="list-group-item">
+														<div class="item_name">Starter Item 2</div>
+														<div class="row">
+															<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+															<div class="col-sm-1 hidden-sm hidden-xs">
+																<span class="badge weight-500 font-10"><span class="cooking_time">12</span>
+																<br>min</span>
+															</div>
+															<div class="col-sm-2 col-xs-2 text-dark">
+																<span class="pull-right font-12">£<span class="price">2.00</span></span>
+															</div>
+															<div class="col-sm-1 col-xs-2">
+																<div class="pull-right">
+																	<i class="fa fa-lg fa-plus-circle"></i>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="list-group-item">
+														<div class="item_name">Starter Item 3</div>
+														<div class="row">
+															<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+															<div class="col-sm-1 hidden-sm hidden-xs">
+																<span class="badge weight-500 font-10"><span class="cooking_time">13</span>
+																<br>min</span>
+															</div>
+															<div class="col-sm-2 col-xs-2 text-dark">
+																<span class="pull-right font-12">£<span class="price">2.00</span></span>
+															</div>
+															<div class="col-sm-1 col-xs-2">
+																<div class="pull-right">
+																	<i class="fa fa-lg fa-plus-circle"></i>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-default animated fadeInUp">
+										<div class="panel-heading" role="tab" id="mainCourseHeading">
+											<h4 class="panel-title menu-header">
+							        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#mainCourse" aria-expanded="false" aria-controls="mainCourse">
+										<div class="pull-left">Main Course</div>
+		  							  	<div class="pull-right"><i class="fa-angle-up fa"></i></div>
+		  							  	<div class="clearfix"></div>
+							        </a>
+							      </h4>
+										</div>
+										<div id="mainCourse" class="panel-collapse collapse  in" role="tabpanel" aria-labelledby="mainCourseHeading">
+											<div class="panel-body no-padding no-margin">
+												<div class="list-group menu-items no-padding no-margin">
+													<div class="list-group-item">
+														<div class="item_name">Main Course Item 1</div>
+														<div class="row">
+															<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+															<div class="col-sm-1 hidden-sm hidden-xs">
+																<span class="badge weight-500 font-10"><span class="cooking_time">14</span>
+																<br>min</span>
+															</div>
+															<div class="col-sm-2 col-xs-2 text-dark">
+																<span class="pull-right font-12">£<span class="price">2.00</span></span>
+															</div>
+															<div class="col-sm-1 col-xs-2">
+																<div class="pull-right">
+																	<i class="fa fa-lg fa-plus-circle"></i>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="list-group-item">
+														<div class="item_name">Main Course Item 2</div>
+														<div class="row">
+															<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+															<div class="col-sm-1 hidden-sm hidden-xs">
+																<span class="badge weight-500 font-10"><span class="cooking_time">15</span>
+																<br>min</span>
+															</div>
+															<div class="col-sm-2 col-xs-2 text-dark">
+																<span class="pull-right font-12">£<span class="price">2.00</span></span>
+															</div>
+															<div class="col-sm-1 col-xs-2">
+																<div class="pull-right">
+																	<i class="fa fa-lg fa-plus-circle"></i>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="list-group-item">
+														<div class="item_name">Main Course Item 3</div>
+														<div class="row">
+															<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+															<div class="col-sm-1 hidden-sm hidden-xs">
+																<span class="badge weight-500 font-10"><span class="cooking_time">16</span>
+																<br>min</span>
+															</div>
+															<div class="col-sm-2 col-xs-2 text-dark">
+																<span class="pull-right font-12">£<span class="price">2.00</span></span>
+															</div>
+															<div class="col-sm-1 col-xs-2">
+																<div class="pull-right">
+																	<i class="fa fa-lg fa-plus-circle"></i>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="list-group-item">
+														<div class="item_name">Main Course Item 4</div>
+														<div class="row">
+															<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+															<div class="col-sm-1 hidden-sm hidden-xs">
+																<span class="badge weight-500 font-10"><span class="cooking_time">17</span>
+																<br>min</span>
+															</div>
+															<div class="col-sm-2 col-xs-2 text-dark">
+																<span class="pull-right font-12">£<span class="price">2.00</span></span>
+															</div>
+															<div class="col-sm-1 col-xs-2">
+																<div class="pull-right">
+																	<i class="fa fa-lg fa-plus-circle"></i>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-default animated fadeInUp">
+										<div class="panel-heading" role="tab" id="dessertHeading">
+											<h4 class="panel-title menu-header">
+							        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#desserts" aria-expanded="false" aria-controls="desserts">
+										<div class="pull-left">Desserts</div>
+										<div class="pull-right"><i class="fa-angle-up fa"></i></div>
+										<div class="clearfix"></div>
+							        </a>
+							      </h4>
+										</div>
+										<div id="desserts" class="panel-collapse collapse in no-padding no-margin" role="tabpanel" aria-labelledby="dessertHeading">
+											<div class="panel-body no-margin no-padding">
+												<div class="list-group  menu-items no-padding no-margin">
+													<div class="list-group-item">
+														<div class="item_name">Dessert Item 1</div>
+														<div class="row">
+															<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+															<div class="col-sm-1  hidden-sm hidden-xs">
+																<span class="badge weight-500 font-10"><span class="cooking_time">21</span>
+																<br>min</span>
+															</div>
+															<div class="col-sm-2 col-xs-2 text-dark">
+																<span class="pull-right font-12">£<span class="price">2.00</span></span>
+															</div>
+															<div class="col-sm-1 col-xs-2">
+																<div class="pull-right">
+																	<i class="fa fa-lg fa-plus-circle"></i>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="list-group-item">
+														<div class="item_name">Dessert Item 2</div>
+														<div class="row">
+															<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+															<div class="col-sm-1 hidden-sm hidden-xs">
+																<span class="badge weight-500 font-10"><span class="cooking_time">22</span>
+																<br>min</span>
+															</div>
+															<div class="col-sm-2 col-xs-2 text-dark">
+																<span class="pull-right font-12">£<span class="price">2.00</span></span>
+															</div>
+															<div class="col-sm-1 col-xs-2">
+																<div class="pull-right">
+																	<i class="fa fa-lg fa-plus-circle"></i>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="list-group-item">
+														<div class="item_name">Dessert Item 3</div>
+														<div class="row">
+															<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+															<div class="col-sm-1 hidden-sm hidden-xs">
+																<span class="badge weight-500 font-10"><span class="cooking_time">25</span>
+																<br>min</span>
+															</div>
+															<div class="col-sm-2 col-xs-2 text-dark">
+																<span class="pull-right font-12">£<span class="price">2.00</span></span>
+															</div>
+															<div class="col-sm-1 col-xs-2">
+																<div class="pull-right">
+																	<i class="fa fa-lg fa-plus-circle"></i>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="list-group-item">
+														<div class="item_name">Dessert Item 4</div>
+														<div class="row">
+															<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+															<div class="col-sm-1 hidden-sm hidden-xs">
+																<span class="badge weight-500 font-10"><span class="cooking_time">30</span>
+																<br>min</span>
+															</div>
+															<div class="col-sm-2 col-xs-2 text-dark">
+																<span class="pull-right font-12">£<span class="price">2.00</span></span>
+															</div>
+															<div class="col-sm-1 col-xs-2">
+																<div class="pull-right">
+																	<i class="fa fa-lg fa-plus-circle"></i>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="list-group-item">
+														<div class="item_name">Dessert Item 5</div>
+														<div class="row">
+															<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+															<div class="col-sm-1 hidden-sm hidden-xs">
+																<span class="badge weight-500 font-10"><span class="cooking_time">32</span>
+																<br>min</span>
+															</div>
+															<div class="col-sm-2 col-xs-2 text-dark">
+																<span class="pull-right font-12">£<span class="price">2.00</span></span>
+															</div>
+															<div class="col-sm-1 col-xs-2">
+																<div class="pull-right">
+																	<i class="fa fa-lg fa-plus-circle"></i>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="list-group-item">
+														<div class="item_name">Dessert Item 6</div>
+														<div class="row">
+															<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+															<div class="col-sm-1 hidden-sm hidden-xs">
+																<span class="badge weight-500 font-10"><span class="cooking_time">23</span>
+																<br>min</span>
+															</div>
+															<div class="col-sm-2 col-xs-2 text-dark">
+																<span class="pull-right font-12">£<span class="price">2.00</span></span>
+															</div>
+															<div class="col-sm-1 col-xs-2">
+																<div class="pull-right">
+																	<i class="fa fa-lg fa-plus-circle"></i>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="list-group-item">
+														<div class="item_name">Dessert Item 7</div>
+														<div class="row">
+															<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+															<div class="col-sm-1 hidden-sm hidden-xs">
+																<span class="badge weight-500 font-10"><span class="cooking_time">12</span>
+																<br>min</span>
+															</div>
+															<div class="col-sm-2 col-xs-2 text-dark">
+																<span class="pull-right font-12">£<span class="price">2.00</span></span>
+															</div>
+															<div class="col-sm-1 col-xs-2">
+																<div class="pull-right">
+																	<i class="fa fa-lg fa-plus-circle"></i>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="list-group-item">
+														<div class="item_name">Dessert Item 8</div>
+														<div class="row">
+															<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+															<div class="col-sm-1 hidden-sm hidden-xs">
+																<span class="badge weight-500 font-10"><span class="cooking_time">31</span>
+																<br>min</span>
+															</div>
+															<div class="col-sm-2 col-xs-2 text-dark">
+																<span class="pull-right font-12">£<span class="price">2.00</span></span>
+															</div>
+															<div class="col-sm-1 col-xs-2">
+																<div class="pull-right">
+																	<i class="fa fa-lg fa-plus-circle"></i>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="list-group-item">
+														<div class="item_name">Dessert Item 9</div>
+														<div class="row">
+															<div class="col-sm-8 col-xs-8 text-muted font-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+															<div class="col-sm-1 hidden-sm hidden-xs">
+																<span class="badge weight-500 font-10"><span class="cooking_time">12</span>
+																<br>min</span>
+															</div>
+															<div class="col-sm-2 col-xs-2 text-dark">
+																<span class="pull-right font-12">£<span class="price">2.00</span></span>
+															</div>
+															<div class="col-sm-1 col-xs-2">
+																<div class="pull-right">
+																	<i class="fa fa-lg fa-plus-circle"></i>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane padding-10  hidden-sm hidden-xs" id="about">
+								<h3 class="text-center weight-400">About Us</h3>
+								<p class="font-16">
+									Having a hard day, stressed at work, kids driving you crazy, don’t worry we understand how hard some days can be. So let us and Stefanos Fish & Chips take the stress out of feeding the family for the evening. Located on 241 Morningside Road, Midlothian,
+									offers a wide variety of dishes including Calzone, Kebabs and Munchy boxes.
+								</p>
+								<table class="table table-bordered table-condensed table-hover">
+									<caption>Opening hours</caption>
+									<thead>
+										<tr>
+											<th>Day</th>
+											<th>Timings</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Monday</td>
+											<td>16:45 - 00:30</td>
+										</tr>
+										<tr>
+											<td>Tuesday</td>
+											<td>16:45 - 00:30</td>
+										</tr>
+										<tr>
+											<td>Wednesday</td>
+											<td>16:45 - 00:30</td>
+										</tr>
+										<tr>
+											<td>Thursday</td>
+											<td>16:45 - 00:30</td>
+										</tr>
+										<tr>
+											<td>Friday</td>
+											<td>16:45 - 02:00</td>
+										</tr>
+										<tr>
+											<td>Saturday</td>
+											<td>16:45 - 02:00</td>
+										</tr>
+										<tr>
+											<td>Sunday</td>
+											<td>16:45 - 00:30</td>
+										</tr>
+									</tbody>
+								</table>
+								<address>
+						  	<strong>Address:</strong><br>
+						  	107-109 Fountainbridge,<br>
+						  	Edinburgh EH3 9QG<br>
+						  	San Francisco, CA 94103<br>
+						  	<abbr title="Phone Number">Ph:</abbr> 98989898980
+						</address>
+							</div>
+							<div role="tabpanel" class="tab-pane padding-10  hidden-sm hidden-xs" id="reviews">
+								<h3 class="text-center weight-400">Reviews</h3>
+								<span class="text-left help-block">267 reviews of Stefanos Fish & Chips</span>
+								<div class="list-group">
+									<div class="list-group-item  padding-10">
+										<div class="row">
+											<div class="col-xs-12">
+												<div class="pull-left font-13">Name</div>
+												<div class="pull-right font-13">01/01/2016</div>
+											</div>
+											<div class="col-xs-12">
+												<div class="pull-left font-13">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+											</div>
+											<div class="col-xs-12">
+												Some comment about the restaurant
+											</div>
+										</div>
+									</div>
+									<div class="list-group-item  padding-10">
+										<div class="row">
+											<div class="col-xs-12">
+												<div class="pull-left font-13">Name</div>
+												<div class="pull-right font-13">01/01/2016</div>
+											</div>
+											<div class="col-xs-12">
+												<div class="pull-left font-13">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+											</div>
+											<div class="col-xs-12">
+												Some comment about the restaurant
+											</div>
+										</div>
+									</div>
+									<div class="list-group-item  padding-10">
+										<div class="row">
+											<div class="col-xs-12">
+												<div class="pull-left font-13">Name</div>
+												<div class="pull-right font-13">01/01/2016</div>
+											</div>
+											<div class="col-xs-12">
+												<div class="pull-left font-13">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+											</div>
+											<div class="col-xs-12">
+												Some comment about the restaurant
+											</div>
+										</div>
+									</div>
+									<div class="list-group-item  padding-10">
+										<div class="row">
+											<div class="col-xs-12">
+												<div class="pull-left font-13">Name</div>
+												<div class="pull-right font-13">01/01/2016</div>
+											</div>
+											<div class="col-xs-12">
+												<div class="pull-left font-13">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+											</div>
+											<div class="col-xs-12">
+												Some comment about the restaurant
+											</div>
+										</div>
+									</div>
+									<div class="list-group-item  padding-10">
+										<div class="row">
+											<div class="col-xs-12">
+												<div class="pull-left font-13">Name</div>
+												<div class="pull-right font-13">01/01/2016</div>
+											</div>
+											<div class="col-xs-12">
+												<div class="pull-left font-13">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+											</div>
+											<div class="col-xs-12">
+												Some comment about the restaurant
+											</div>
+										</div>
+									</div>
+									<div class="list-group-item  padding-10">
+										<div class="row">
+											<div class="col-xs-12">
+												<div class="pull-left font-13">Name</div>
+												<div class="pull-right font-13">01/01/2016</div>
+											</div>
+											<div class="col-xs-12">
+												<div class="pull-left font-13">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+											</div>
+											<div class="col-xs-12">
+												Some comment about the restaurant
+											</div>
+										</div>
+									</div>
+									<div class="list-group-item  padding-10">
+										<div class="row">
+											<div class="col-xs-12">
+												<div class="pull-left font-13">Name</div>
+												<div class="pull-right font-13">01/01/2016</div>
+											</div>
+											<div class="col-xs-12">
+												<div class="pull-left font-13">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+											</div>
+											<div class="col-xs-12">
+												Some comment about the restaurant
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane  hidden-sm hidden-xs" id="photos">
+								<h3 class="text-center weight-400">Photos</h3>
+								<a href="img/food.jpg" class="col-lg-4 margin-top-5" data-lightbox="roadtrip" title="this is the image title"><img style="height:150px;width:100%" class="img-thumbnail library-img img-responsive" src="img/test_image2.jpg"></a>
+								<a href="img/test_image3.jpg" class="col-lg-4 margin-top-5" data-lightbox="roadtrip" title="this is the image title"><img style="height:150px;width:100%" class="img-thumbnail library-img img-responsive" src="img/test_image3.jpg"></a>
+								<a href="img/test_image4.jpg" class="col-lg-4 margin-top-5" data-lightbox="roadtrip" title="this is the image title"><img style="height:150px;width:100%" class="img-thumbnail library-img img-responsive" src="img/test_image4.jpg"></a>
+								<a href="img/test_image5.jpg" class="col-lg-4 margin-top-5" data-lightbox="roadtrip" title="this is the image title"><img style="height:150px;width:100%" class="img-thumbnail library-img img-responsive" src="img/test_image2.jpg"></a>
+								<a href="img/test_image6.jpg" class="col-lg-4 margin-top-5" data-lightbox="roadtrip" title="this is the image title"><img style="height:150px;width:100%" class="img-thumbnail library-img img-responsive" src="img/test_image3.jpg"></a>
+								<a href="img/test_image7.jpg" class="col-lg-4 margin-top-5" data-lightbox="roadtrip" title="this is the image title"><img style="height:150px;width:100%" class="img-thumbnail library-img img-responsive" src="img/test_image4.jpg"></a>
+								<a href="img/test_image8.jpg" class="col-lg-4 margin-top-5" data-lightbox="roadtrip" title="this is the image title"><img style="height:150px;width:100%" class="img-thumbnail library-img img-responsive" src="img/test_image2.jpg"></a>
+								<a href="img/test_image9.jpg" class="col-lg-4 margin-top-5" data-lightbox="roadtrip" title="this is the image title"><img style="height:150px;width:100%" class="img-thumbnail library-img img-responsive" src="img/test_image3.jpg"></a>
+								<a href="img/test_image10.jpg" class="col-lg-4 margin-top-5" data-lightbox="roadtrip" title="this is the image title"><img style="height:150px;width:100%" class="img-thumbnail library-img img-responsive" src="img/test_image4.jpg"></a>
+								<a href="img/test_image11.jpg" class="col-lg-4 margin-top-5" data-lightbox="roadtrip" title="this is the image title"><img style="height:150px;width:100%" class="img-thumbnail library-img img-responsive" src="img/test_image2.jpg"></a>
+								<a href="img/test_image12.jpg" class="col-lg-4 margin-top-5" data-lightbox="roadtrip" title="this is the image title"><img style="height:150px;width:100%" class="img-thumbnail library-img img-responsive" src="img/test_image3.jpg"></a>
+								<a href="img/test_image3.jpg" class="col-lg-4 margin-top-5" data-lightbox="roadtrip" title="this is the image title"><img style="height:150px;width:100%" class="img-thumbnail library-img img-responsive" src="img/test_image4.jpg"></a>
+
+							</div>
+							<div role="tabpanel" class="tab-pane padding-5 hidden-sm hidden-xs" id="social">
+								<h3 class="text-center weight-400">Social</h3>
+								<h4 class="text-left text-primary">Twitter Feeds</h4>
+								<div class="padding-5  tweets">
+									<div class="row big-font">
+										<div class="col-xs-3">
+											<i class="fa fa-twitter fa-2x text-primary"></i>
+										</div>
+										<div class="col-xs-5 text-center">
+											<span class="text-black"><strong>@Restaurant Name</strong></span>
+										</div>
+										<div class="col-xs-4 ">
+											<span class="pull-right">Wed Mar 23 </span>
+										</div>
+										<div class="col-xs-12 ">
+											<p class="h5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+											<p class="h5">URL: <a href="http://t.co/mwaSar7U14" target="_blank">URL to the feed</a></p>
+										</div>
+									</div>
+								</div>
+								<div class="padding-5 margin-top-25 tweets">
+									<div class="row big-font">
+										<div class="col-xs-3">
+											<i class="fa fa-twitter fa-2x text-primary"></i>
+										</div>
+										<div class="col-xs-5 text-center">
+											<span class="text-black"><strong>@Restaurant Name</strong></span>
+										</div>
+										<div class="col-xs-4 ">
+											<span class="pull-right">Wed Mar 23 </span>
+										</div>
+										<div class="col-xs-12 ">
+											<p class="h5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+											<p class="h5">URL: <a href="http://t.co/mwaSar7U14" target="_blank">URL to the feed</a></p>
+										</div>
+									</div>
+								</div>
+								<div class="padding-5 margin-top-25 tweets">
+									<div class="row big-font">
+										<div class="col-xs-3">
+											<i class="fa fa-twitter fa-2x text-primary"></i>
+										</div>
+										<div class="col-xs-5 text-center">
+											<span class="text-black"><strong>@Restaurant Name</strong></span>
+										</div>
+										<div class="col-xs-4 ">
+											<span class="pull-right">Wed Mar 23 </span>
+										</div>
+										<div class="col-xs-12 ">
+											<p class="h5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+											<p class="h5">URL: <a href="http://t.co/mwaSar7U14" target="_blank">URL to the feed</a></p>
+										</div>
+									</div>
+								</div>
+								<div class="padding-5 margin-top-25 tweets">
+									<div class="row big-font">
+										<div class="col-xs-3">
+											<i class="fa fa-twitter fa-2x text-primary"></i>
+										</div>
+										<div class="col-xs-5 text-center">
+											<span class="text-black"><strong>@Restaurant Name</strong></span>
+										</div>
+										<div class="col-xs-4 ">
+											<span class="pull-right">Wed Mar 23 </span>
+										</div>
+										<div class="col-xs-12 ">
+											<p class="h5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+											<p class="h5">URL: <a href="http://t.co/mwaSar7U14" target="_blank">URL to the feed</a></p>
+										</div>
+									</div>
+								</div>
+								<hr>
+								<h4 class="text-left text-primary">Instagram Feeds</h4>
+								<div class="padding-5 margin-top-25 ">
+									<div class="row">
+										<div class="col-md-4 col-lg-3">
+											<div href="#" class="thumbnail">
+												<img src="img/insta_1.jpg" alt="" class="img-responsive" />
+												<div class="caption padding-5">
+													<div class="text-center"><a href="#" class="btn btn-link font-10">Image Title 1</a> </div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4 col-lg-3">
+											<div href="#" class="thumbnail">
+												<img src="img/insta_2.jpg" alt="" class="img-responsive" />
+												<div class="caption padding-5">
+													<div class="text-center"><a href="#" class="btn btn-link font-10">Image Title 2</a> </div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4 col-lg-3">
+											<div href="#" class="thumbnail">
+												<img src="img/insta_3.jpg" alt="" class="img-responsive" />
+												<div class="caption padding-5">
+													<div class="text-center"><a href="#" class="btn btn-link font-10">Image Title 3</a> </div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4 col-lg-3">
+											<div href="#" class="thumbnail">
+												<img src="img/insta_4.jpg" alt="" class="img-responsive" />
+												<div class="caption padding-5">
+													<div class="text-center"><a href="#" class="btn btn-link font-10">Image Title 4</a> </div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4 col-lg-3">
+											<div href="#" class="thumbnail">
+												<img src="img/insta_1.jpg" alt="" class="img-responsive" />
+												<div class="caption padding-5">
+													<div class="text-center"><a href="#" class="btn btn-link font-10">Image Title 5</a> </div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4 col-lg-3">
+											<div href="#" class="thumbnail">
+												<img src="img/insta_2.jpg" alt="" class="img-responsive" />
+												<div class="caption padding-5">
+													<div class="text-center"><a href="#" class="btn btn-link font-10">Image Title 6</a> </div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4 col-lg-3">
+											<div href="#" class="thumbnail">
+												<img src="img/insta_3.jpg" alt="" class="img-responsive" />
+												<div class="caption padding-5">
+													<div class="text-center"><a href="#" class="btn btn-link font-10">Image Title 7</a> </div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4 col-lg-3">
+											<div href="#" class="thumbnail">
+												<img src="img/insta_4.jpg" alt="" class="img-responsive" />
+												<div class="caption padding-5">
+													<div class="text-center"><a href="#" class="btn btn-link font-10">Image Title 8</a> </div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col xs-12">
+						<div id="right-sidebar">
+							<div class="col-xs-12  order-header padding-10 text-left" id="calculator_header">
+								<span>My Order (£<small class="grand_total">0.00</small>)</span>
+								<span class="pull-right visible-sm visible-xs">
+							<i class="fa margin-top-5 text-white sheet fa-expand"></i>
+						</span>
+							</div>
+							<div class="col-xs-12 order-bg hidden-sm hidden-xs ">
+								<span>Estimated <br/>Cooking Time</span>
+								<br/>
+								<span class="cooking-time" id="cooking-time">NA</span>
+								<br/>
+								<span>minutes</span>
+							</div>
+
+							<div class="col-xs-12">
+								<div class="row padding-5" id="calculator">
+									<div id="calculatorItem"></div>
+									<div id="minimum_amount_msg" class="col-xs-12 text-danger  font-14 text-right">Minimum £15.00</div>
+									<br>
+									<div class="col-xs-9 pull-left">
+										<span class=" font-11 text-dark">Subtotal</span>
+									</div>
+									<div class="col-xs-3">
+										<div class=" pull-right font-10">
+											£<span id="subtotal" class="price">00.00</span>
+										</div>
+									</div>
+									<div class="col-xs-9 pull-left">
+										<span class=" font-11 text-dark">VAT (5%)</span>
+									</div>
+									<div class="col-xs-3">
+										<div class=" pull-right font-10">
+											£<span class="price" id="vat">00.00</span>
+										</div>
+									</div>
+									<div class="col-xs-9 pull-left">
+										<span class=" font-11 text-dark">Deliver Charges ()</span>
+									</div>
+									<div class="col-xs-3">
+										<div class=" pull-right font-10">
+											£<span class="price" id="delv_chg">00.00</span>
+										</div>
+									</div>
+									<div class="col-xs-9 pull-left">
+										<span class=" font-11 text-dark">Service Charges (10%)</span>
+									</div>
+									<div class="col-xs-3">
+										<div class=" pull-right font-10">
+											£<span class="price" id="service_chg">00.00</span>
+										</div>
+									</div>
+									<div class="col-xs-9 pull-left">
+										<span class=" font-11 text-dark">Discount(-20%)</span>
+									</div>
+									<div class="col-xs-3">
+										<div class=" pull-right font-10">
+											£<span class="price" id="discount">00.00</span>
+										</div>
+									</div>
+									<div class="col-xs-9 pull-left">
+										<span class=" font-11 text-dark">Total</span>
+									</div>
+									<div class="col-xs-3">
+										<div class=" pull-right font-10">
+											£<span class="price grand_total">00.00</span>
+										</div>
+									</div>
+									<button type="button" id="checkout_btn" class="btn btn-block btn-checkout">
+										Check out
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="margin-top-10 row">
+					<div class="col-xs-12 solid">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6">
+						<a class="help-block font-12" data-target="#RestaurantModal" data-toggle="modal" href="#RestaurantModal">
+							<i class="fa fa-bell red"></i> Suggest a takeaway
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- Footter -->
+			<footer class="container-fluid no-padding no-margin">
+				<div align="center" class="row padding-top-25 bg-dark no-margin padding-bottom-25">
+					<span class="text-grey font-12 padding-right-5 text-capitalize">Blog</span>
+					<span class="text-grey font-12 padding-right-5 text-capitalize">Careers</span>
+					<span class="text-grey font-12 padding-right-5 text-capitalize">Contact</span>
+					<span class="text-grey font-12 padding-right-5 text-uppercase">FAQ</span>
+					<span class="text-grey font-12 padding-right-5 text-capitalize">legal</span>
+					<span class="text-grey font-12 padding-right-5 text-capitalize">privacy</span>
+					<span class="text-grey font-12 padding-right-5 text-capitalize">cookie</span>
+					<span class="text-grey font-12 padding-right-5 text-capitalize">site map</span>
+					<div class="text-grey padding-left-15 pull-left">
+						<a href="https://www.facebook.com/magicmeal.co.in/" target="blank">
+							<i class="a1 fa fa-facebook-square fa-lg"></i>
+						</a>&nbsp;
+						<a href="https://twitter.com/magicmeal_co_in" target="blank">
+							<i class="a1 fa fa-twitter-square fa-lg"></i>
+						</a>
+					</div>
+
+					<div class="text-grey padding-right-25 pull-right">
+						<span class="font-12 text-capitalize">&copy; Magic Meal | 2016</span>
+					</div>
+				</div>
+			</footer>
+
+			<!-- /#page-content-wrapper -->
+		</div>
+	</div>
+
+	<!-- /#wrapper -->
+	<!-- Login modal -->
+	<div class="modal fade" id="LoginModal" role="dialog">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-header">
+				<h3 class="modal-title">Welcome.</h3>
+			</div>
+			<div class="modal-content" style="border-top:solid #ff3300 3px">
+				<div>
+					<form>
+						<fieldset class="form-group">
+							<input class="form-control" id="exampleInputEmail1" placeholder="Email Address" type="email">
+						</fieldset>
+						<fieldset class="form-group">
+							<input class="form-control" id="exampleInputPassword1" placeholder="Password" type="password">
+						</fieldset>
+						<button class="btn sharp loginsubmit" type="submit">Login</button>
+						<div class="checkbox checkboxed">
+							<label>
+								<input type="checkbox">&nbsp; &nbsp; Remember me</label>
+						</div>
+						<a class="modal-footer forgotlink pull-right" href="#">Forgot password?</a>
+					</form>
+				</div>
+			</div>
+			<div class="md-contentbottom">
+				<p>Simply place an order
+					<br> to create an account</p>
+			</div>
+		</div>
+	</div>
+	<!-- Login modal end -->
+	<!-- Suggest restaurant modal -->
+	<div class="modal fade" id="RestaurantModal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-header">
+				<h3 class="modal-title">Suggest A Restaurant.</h3>
+			</div>
+			<div class="modal-content" style="border-top:solid #ff3300 3px">
+				<div>
+					<form class="form-horizontal">
+						<fieldset>
+							<!-- Text input-->
+							<div class="form-group">
+								<div class="col-md-12">
+									<input class="form-control input-md" id="textinput" name="textinput" placeholder="Restaurant name (eg: Sunburst restaurant)" required="" type="text">
+								</div>
+							</div>
+							<!-- Text input-->
+							<div class="form-group">
+								<div class="col-md-12">
+									<input class="form-control input-md" id="textinput" name="textinput" placeholder="City (eg: Chennai)" required="" type="text">
+								</div>
+							</div>
+							<!-- Button -->
+							<div class="form-group">
+								<div class="col-md-12">
+									<button class="btn sharp loginsubmit" id="singlebutton" name="singlebutton">Submit</button>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<div class="md-contentbottom">
+				<p>Know a great restaurant that really should be on here,
+					<br> but isn't? Let us know !</p>
+			</div>
+		</div>
+	</div>
+	<!-- Suggest restaurant modal end  -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-select.min.js"></script>
+	<script src="js/lightbox.js"></script>
+	<script src="js/sidebar.js"></script>
+	<script src="js/icheck.min.js"></script>
+	<script src="js/main.js"></script>
+	<!-- <script type="text/javascript" src="js/restaurantsignup/wow.min.js"></script> -->
+	<script>
+		$("#menu-toggle").click(function(e) {
+			e.preventDefault();
+			$("#wrapper").toggleClass("toggled");
+		});
+
+		$(window).resize(function() {
+			$("#wrapper").toggleClass("toggled", false);
+		});
+	</script>
+</body>
+
+</html>
