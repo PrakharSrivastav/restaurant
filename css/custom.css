@@ -52,24 +52,25 @@ Custom Map CSS
 
 .pac-container {
     background-color: #FFF;
-    z-index: 20;
+    z-index: 200000;
     position: fixed;
     display: inline-block;
     float: left;
 }
 .modal{
-    z-index: 20; 
+    z-index: 20;
 }
 .modal-backdrop{
-    z-index: 10;        
+    z-index: 10;
 }
 
 .modal-dialog{
     z-index: 999;
+    background-color: white;
 }
 
-.modal-content1{
-background-color: white;
+.modal-content{
+    background-color: white;
 }
 
 .gmnoprint{
@@ -114,10 +115,8 @@ background-color: white;
 .modal-header{
     font-family: 'Nunito', sans-serif;
     letter-spacing: 2px;
-    color:#fff;
+    /*color:#fff;*/
     font-size: 1.5em;
     text-transform: uppercase;
     text-align: center;
 }
-
-

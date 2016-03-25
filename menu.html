@@ -7,14 +7,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Menu</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link href="css/lightbox.css" rel="stylesheet">
+	<!-- <link href="css/lightbox.css" rel="stylesheet"> -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type='text/css' href="css/sidebar.css">
+	<!-- <link rel="stylesheet" type='text/css' href="css/sidebar.css"> -->
 	<link rel="stylesheet" type='text/css' href="css/main.css">
 	<link rel="stylesheet" href="css/blue.css">
 	<link rel="stylesheet" type='text/css' href="css/ajitcustom.css">
+	<!-- <link rel="stylesheet" type='text/css' href="css/custom.css"> -->
 	<!--[if lt IE 9]>
       <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
@@ -68,8 +69,6 @@
 					</div>
 				</div>
 			</div>
-
-
 		</div>
 	</div>
 	<div class="container">
@@ -748,7 +747,7 @@
 									<div href="#" class="thumbnail">
 										<img src="img/insta_1.jpg" alt="" class="img-responsive" />
 										<div class="caption padding-5">
-											<div class="text-center"><a href="#" class="btn btn-link font-10" >Image Title 1</a> </div>
+											<div class="text-center"><a href="#" class="btn btn-link font-10">Image Title 1</a> </div>
 										</div>
 									</div>
 								</div>
@@ -756,7 +755,7 @@
 									<div href="#" class="thumbnail">
 										<img src="img/insta_2.jpg" alt="" class="img-responsive" />
 										<div class="caption padding-5">
-											<div class="text-center"><a href="#" class="btn btn-link font-10" >Image Title 2</a> </div>
+											<div class="text-center"><a href="#" class="btn btn-link font-10">Image Title 2</a> </div>
 										</div>
 									</div>
 								</div>
@@ -764,7 +763,7 @@
 									<div href="#" class="thumbnail">
 										<img src="img/insta_3.jpg" alt="" class="img-responsive" />
 										<div class="caption padding-5">
-											<div class="text-center"><a href="#" class="btn btn-link font-10" >Image Title 3</a> </div>
+											<div class="text-center"><a href="#" class="btn btn-link font-10">Image Title 3</a> </div>
 										</div>
 									</div>
 								</div>
@@ -772,7 +771,7 @@
 									<div href="#" class="thumbnail">
 										<img src="img/insta_4.jpg" alt="" class="img-responsive" />
 										<div class="caption padding-5">
-											<div class="text-center"><a href="#" class="btn btn-link font-10" >Image Title 4</a> </div>
+											<div class="text-center"><a href="#" class="btn btn-link font-10">Image Title 4</a> </div>
 										</div>
 									</div>
 								</div>
@@ -780,7 +779,7 @@
 									<div href="#" class="thumbnail">
 										<img src="img/insta_1.jpg" alt="" class="img-responsive" />
 										<div class="caption padding-5">
-											<div class="text-center"><a href="#" class="btn btn-link font-10" >Image Title 5</a> </div>
+											<div class="text-center"><a href="#" class="btn btn-link font-10">Image Title 5</a> </div>
 										</div>
 									</div>
 								</div>
@@ -788,7 +787,7 @@
 									<div href="#" class="thumbnail">
 										<img src="img/insta_2.jpg" alt="" class="img-responsive" />
 										<div class="caption padding-5">
-											<div class="text-center"><a href="#" class="btn btn-link font-10" >Image Title 6</a> </div>
+											<div class="text-center"><a href="#" class="btn btn-link font-10">Image Title 6</a> </div>
 										</div>
 									</div>
 								</div>
@@ -796,7 +795,7 @@
 									<div href="#" class="thumbnail">
 										<img src="img/insta_3.jpg" alt="" class="img-responsive" />
 										<div class="caption padding-5">
-											<div class="text-center"><a href="#" class="btn btn-link font-10" >Image Title 7</a> </div>
+											<div class="text-center"><a href="#" class="btn btn-link font-10">Image Title 7</a> </div>
 										</div>
 									</div>
 								</div>
@@ -804,7 +803,7 @@
 									<div href="#" class="thumbnail">
 										<img src="img/insta_4.jpg" alt="" class="img-responsive" />
 										<div class="caption padding-5">
-											<div class="text-center"><a href="#" class="btn btn-link font-10" >Image Title 8</a> </div>
+											<div class="text-center"><a href="#" class="btn btn-link font-10">Image Title 8</a> </div>
 										</div>
 									</div>
 								</div>
@@ -931,11 +930,11 @@
 	<!-- Login modal -->
 	<div class="modal fade" id="LoginModal" role="dialog">
 		<div class="modal-dialog modal-sm">
-			<div class="modal-header">
-				<h3 class="modal-title">Welcome.</h3>
-			</div>
 			<div class="modal-content" style="border-top:solid #ff3300 3px">
-				<div>
+				<div class="modal-header">
+					<h3 class="modal-title">Welcome.</h3>
+				</div>
+				<div class="modal-body">
 					<form>
 						<fieldset class="form-group">
 							<input class="form-control" id="exampleInputEmail1" placeholder="Email Address" type="email">
@@ -948,25 +947,28 @@
 							<label>
 								<input type="checkbox">&nbsp; &nbsp; Remember me</label>
 						</div>
-						<a class="modal-footer forgotlink pull-right" href="#">Forgot password?</a>
+						<a class="forgotlink pull-right" href="#">Forgot password?</a>
 					</form>
 				</div>
+				<div class="md-contentbottom modal-footer ">
+
+					<p class="text-center col-xs-12">
+						Simply place an order<br> to create an account
+					</p>
+				</div>
 			</div>
-			<div class="md-contentbottom">
-				<p>Simply place an order
-					<br> to create an account</p>
-			</div>
+
 		</div>
 	</div>
 	<!-- Login modal end -->
 	<!-- Suggest restaurant modal -->
 	<div class="modal fade" id="RestaurantModal" role="dialog">
 		<div class="modal-dialog">
-			<div class="modal-header">
-				<h3 class="modal-title">Suggest A Restaurant.</h3>
-			</div>
 			<div class="modal-content" style="border-top:solid #ff3300 3px">
-				<div>
+				<div class="modal-header">
+					<h3 class="modal-title">Suggest A Restaurant.</h3>
+				</div>
+				<div class="modal-body">
 					<form class="form-horizontal">
 						<fieldset>
 							<!-- Text input-->
@@ -990,11 +992,12 @@
 						</fieldset>
 					</form>
 				</div>
+				<div class="md-contentbottom modal-footer">
+					<p>Know a great restaurant that really should be on here,
+						<br> but isn't? Let us know !</p>
+				</div>
 			</div>
-			<div class="md-contentbottom">
-				<p>Know a great restaurant that really should be on here,
-					<br> but isn't? Let us know !</p>
-			</div>
+
 		</div>
 	</div>
 	<!-- Suggest restaurant modal end  -->
@@ -1002,10 +1005,10 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/bootstrap-select.min.js"></script>
 	<script src="js/lightbox.js"></script>
-	<script src="js/sidebar.js"></script>
+	<!-- <script src="js/sidebar.js"></script> -->
 	<script src="js/icheck.min.js"></script>
 	<script src="js/main.js"></script>
-	<script type="text/javascript" src="js/restaurantsignup/wow.min.js"></script>
+	<!-- <script type="text/javascript" src="js/restaurantsignup/wow.min.js"></script> -->
 </body>
 
 </html>

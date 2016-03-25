@@ -16,35 +16,38 @@
 	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" type='text/css' href="css/custom.css">
 	<link rel="stylesheet" type='text/css' href="css/a/normalize.css">
-	<link rel="stylesheet" type='text/css' href="css/a/fontello.css">
-	<link rel="stylesheet" type='text/css' href="css/a/animate.css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link href="css/searchbar.css" rel="stylesheet">
+	<link rel="stylesheet" type='text/css' href="css/custom.css">
 	<link rel="stylesheet" type='text/css' href="css/bootstrap.min.css">
 	<link rel="stylesheet" type='text/css' href="css/lightbox.css">
-	<link rel="stylesheet" type='text/css' href="css/a/owl.carousel.css">
-	<link rel="stylesheet" type='text/css' href="css/a/owl.theme.css">
-	<link rel="stylesheet" type='text/css' href="css/a/owl.transitions.css">
 	<link rel="stylesheet" type='text/css' href="css/a/style.css">
-	<link rel="stylesheet" type='text/css' href="css/a/responsive.css">
-	<link rel="stylesheet" type='text/css' href="css/bootstrap-select.min.css">
 	<link rel="stylesheet" type='text/css' href="css/main.css">
 	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/ajitcustom.css">
 	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/toastr.css">
-	<link rel="stylesheet" href="css/ajitcustom.css">
-	<link href="css/simple-sidebar.css" rel="stylesheet">
-	
+	<!--  -->
+	<link rel="stylesheet" type='text/css' href="css/a/fontello.css">
+	<link rel="stylesheet" type='text/css' href="css/a/animate.css">
+	<link rel="stylesheet" type='text/css' href="css/a/owl.carousel.css">
+	<link rel="stylesheet" type='text/css' href="css/a/owl.theme.css">
+	<link rel="stylesheet" type='text/css' href="css/a/owl.transitions.css">
+	<link rel="stylesheet" type='text/css' href="css/a/responsive.css">
+	<!-- <link rel="stylesheet" type='text/css' href="css/bootstrap-select.min.css"> -->
+
+	<!-- <link href="css/searchbar.css" rel="stylesheet"> -->
 	<!--[if lt IE 9]>
       <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 </head>
+
 <body>
 	<!-- Body content -->
 	<nav class="navbar navbar-fixed-top full-width margin-bottom-5" role="navigation">
@@ -88,24 +91,24 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi deserunt deleniti, ullam commodi sit ipsam laboriosam velit adipisci quibusdam aliquam teneturo!</p>
 					<div class="search-form wow pulse" data-wow-delay="0.8s" align="center">
 						<form action="" class="form-inline">
-							<div class="form-group">
+							<div class="form-group margin-top-5">
 								<select class="form-control" id="" name="">
 									<option selected>Delivery</option>
 									<option>Pickup</option>
 									<option>Reserve a table</option>
 								</select>
 							</div>
-							<div class="form-group">
+							<div class="form-group margin-top-5">
 								<select class="form-control" id="locationselect" name="">
 									<option value="0">Select Your location</option>
 									<option value="1">My location</option>
 									<option value="2">Selected location</option>
 								</select>
 							</div>
-							<div class="form-group">
+							<div class="form-group margin-top-5">
 								<input class="form-control" placeholder="Food (optional)" type="text">
 							</div>
-							<input class="btn" type="submit" value="Search">
+							<input class="btn margin-top-5" type="submit" value="Search">
 						</form>
 					</div>
 				</div>
@@ -148,8 +151,8 @@
 							</div>
 							<div class="col-md-3">
 								<div class="single-footer visible-lg visible-md visible-sm">
-									<h4><a href="#">Are you a restaurant owner ?<br>
-                                    Register here <i class="fa fa-user-plus"></i><br></a>
+									<h4><a href="#" class="font-14">Are you a restaurant owner ?<br>
+                                     <i class="fa fa-user-plus"></i>&nbsp;Register here<br></a>
                                     </h4>
 									<div class="twitter-updates">
 										<div class="single-tweets">
@@ -209,11 +212,11 @@
 	<!-- Login modal -->
 	<div class="modal fade" id="LoginModal" role="dialog">
 		<div class="modal-dialog modal-sm">
-			<div class="md-contenthead modal-header">
-				<h3 class="modal-title">Welcome.</h3>
-			</div>
 			<div class="modal-content" style="border-top:solid #ff3300 3px">
-				<div>
+				<div class="md-contenthead modal-header">
+					<h3 class="modal-title">Welcome.</h3>
+				</div>
+				<div class="modal-body">
 					<form>
 						<fieldset class="form-group">
 							<input class="form-control" id="exampleInputEmail1" placeholder="Email Address" type="email">
@@ -226,13 +229,12 @@
 							<label>
 								<input type="checkbox">&nbsp; &nbsp; Remember me</label>
 						</div>
-						<a class="modal-footer forgotlink pull-right" href="#">Forgot password?</a>
+						<a class="forgotlink pull-right" href="#">Forgot password?</a>
 					</form>
 				</div>
-			</div>
-			<div class="md-contentbottom">
-				<p>Simply place an order
-					<br> to create an account</p>
+				<div class="md-contentbottom modal-footer">
+					<p>Simply place an order<br> to create an account</p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -289,4 +291,5 @@
 	<script src="js/custommap.js"></script>
 	<script src="js/main.js"></script>
 </body>
+
 </html>

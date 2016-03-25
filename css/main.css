@@ -566,7 +566,7 @@ nav.affix #navbar .text-white-icons1{
 
 .pickgradient {
   /*display:inline-block;*/
-  border-radius: 4px;
+  border-radius: 3px;
   background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.85)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.85) 100%); /* Chrome10+,Safari5.1+ */
@@ -715,6 +715,11 @@ div.dotted {
 		width: 100%;
 		height: auto;
 	}
+}
+li.presentation a {font-size:10px !important}
+@media ( max-width:428px) {
+	.pickgradient {font-size: 9px !important}
+	li.presentation a {font-size:8px !important}
 }
 .tabs-left > .nav-tabs {
 	border-bottom: 0;
