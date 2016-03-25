@@ -651,8 +651,9 @@ div.dotted {
 	font-family: 'Nunito', sans-serif;
 	background: #ff3300;
 	padding: 30px;
-	width: 100%
+	width: 100%;
 }
+
 @media (min-width:992px) and (max-width:1200px) {
 	.restaurant-name {
 		left: 150px;

@@ -445,6 +445,7 @@ function removeItem(array, value) { //my clear function
 function fixAlignment() {
 	// $("#height_of_video").height($(window).height() )
 	// console.log($("#height_of_video"))
+	$(".slider").height($(window).height())
 	page_width = $("html").width();
 	if (window.pageYOffset > 40) {
 		$(".navbar-fixed-top").addClass('affix')
