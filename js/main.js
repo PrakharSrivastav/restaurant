@@ -19,7 +19,7 @@ $(document).ready(function() {
 		fixAlignment()
 	});
 
-	$(window).resize(function(){
+	$(window).resize(function() {
 		fixAlignment()
 	})
 
@@ -182,7 +182,7 @@ $(document).ready(function() {
 			"albumLabel": "",
 			"fadeDuration": 100
 				//  "width":"300"
-		})
+		});
 		// this is fr the mobile view
 		// when the screen width is small, the calculator is rezised to be at the
 		// bottom of the page. this section helps is expanding and compacting the calculator
@@ -452,11 +452,10 @@ function fixAlignment() {
 	} else {
 		$(".navbar-fixed-top").removeClass('affix')
 	}
-	if(page_width < 768){
+	if (page_width < 768) {
 		$("#video_wrapper").hide();
 		$("#image").show();
-	}
-	else{
+	} else {
 		$("#video_wrapper").show();
 		$("#image").hide();
 	}
