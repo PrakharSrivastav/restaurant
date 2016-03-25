@@ -13,10 +13,15 @@ $(document).ready(function() {
 	});
 
 	// align the sidebars on the menu page on page scroll
+	fixAlignment()
+
 	$(window).scroll(function() {
 		fixAlignment()
 	});
-	fixAlignment()
+
+	$(window).resize(function(){
+		fixAlignment()
+	})
 
 	// setting for the select boxes
 	$('.selectpicker').selectpicker({
@@ -72,7 +77,6 @@ $(document).ready(function() {
 
 		// adjust the values in the calculator
 		price_array.push(item_name);
-		// console.log(price_array)
 		total = parseFloat(total + price)
 		$("#subtotal").text(total.toFixed(2));
 		grand_total = total + (5 * total / 100);
@@ -134,7 +138,6 @@ $(document).ready(function() {
 		} else {
 			$("#cooking-time").text(cookingTimeRemoval());
 		}
-		// console.log(price_array)
 		// adjust the reading in the calculator
 		// this is the meat of the calculation
 		total = parseFloat(total - element_price)
@@ -215,7 +218,6 @@ $(document).ready(function() {
 	// this section takes care of the filter section.
 	$("#filter_body").hide();
 	$("#filter_button").click(function() {
-		// console.log($("#filter_body"))
 		$("#filter_body").slideToggle(400);
 	});
 	$('input').iCheck({
@@ -231,10 +233,10 @@ $(document).ready(function() {
 	})
 
 	// fix the size of image/video on the home page
-	$("#height_of_video").height($(window).height() - 10);
-	if ($("html").width() < 900) {
-		$("#height_of_video").height($(window).height() - 60);
-	}
+	;
+	// if ($("html").width() < 1000) {
+	// 	$("#height_of_video").height($(window).height() - 60);
+	// }
 
 
 	// checkout button
@@ -305,8 +307,6 @@ function maintiainHeights() {
 	if (page_width > 992) {
 		left_height = $("#left-sidebar-parent").height();
 		middle_height = $("#middle-section-parent").height();
-		// console.log(middle_height);
-		// console.log(left_height);
 		if (middle_height > left_height) {
 			$("#left-sidebar-parent").height(middle_height);
 			$("#middle-section-parent").height(middle_height);
@@ -437,18 +437,27 @@ function removeItem(array, value) { //my clear function
 	for (var i = array.length - 1; i >= 0; i--) {
 		if (array[i] == value) {
 			array.splice(i, 1);
-			// console.log(array);
 			return false;
 		}
 	}
 }
 
 function fixAlignment() {
+	// $("#height_of_video").height($(window).height() )
+	// console.log($("#height_of_video"))
 	page_width = $("html").width();
 	if (window.pageYOffset > 40) {
 		$(".navbar-fixed-top").addClass('affix')
 	} else {
 		$(".navbar-fixed-top").removeClass('affix')
+	}
+	if(page_width < 768){
+		$("#video_wrapper").hide();
+		$("#image").show();
+	}
+	else{
+		$("#video_wrapper").show();
+		$("#image").hide();
 	}
 	if (page_width > 992) {
 		$("#right-sidebar").removeClass("fixed-bottom-menu");
@@ -458,7 +467,6 @@ function fixAlignment() {
 				$("#left-sidebar").addClass("fixed-left-menu")
 				$("#left-sidebar").addClass("pull-left")
 				$("#left-sidebar").width($("#left-sidebar").parent().width())
-					// console.log($("#left-sidebar").parent().width())
 			}
 			if (!$("#right-sidebar").hasClass("fixed-right-menu")) {
 				$("#right-sidebar").addClass("fixed-right-menu")
@@ -466,7 +474,6 @@ function fixAlignment() {
 				$("#right-sidebar").width($("#right-sidebar").parent().width())
 			}
 		} else {
-			// console.log($("#left-sidebar").parent().width())
 			$("#left-sidebar").removeClass("fixed-left-menu")
 			$("#right-sidebar").removeClass("fixed-right-menu")
 		}
@@ -474,7 +481,8 @@ function fixAlignment() {
 		$("#right-sidebar").removeClass("fixed-right-menu")
 		$("#right-sidebar").addClass("fixed-bottom-menu")
 		$("#right-sidebar").addClass("col-xs-12")
-		$("#right-sidebar").width($("#right-sidebar").parent().width())
+		$("#right-sidebar").width($("#right-sidebar").parent().width());
+
 	}
 
 }

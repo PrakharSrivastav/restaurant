@@ -15,9 +15,8 @@
 	<meta content="" name="keyword">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
 	<link rel="stylesheet" type='text/css' href="css/a/normalize.css">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link href="css/searchbar.css" rel="stylesheet">
 	<link rel="stylesheet" type='text/css' href="css/custom.css">
 	<link rel="stylesheet" type='text/css' href="css/bootstrap.min.css">
@@ -64,11 +63,16 @@
 	<div class="slider-area">
 		<div class="slider">
 			<div class="blurvideo" id="height_of_video">
-				<video autoplay="" class="full-width" id="video_section" loop="loop" muted="" preload="">
-					<source media="all and (min-width:768px)" src="video/intro.webm" type="video/webm">
-					<source media="all and (min-width:768px)" src="video/intro.mp4" type="video/mp4">
-					<source media="all and (min-width:768px)" src="video/intro.ogv" type="video/ogv"> Your browser does not support the video tag.
-				</video>
+				<div id="video_wrapper">
+					<video autoplay="" class="video full-width" id="video_section" loop="loop" muted="" preload="" >
+						<source media="all and (min-width:768px)" src="video/intro.webm" type="video/webm">
+						<source media="all and (min-width:768px)" src="video/intro.mp4" type="video/mp4">
+						<source media="all and (min-width:768px)" src="video/intro.ogv" type="video/ogv"> Your browser does not support the video tag.
+					</video>
+				</div>
+				<div class="image" id="image">
+					<img src="img/intro.jpg" alt="" style="object-fit:cover"/>
+				</div>
 			</div>
 		</div>
 		<div align="center" id="menu_text">
@@ -283,7 +287,7 @@
 	<script src="js/bootstrap-select.min.js"></script>
 	<script src="js/lightbox.js"></script>
 	<script src="js/icheck.min.js"></script>
-	<script src="js/a/wow.js"></script>
+	<script src="js/wow.min.js"></script>
 	<script type="text/javascript" src="js/a/owl.carousel.min.js"></script>
 	<script src="js/a/main1.js"></script>
 	<script src="js/toastr.js"></script>

@@ -307,7 +307,6 @@
 .font-5 {
 	font-size: 5px !important;
 }
-
 .font-8 {
 	font-size: 8px !important;
 }
@@ -408,9 +407,8 @@ div.bg-img {
 	color: #000;
 	font-size: 20px
 }
-
-.text-black{
-color: #1a1a1a;
+.text-black {
+	color: #1a1a1a;
 }
 .bg-white {
 	background-color: #fff !important
@@ -487,7 +485,7 @@ nav.affix #navbar i.fa {
 	color: #000 !important;
 	opacity: 1.0
 }
-nav.affix #navbar .text-white-icons1{
+nav.affix #navbar .text-white-icons1 {
 	color: #000 !important;
 	opacity: 1.0
 }
@@ -536,12 +534,12 @@ nav.affix #navbar .text-white-icons1{
 	bottom: 0px;
 	opacity: 0.8;
 	color: #fff;
-    font-family: 'Nunito', sans-serif;
-    font-size: 10px;
-    text-transform: uppercase;
-	left:0px;
+	font-family: 'Nunito', sans-serif;
+	font-size: 10px;
+	text-transform: uppercase;
+	left: 0px;
 }
-.get-gradient{
+.get-gradient {
 	background-color: #1a82f7;
 	background-image: url(images/linear_bg_1.png);
 	background-repeat: repeat-y;
@@ -563,29 +561,35 @@ nav.affix #navbar .text-white-icons1{
 	width: 230px !important;
 	height: 140px !important;
 }
-
 .pickgradient {
-  /*display:inline-block;*/
-  border-radius: 3px;
-  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.85)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.85) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.85) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.85) 100%); /* IE10+ */
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.85) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+	/*display:inline-block;*/
+	border-radius: 3px;
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.85)), color-stop(100%, rgba(0, 0, 0, 0)));
+	/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%);
+	/* IE10+ */
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%);
+	/* W3C */
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
+	/* IE6-9 */
 }
-.no-side-border{
+.no-side-border {
 	border-left: none !important;
 	border-right: none !important;
 }
-img{
-  position:relative;
-  /*z-index:-1;*/
-  display:block;
+img {
+	position: relative;
+	/*z-index:-1;*/
+	display: block;
 }
-.profile-picture, .library-img{
-	z-index:0
+.profile-picture, .library-img {
+	z-index: 0
 }
 div.dotted {
 	height: 1px;
@@ -607,14 +611,13 @@ div.dotted {
 	background: -o-linear-gradient(left, #494141, #591c1a);
 }
 
-
-
 /*#video-background 			{margin-top: 300px !important;}*/
+
 .callout {
 	position: relative;
 	overflow: hidden;
 }
-.bootstrap-select > .home{
+.bootstrap-select > .home {
 	height: 46px;
 }
 #height_of_video {
@@ -622,32 +625,30 @@ div.dotted {
 	padding: 0px !important;
 	margin-top: 0px !important
 }
-
-.blurvideo{
--webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
+.blurvideo {
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
 }
-
 #home_page_heading {
 	background: #000;
 	border-radius: 0px;
 	font-size: 20px;
 	border: none;
 	padding: 15px;
-    opacity: 0.8;
+	opacity: 0.8;
 }
 #homepage_header {
 	position: absolute;
 	top: 100px
 }
 #menu_text {
-    color: black;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-family: 'Nunito', sans-serif;
+	color: black;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-family: 'Nunito', sans-serif;
 	background: #ff3300;
 	padding: 30px;
 	width: 100%
@@ -660,8 +661,23 @@ div.dotted {
 	.restaurant-name h3 {
 		font-size: 18px !important
 	}
+	#video_section {
+		background-image: url('../img/intro.jpg');
+		background-repeat: no-repeat center center fixed;
+		-webkit-background-repeat: no-repeat center center fixed;
+		-moz-background-repeat: no-repeat center center fixed;
+		-o-background-repeat: no-repeat center center fixed;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		min-height: 100%;
+		min-width: 1024px;
+		width: 100%;
+		height: auto !important;
+	}
 }
-@media (min-width:769px) and (max-width:992px) {
+@media (min-width:769px) and (max-width:1062px) {
 	.restaurant-name {
 		left: -30px;
 		margin: 0;
@@ -689,6 +705,9 @@ div.dotted {
 		min-width: 1024px;
 		width: 100%;
 		height: auto;
+		-webkit-background-repeat: no-repeat center center fixed;
+		-moz-background-repeat: no-repeat center center fixed;
+		-o-background-repeat: no-repeat center center fixed;
 	}
 }
 @media ( max-width:768px) {
@@ -718,6 +737,9 @@ div.dotted {
 	#video_section {
 		background-image: url('../img/intro.jpg');
 		background-repeat: no-repeat center center fixed;
+		-webkit-background-repeat: no-repeat center center fixed;
+		-moz-background-repeat: no-repeat center center fixed;
+		-o-background-repeat: no-repeat center center fixed;
 		background-size: cover;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
@@ -728,10 +750,16 @@ div.dotted {
 		height: auto;
 	}
 }
-li.presentation a {font-size:10px !important}
+li.presentation a {
+	font-size: 10px !important
+}
 @media ( max-width:428px) {
-	.pickgradient {font-size: 9px !important}
-	li.presentation a {font-size:8px !important}
+	.pickgradient {
+		font-size: 9px !important
+	}
+	li.presentation a {
+		font-size: 8px !important
+	}
 }
 .tabs-left > .nav-tabs {
 	border-bottom: 0;
@@ -787,5 +815,9 @@ li.presentation a {font-size:10px !important}
 	border-color: #ddd transparent #ddd #ddd;
 	*border-right-color: #ffffff;
 }
-.tweets                 {background:#f5f5f0;border-radius:0px !important;margin-bottom:-15px !important;
-                         box-shadow:-2px 2px 4px #888;}
+.tweets {
+	background: #f5f5f0;
+	border-radius: 0px !important;
+	margin-bottom: -15px !important;
+	box-shadow: -2px 2px 4px #888;
+}
